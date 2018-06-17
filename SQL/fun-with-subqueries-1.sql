@@ -67,7 +67,7 @@ FROM
     ) sub2;
 
 --For the customer that spent the most (in total over their lifetime as a customer) total_amt_usd, how many web_events did they have for each channel?
-SELECT top.name, w.channel, COUNT(*)
+SELECT tops.name, w.channel, COUNT(*)
 FROM 
     (SELECT a.name, SUM(o.total_amt_usd) total_dollars
     FROM accounts a
@@ -75,7 +75,7 @@ FROM
     ON a.id = o.account_id
     GROUP BY 1
     ORDER BY 2 DESC
-    LIMIT 1) top
+    LIMIT 1) tops
 JOIN accounts a
 ON top.name = a.name
 JOIN web_events w
