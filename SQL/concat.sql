@@ -22,7 +22,7 @@ WITH sub AS (SELECT name company,
     		RIGHT(primary_poc, LENGTH(primary_poc) - POSITION(' ' IN primary_poc)) last_name
     FROM accounts)
           
-SELECT CONCAT(LOWER(LEFT(sub.first_name, 1)), RIGHT(sub.first_name, 1), LOWER(LEFT(sub.last_name, 1)), RIGHT(sub.last_name, 1), 
+SELECT CONCAT(LOWER(LEFT(first_name, 1)), RIGHT(first_name, 1), LOWER(LEFT(last_name, 1)), RIGHT(last_name, 1), 
 LENGTH(first_name), LENGTH(last_name), UPPER(REPLACE(company, ' ', ''))) 
 FROM sub;
 
