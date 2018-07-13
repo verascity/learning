@@ -1,3 +1,5 @@
+from math import sqrt
+
 class Vector(object):
     def __init__(self, coordinates):
         try:
@@ -23,7 +25,14 @@ class Vector(object):
     def scalar_mult(self, c):
         multi_coords = [c*x for x in self.coordinates]
         return Vector(multi_coords)
-
+    
+    def magnitude(self):
+        sqr_coords = [x**2 for x in self.coordinates]
+        return sqrt(sum(sqr_coords))
+    
+    def normalize(self):
+        unit_div = 1 / self.magnitude()
+        return self.scalar_mult(unit_div)
 
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
