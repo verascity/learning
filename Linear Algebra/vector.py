@@ -31,8 +31,12 @@ class Vector(object):
         return sqrt(sum(sqr_coords))
     
     def normalize(self):
-        unit_div = 1 / self.magnitude()
-        return self.scalar_mult(unit_div)
+        try:
+            unit_div = 1.0 / self.magnitude()
+            return self.scalar_mult(unit_div)
+        
+        except ZeroDivisionError:
+            raise Exception("Unable to normalize the zero vector!")
 
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
