@@ -1,11 +1,14 @@
 from math import sqrt, acos, degrees
+from decimal import Decimal, getcontext
+
+getcontext().prec = 30
 
 class Vector(object):
     def __init__(self, coordinates):
         try:
             if not coordinates:
                 raise ValueError
-            self.coordinates = tuple(coordinates)
+            self.coordinates = tuple([Decimal(x) for x in coordinates])
             self.dimension = len(coordinates)
 
         except ValueError:
@@ -23,7 +26,7 @@ class Vector(object):
         return Vector(sub_coords)
     
     def scalar_mult(self, c):
-        multi_coords = [c*x for x in self.coordinates]
+        multi_coords = [Decimal(c)*x for x in self.coordinates]
         return Vector(multi_coords)
     
     def magnitude(self):
@@ -32,14 +35,14 @@ class Vector(object):
     
     def normalize(self):
         try:
-            unit_div = 1.0 / self.magnitude()
+            unit_div = Decimal('1.0') / self.magnitude()
             return self.scalar_mult(unit_div)
         
         except ZeroDivisionError:
             raise Exception("Unable to normalize the zero vector!")
             
     def dot_product(self, v):
-        return sum([x * y for x, y in zip(self.coordinates, v.coordinates)])
+        return sum([x*y for x,y in zip(self.coordinates, v.coordinates)])
     
     def theta(self, v):
         rad_deg = input("In radians or degrees? Type r or d: ")
