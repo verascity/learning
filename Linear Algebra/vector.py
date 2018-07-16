@@ -31,7 +31,7 @@ class Vector(object):
     
     def magnitude(self):
         sqr_coords = [x**2 for x in self.coordinates]
-        return sqrt(sum(sqr_coords))
+        return Decimal(sqrt(sum(sqr_coords)))
     
     def normalize(self):
         try:
