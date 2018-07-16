@@ -1,4 +1,5 @@
 from math import sqrt, acos, degrees
+from numpy import around
 
 class Vector(object):
     def __init__(self, coordinates):
@@ -39,8 +40,8 @@ class Vector(object):
             raise Exception("Unable to normalize the zero vector!")
             
     def dot_product(self, v):
-        mult_coords = [x*y for x,y in zip(self.coordinates, v.coordinates)]
-        return sum(mult_coords)
+        mult_coords = [around(x*y, decimals=3) for x,y in zip(self.coordinates, v.coordinates)]
+        return around(sum(mult_coords), decimals=3)
     
     def theta(self, v):
         rad_deg = input("In radians or degrees? Type r or d: ")
