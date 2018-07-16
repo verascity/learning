@@ -39,8 +39,7 @@ class Vector(object):
             raise Exception("Unable to normalize the zero vector!")
             
     def dot_product(self, v):
-        mult_coords = [x*y for x,y in zip(self.coordinates, v.coordinates)]
-        return sum(mult_coords)
+        return sum([x * y for x, y in zip(self.coordinates, v.coordinates)])
     
     def theta(self, v):
         rad_deg = input("In radians or degrees? Type r or d: ")
