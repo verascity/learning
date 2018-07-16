@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, acos, degrees
 
 class Vector(object):
     def __init__(self, coordinates):
@@ -41,6 +41,21 @@ class Vector(object):
     def dot_product(self, v):
         mult_coords = [x*y for x,y in zip(self.coordinates, v.coordinates)]
         return sum(mult_coords)
+    
+    def theta(self, v):
+        rad_deg = input("In radians or degrees? Type r or d: ")
+        
+        num = self.dot_product(v)
+        denom = self.magnitude() * v.magnitude()
+        
+        if denom == 0:
+            raise Exception("Unable to return theta!")
+        else:       
+            
+            if rad_deg == "r":
+                return acos(num/denom)
+            elif rad_deg == "d":
+                return degrees(acos(num/denom))
 
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
