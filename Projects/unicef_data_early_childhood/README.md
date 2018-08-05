@@ -1,1 +1,1 @@
-This is the code written for the UN/UNICEF Data Project completed for the Udacity Bertelsmann Data Science Scholarship, posted on Medium at [insert link here when that goes up].
+This is the code written for the UN/UNICEF Data Project completed for the Udacity Bertelsmann Data Science Scholarship, posted on Medium at https://medium.com/@svsticker/adult-support-for-learning-around-the-world-dbe30ac47c56.
