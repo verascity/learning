@@ -1,4 +1,4 @@
-from math import sqrt, acos, degrees
+from math import sqrt, acos, degrees, pi
 from decimal import Decimal, getcontext
 
 getcontext().prec = 30
@@ -61,6 +61,15 @@ class Vector(object):
             
     def orthogonal(self, v, tolerance=1e-10):
         return abs(self.dot_product(v)) < tolerance
+    
+    def parallel(self, v):
+        return(self.is_zero() or
+               v.is_zero() or
+               self.theta(v) == 0 or
+               self.theta(v) == pi)
+        
+    def is_zero(self, tolerance=1e-10):
+        return self.magnitude() < tolerance
 
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
