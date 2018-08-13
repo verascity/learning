@@ -58,6 +58,9 @@ class Vector(object):
                 return acos(num/denom)
             elif rad_deg == "d":
                 return degrees(acos(num/denom))
+            
+    def orthogonal(self, v, tolerance=1e-10):
+        return abs(self.dot_product(v)) < tolerance
 
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
