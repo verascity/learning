@@ -22,3 +22,7 @@ weather["global_mov_avg"] = weather["global_temp"].rolling(window=10).mean()
 
 plt.figure(figsize=(10, 5))
 plt.plot(weather["year"], weather["ny_mov_avg"], 'orange', weather["year"], weather["global_mov_avg"], 'blue')
+plt.xlabel("Year")
+plt.ylabel("Temperature in Celsius")
+plt.suptitle("10-Year Moving Average Temperatures, Globally and in New York City, 1750-2015") #I prefer suptitle for spacing.
+plt.legend(["New York", "Global"])
