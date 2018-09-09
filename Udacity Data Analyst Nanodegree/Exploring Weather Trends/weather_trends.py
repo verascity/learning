@@ -31,3 +31,11 @@ plt.legend(["New York", "Global"])
 #Calculate the correlation coefficient for the two moving averages:
 corr = weather["ny_mov_avg"].corr(weather["global_mov_avg"]) 
 print(corr)
+
+"""
+After looking at this data, I was curious about how other cities would
+compare, so I generated a new csv with a random sample of five cities.
+"""
+
+weather2 = pd.read_csv("weather_data2.csv")
+print(weather2.describe())
