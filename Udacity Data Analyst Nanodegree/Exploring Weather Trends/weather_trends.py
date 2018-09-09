@@ -19,3 +19,6 @@ weather = weather.bfill() #The ny_temp for 1779 is an outlier at 0.25, so backfi
 
 weather["ny_mov_avg"] = weather["ny_temp"].rolling(window=10).mean()
 weather["global_mov_avg"] = weather["global_temp"].rolling(window=10).mean()
+
+plt.figure(figsize=(10, 5))
+plt.plot(weather["year"], weather["ny_mov_avg"], 'orange', weather["year"], weather["global_mov_avg"], 'blue')
