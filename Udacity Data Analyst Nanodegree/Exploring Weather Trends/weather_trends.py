@@ -6,7 +6,6 @@ This script analyzes weather_data.csv to look for trends in yearly average
 temperature, both globally and locally to New York City, from 1750 to 2013. 
 """
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -17,12 +16,18 @@ weather = pd.read_csv("weather_data.csv")
 #print(weather[weather['ny_temp'].isna()]) #Reveals missing year is 1780
 weather = weather.bfill() #The ny_temp for 1779 is an outlier at 0.25, so backfilling makes the most sense.
 
-weather["ny_mov_avg"] = weather["ny_temp"].rolling(window=10).mean()
+#Calculate 10-year moving averages:
+weather["ny_mov_avg"] = weather["ny_temp"].rolling(window=10).mean() 
 weather["global_mov_avg"] = weather["global_temp"].rolling(window=10).mean()
 
-plt.figure(figsize=(10, 5))
+#Plot the data:
+plt.figure(figsize=(10, 5)) 
 plt.plot(weather["year"], weather["ny_mov_avg"], 'orange', weather["year"], weather["global_mov_avg"], 'blue')
 plt.xlabel("Year")
 plt.ylabel("Temperature in Celsius")
 plt.suptitle("10-Year Moving Average Temperatures, Globally and in New York City, 1750-2015") #I prefer suptitle for spacing.
 plt.legend(["New York", "Global"])
+
+#Calculate the correlation coefficient for the two moving averages:
+corr = weather["ny_mov_avg"].corr(weather["global_mov_avg"]) 
+print(corr)
