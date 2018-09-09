@@ -17,4 +17,5 @@ weather = pd.read_csv("weather_data.csv")
 #print(weather[weather['ny_temp'].isna()]) #Reveals missing year is 1780
 weather = weather.bfill() #The ny_temp for 1779 is an outlier at 0.25, so backfilling makes the most sense.
 
-
+weather["ny_mov_avg"] = weather["ny_temp"].rolling(window=10).mean()
+weather["global_mov_avg"] = weather["global_temp"].rolling(window=10).mean()
