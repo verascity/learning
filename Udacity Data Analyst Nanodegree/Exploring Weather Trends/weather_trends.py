@@ -40,6 +40,6 @@ compare, so I generated a new csv with a random sample of five cities.
 
 weather2 = pd.read_csv("weather_data2.csv")
 weather2["location"] = weather2["city"] + ", " + weather2["country"]
-weather2 = weather2[["year", "location", "city_temp"]]
+weather2 = weather2[["year", "location", "city_temp", "global_temp"]]
 weather2 = weather2.interpolate()
-
+print(weather2.describe())
