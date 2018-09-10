@@ -1,1064 +1,1032 @@
 year,city,country,city_temp,global_temp
-1750,Berlin,Germany,9.83,8.72
-1751,Berlin,Germany,9.75,7.98
-1752,Berlin,Germany,4.84,5.78
-1753,Berlin,Germany,8.72,8.39
-1754,Berlin,Germany,8.49,8.47
-1755,Berlin,Germany,8.26,8.36
-1756,Berlin,Germany,9.62,8.85
-1757,Berlin,Germany,9.15,9.02
-1758,Berlin,Germany,8.25,6.74
-1759,Berlin,Germany,9.04,7.99
-1760,Berlin,Germany,8.99,7.19
-1761,Berlin,Germany,9.47,8.77
-1762,Berlin,Germany,8.53,8.61
-1763,Berlin,Germany,8.62,7.50
-1764,Berlin,Germany,8.91,8.40
-1765,Berlin,Germany,8.54,8.25
-1766,Berlin,Germany,8.87,8.41
-1767,Berlin,Germany,8.14,8.22
-1768,Berlin,Germany,8.03,6.78
-1769,Berlin,Germany,8.46,7.69
-1770,Berlin,Germany,8.50,7.69
-1771,Berlin,Germany,7.45,7.85
-1772,Berlin,Germany,9.13,8.19
-1773,Berlin,Germany,9.52,8.22
-1774,Berlin,Germany,8.46,8.77
-1775,Berlin,Germany,10.10,9.18
-1776,Berlin,Germany,8.36,8.30
-1777,Berlin,Germany,8.29,8.26
-1778,Berlin,Germany,9.43,8.54
-1779,Berlin,Germany,10.47,8.98
-1780,Berlin,Germany,8.78,9.43
-1781,Berlin,Germany,9.98,8.10
-1782,Berlin,Germany,8.61,7.90
-1783,Berlin,Germany,9.76,7.68
-1784,Berlin,Germany,7.67,7.86
-1785,Berlin,Germany,7.42,7.36
-1786,Berlin,Germany,7.68,8.26
-1787,Berlin,Germany,9.27,8.03
-1788,Berlin,Germany,8.33,8.45
-1789,Berlin,Germany,8.99,8.33
-1790,Berlin,Germany,9.09,7.98
-1791,Berlin,Germany,9.55,8.23
-1792,Berlin,Germany,8.90,8.09
-1793,Berlin,Germany,9.18,8.23
-1794,Berlin,Germany,10.02,8.53
-1795,Berlin,Germany,8.87,8.35
-1796,Berlin,Germany,9.01,8.27
-1797,Berlin,Germany,10.07,8.51
-1798,Berlin,Germany,9.33,8.67
-1799,Berlin,Germany,6.72,8.51
-1800,Berlin,Germany,8.60,8.48
-1801,Berlin,Germany,9.61,8.59
-1802,Berlin,Germany,9.08,8.58
-1803,Berlin,Germany,8.02,8.50
-1804,Berlin,Germany,8.36,8.84
-1805,Berlin,Germany,7.20,8.56
-1806,Berlin,Germany,9.67,8.43
-1807,Berlin,Germany,9.42,8.28
-1808,Berlin,Germany,8.15,7.63
-1809,Berlin,Germany,8.66,7.08
-1810,Berlin,Germany,8.46,6.92
-1811,Berlin,Germany,9.93,6.86
-1812,Berlin,Germany,7.35,7.05
-1813,Berlin,Germany,8.66,7.74
-1814,Berlin,Germany,7.46,7.59
-1815,Berlin,Germany,8.38,7.24
-1816,Berlin,Germany,7.75,6.94
-1817,Berlin,Germany,8.92,6.98
-1818,Berlin,Germany,9.00,7.83
-1819,Berlin,Germany,9.43,7.37
-1820,Berlin,Germany,7.86,7.62
-1821,Berlin,Germany,9.15,8.09
-1822,Berlin,Germany,10.05,8.19
-1823,Berlin,Germany,8.26,7.72
-1824,Berlin,Germany,9.61,8.55
-1825,Berlin,Germany,9.32,8.39
-1826,Berlin,Germany,9.35,8.36
-1827,Berlin,Germany,8.99,8.81
-1828,Berlin,Germany,8.94,8.17
-1829,Berlin,Germany,6.52,7.94
-1830,Berlin,Germany,8.08,8.52
-1831,Berlin,Germany,8.93,7.64
-1832,Berlin,Germany,8.34,7.45
-1833,Berlin,Germany,8.89,8.01
-1834,Berlin,Germany,10.40,8.15
-1835,Berlin,Germany,8.81,7.39
-1836,Berlin,Germany,8.88,7.70
-1837,Berlin,Germany,8.12,7.38
-1838,Berlin,Germany,6.98,7.51
-1839,Berlin,Germany,8.63,7.63
-1840,Berlin,Germany,7.74,7.80
-1841,Berlin,Germany,9.06,7.69
-1842,Berlin,Germany,8.51,8.02
-1843,Berlin,Germany,9.18,8.17
-1844,Berlin,Germany,7.85,7.65
-1845,Berlin,Germany,7.92,7.85
-1846,Berlin,Germany,9.84,8.55
-1847,Berlin,Germany,8.24,8.09
-1848,Berlin,Germany,8.75,7.98
-1849,Berlin,Germany,8.03,7.98
-1850,Berlin,Germany,8.20,7.90
-1851,Berlin,Germany,8.50,8.18
-1852,Berlin,Germany,9.54,8.10
-1853,Berlin,Germany,7.55,8.04
-1854,Berlin,Germany,8.69,8.21
-1855,Berlin,Germany,7.07,8.11
-1856,Berlin,Germany,8.50,8.00
-1857,Berlin,Germany,9.39,7.76
-1858,Berlin,Germany,7.97,8.10
-1859,Berlin,Germany,9.60,8.25
-1860,Berlin,Germany,8.00,7.96
-1861,Berlin,Germany,8.87,7.85
-1862,Berlin,Germany,8.91,7.56
-1863,Berlin,Germany,9.81,8.11
-1864,Berlin,Germany,6.99,7.98
-1865,Berlin,Germany,8.88,8.18
-1866,Berlin,Germany,9.44,8.29
-1867,Berlin,Germany,8.41,8.44
-1868,Berlin,Germany,10.24,8.25
-1869,Berlin,Germany,9.06,8.43
-1870,Berlin,Germany,7.57,8.20
-1871,Berlin,Germany,7.08,8.12
-1872,Berlin,Germany,9.97,8.19
-1873,Berlin,Germany,9.27,8.35
-1874,Berlin,Germany,9.08,8.43
-1875,Berlin,Germany,8.04,7.86
-1876,Berlin,Germany,8.64,8.08
-1877,Berlin,Germany,8.95,8.54
-1878,Berlin,Germany,9.38,8.83
-1879,Berlin,Germany,7.46,8.17
-1880,Berlin,Germany,9.08,8.12
-1881,Berlin,Germany,7.75,8.27
-1882,Berlin,Germany,9.28,8.13
-1883,Berlin,Germany,8.54,7.98
-1884,Berlin,Germany,9.20,7.77
-1885,Berlin,Germany,8.47,7.92
-1886,Berlin,Germany,8.55,7.95
-1887,Berlin,Germany,7.93,7.91
-1888,Berlin,Germany,7.61,8.09
-1889,Berlin,Germany,8.34,8.32
-1890,Berlin,Germany,8.35,7.97
-1891,Berlin,Germany,8.48,8.02
-1892,Berlin,Germany,8.28,8.07
-1893,Berlin,Germany,8.50,8.06
-1894,Berlin,Germany,8.96,8.16
-1895,Berlin,Germany,8.28,8.15
-1896,Berlin,Germany,8.57,8.21
-1897,Berlin,Germany,8.69,8.29
-1898,Berlin,Germany,9.42,8.18
-1899,Berlin,Germany,8.96,8.40
-1900,Berlin,Germany,9.16,8.50
-1901,Berlin,Germany,8.58,8.54
-1902,Berlin,Germany,7.63,8.30
-1903,Berlin,Germany,9.28,8.22
-1904,Berlin,Germany,9.15,8.09
-1905,Berlin,Germany,8.90,8.23
-1906,Berlin,Germany,9.31,8.38
-1907,Berlin,Germany,8.52,7.95
-1908,Berlin,Germany,8.35,8.19
-1909,Berlin,Germany,8.16,8.18
-1910,Berlin,Germany,9.33,8.22
-1911,Berlin,Germany,9.89,8.18
-1912,Berlin,Germany,8.49,8.17
-1913,Berlin,Germany,9.41,8.30
-1914,Berlin,Germany,9.50,8.59
-1915,Berlin,Germany,8.56,8.59
-1916,Berlin,Germany,9.30,8.23
-1917,Berlin,Germany,8.39,8.02
-1918,Berlin,Germany,9.42,8.13
-1919,Berlin,Germany,8.00,8.38
-1920,Berlin,Germany,9.37,8.36
-1921,Berlin,Germany,9.78,8.57
-1922,Berlin,Germany,7.76,8.41
-1923,Berlin,Germany,8.58,8.42
-1924,Berlin,Germany,8.30,8.51
-1925,Berlin,Germany,9.32,8.53
-1926,Berlin,Germany,9.57,8.73
-1927,Berlin,Germany,8.72,8.52
-1928,Berlin,Germany,8.92,8.63
-1929,Berlin,Germany,7.99,8.24
-1930,Berlin,Germany,9.48,8.63
-1931,Berlin,Germany,8.35,8.72
-1932,Berlin,Germany,9.23,8.71
-1933,Berlin,Germany,8.32,8.34
-1934,Berlin,Germany,10.69,8.63
-1935,Berlin,Germany,9.34,8.52
-1936,Berlin,Germany,9.30,8.55
-1937,Berlin,Germany,9.41,8.70
-1938,Berlin,Germany,9.77,8.86
-1939,Berlin,Germany,9.32,8.76
-1940,Berlin,Germany,7.04,8.76
-1941,Berlin,Germany,7.62,8.77
-1942,Berlin,Germany,7.80,8.73
-1943,Berlin,Germany,9.67,8.76
-1944,Berlin,Germany,9.31,8.85
-1945,Berlin,Germany,9.64,8.58
-1946,Berlin,Germany,9.12,8.68
-1947,Berlin,Germany,8.79,8.80
-1948,Berlin,Germany,9.96,8.75
-1949,Berlin,Germany,10.04,8.59
-1950,Berlin,Germany,9.37,8.37
-1951,Berlin,Germany,9.72,8.63
-1952,Berlin,Germany,8.61,8.64
-1953,Berlin,Germany,10.13,8.87
-1954,Berlin,Germany,8.41,8.56
-1955,Berlin,Germany,8.36,8.63
-1956,Berlin,Germany,7.57,8.28
-1957,Berlin,Germany,9.46,8.73
-1958,Berlin,Germany,9.05,8.77
-1959,Berlin,Germany,9.88,8.73
-1960,Berlin,Germany,9.22,8.58
-1961,Berlin,Germany,9.81,8.80
-1962,Berlin,Germany,8.13,8.75
-1963,Berlin,Germany,8.12,8.86
-1964,Berlin,Germany,8.84,8.41
-1965,Berlin,Germany,8.33,8.53
-1966,Berlin,Germany,9.34,8.60
-1967,Berlin,Germany,10.08,8.70
-1968,Berlin,Germany,9.28,8.52
-1969,Berlin,Germany,8.43,8.60
-1970,Berlin,Germany,8.43,8.70
-1971,Berlin,Germany,9.54,8.60
-1972,Berlin,Germany,8.88,8.50
-1973,Berlin,Germany,9.24,8.95
-1974,Berlin,Germany,9.89,8.47
-1975,Berlin,Germany,10.08,8.74
-1976,Berlin,Germany,9.15,8.35
-1977,Berlin,Germany,9.54,8.85
-1978,Berlin,Germany,8.86,8.69
-1979,Berlin,Germany,8.53,8.73
-1980,Berlin,Germany,8.26,8.98
-1981,Berlin,Germany,9.18,9.17
-1982,Berlin,Germany,10.08,8.64
-1983,Berlin,Germany,10.21,9.03
-1984,Berlin,Germany,8.94,8.69
-1985,Berlin,Germany,8.46,8.66
-1986,Berlin,Germany,8.78,8.83
-1987,Berlin,Germany,8.09,8.99
-1988,Berlin,Germany,10.02,9.20
-1989,Berlin,Germany,10.72,8.92
-1990,Berlin,Germany,10.71,9.23
-1991,Berlin,Germany,9.36,9.18
-1992,Berlin,Germany,10.38,8.84
-1993,Berlin,Germany,9.34,8.87
-1994,Berlin,Germany,10.43,9.04
-1995,Berlin,Germany,9.75,9.35
-1996,Berlin,Germany,7.88,9.04
-1997,Berlin,Germany,9.73,9.20
-1998,Berlin,Germany,10.05,9.52
-1999,Berlin,Germany,10.58,9.29
-2000,Berlin,Germany,10.96,9.20
-2001,Berlin,Germany,9.69,9.41
-2002,Berlin,Germany,10.26,9.57
-2003,Berlin,Germany,10.07,9.53
-2004,Berlin,Germany,9.82,9.32
-2005,Berlin,Germany,9.92,9.70
-2006,Berlin,Germany,10.55,9.53
-2007,Berlin,Germany,10.88,9.73
-2008,Berlin,Germany,10.66,9.43
-2009,Berlin,Germany,10.06,9.51
-2010,Berlin,Germany,8.61,9.70
-2011,Berlin,Germany,10.56,9.52
-2012,Berlin,Germany,9.96,9.51
-2013,Berlin,Germany,10.12,9.61
-1841,Canberra,Australia,11.14,7.69
-1842,Canberra,Australia,11.07,8.02
-1843,Canberra,Australia,11.42,8.17
-1844,Canberra,Australia,10.72,7.65
-1845,Canberra,Australia,11.22,7.85
-1846,Canberra,Australia,11.55,8.55
-1847,Canberra,Australia,11.13,8.09
-1848,Canberra,Australia,10.72,7.98
-1849,Canberra,Australia,10.48,7.98
-1850,Canberra,Australia,11.13,7.90
-1851,Canberra,Australia,11.09,8.18
-1852,Canberra,Australia,10.85,8.10
-1853,Canberra,Australia,10.58,8.04
-1854,Canberra,Australia,10.95,8.21
-1855,Canberra,Australia,9.14,8.11
-1856,Canberra,Australia,11.37,8.00
-1857,Canberra,Australia,11.34,7.76
-1858,Canberra,Australia,11.67,8.10
-1859,Canberra,Australia,10.93,8.25
-1860,Canberra,Australia,11.00,7.96
-1861,Canberra,Australia,11.20,7.85
-1862,Canberra,Australia,11.50,7.56
-1863,Canberra,Australia,11.01,8.11
-1864,Canberra,Australia,10.96,7.98
-1865,Canberra,Australia,11.14,8.18
-1866,Canberra,Australia,11.45,8.29
-1867,Canberra,Australia,11.77,8.44
-1868,Canberra,Australia,11.49,8.25
-1869,Canberra,Australia,11.42,8.43
-1870,Canberra,Australia,11.45,8.20
-1871,Canberra,Australia,11.43,8.12
-1872,Canberra,Australia,11.27,8.19
-1873,Canberra,Australia,11.30,8.35
-1874,Canberra,Australia,11.26,8.43
-1875,Canberra,Australia,11.32,7.86
-1876,Canberra,Australia,11.69,8.08
-1877,Canberra,Australia,11.39,8.54
-1878,Canberra,Australia,11.74,8.83
-1879,Canberra,Australia,10.97,8.17
-1880,Canberra,Australia,11.42,8.12
-1881,Canberra,Australia,11.36,8.27
-1882,Canberra,Australia,11.54,8.13
-1883,Canberra,Australia,11.09,7.98
-1884,Canberra,Australia,11.24,7.77
-1885,Canberra,Australia,11.28,7.92
-1886,Canberra,Australia,11.15,7.95
-1887,Canberra,Australia,11.20,7.91
-1888,Canberra,Australia,11.20,8.09
-1889,Canberra,Australia,11.71,8.32
-1890,Canberra,Australia,11.51,7.97
-1891,Canberra,Australia,11.31,8.02
-1892,Canberra,Australia,11.03,8.07
-1893,Canberra,Australia,11.24,8.06
-1894,Canberra,Australia,11.36,8.16
-1895,Canberra,Australia,11.39,8.15
-1896,Canberra,Australia,11.52,8.21
-1897,Canberra,Australia,11.39,8.29
-1898,Canberra,Australia,11.70,8.18
-1899,Canberra,Australia,11.70,8.40
-1900,Canberra,Australia,11.56,8.50
-1901,Canberra,Australia,11.39,8.54
-1902,Canberra,Australia,11.45,8.30
-1903,Canberra,Australia,11.36,8.22
-1904,Canberra,Australia,11.12,8.09
-1905,Canberra,Australia,10.98,8.23
-1906,Canberra,Australia,11.39,8.38
-1907,Canberra,Australia,11.21,7.95
-1908,Canberra,Australia,11.46,8.19
-1909,Canberra,Australia,10.86,8.18
-1910,Canberra,Australia,11.57,8.22
-1911,Canberra,Australia,11.28,8.18
-1912,Canberra,Australia,11.57,8.17
-1913,Canberra,Australia,11.62,8.30
-1914,Canberra,Australia,12.50,8.59
-1915,Canberra,Australia,11.65,8.59
-1916,Canberra,Australia,11.18,8.23
-1917,Canberra,Australia,10.91,8.02
-1918,Canberra,Australia,11.08,8.13
-1919,Canberra,Australia,12.10,8.38
-1920,Canberra,Australia,11.26,8.36
-1921,Canberra,Australia,11.55,8.57
-1922,Canberra,Australia,11.55,8.41
-1923,Canberra,Australia,11.58,8.42
-1924,Canberra,Australia,10.78,8.51
-1925,Canberra,Australia,10.96,8.53
-1926,Canberra,Australia,11.57,8.73
-1927,Canberra,Australia,11.07,8.52
-1928,Canberra,Australia,11.71,8.63
-1929,Canberra,Australia,10.96,8.24
-1930,Canberra,Australia,11.78,8.63
-1931,Canberra,Australia,11.21,8.72
-1932,Canberra,Australia,11.34,8.71
-1933,Canberra,Australia,11.24,8.34
-1934,Canberra,Australia,11.54,8.63
-1935,Canberra,Australia,10.92,8.52
-1936,Canberra,Australia,11.17,8.55
-1937,Canberra,Australia,11.50,8.70
-1938,Canberra,Australia,11.95,8.86
-1939,Canberra,Australia,11.85,8.76
-1940,Canberra,Australia,11.90,8.76
-1941,Canberra,Australia,11.28,8.77
-1942,Canberra,Australia,11.81,8.73
-1943,Canberra,Australia,10.82,8.76
-1944,Canberra,Australia,11.36,8.85
-1945,Canberra,Australia,11.26,8.58
-1946,Canberra,Australia,11.35,8.68
-1947,Canberra,Australia,11.53,8.80
-1948,Canberra,Australia,10.85,8.75
-1949,Canberra,Australia,10.95,8.59
-1950,Canberra,Australia,11.73,8.37
-1951,Canberra,Australia,11.40,8.63
-1952,Canberra,Australia,11.29,8.64
-1953,Canberra,Australia,11.07,8.87
-1954,Canberra,Australia,11.43,8.56
-1955,Canberra,Australia,11.42,8.63
-1956,Canberra,Australia,10.96,8.28
-1957,Canberra,Australia,11.44,8.73
-1958,Canberra,Australia,11.61,8.77
-1959,Canberra,Australia,11.85,8.73
-1960,Canberra,Australia,11.30,8.58
-1961,Canberra,Australia,11.69,8.80
-1962,Canberra,Australia,11.26,8.75
-1963,Canberra,Australia,11.59,8.86
-1964,Canberra,Australia,11.14,8.41
-1965,Canberra,Australia,11.52,8.53
-1966,Canberra,Australia,10.95,8.60
-1967,Canberra,Australia,11.51,8.70
-1968,Canberra,Australia,11.78,8.52
-1969,Canberra,Australia,11.62,8.60
-1970,Canberra,Australia,11.01,8.70
-1971,Canberra,Australia,11.16,8.60
-1972,Canberra,Australia,11.61,8.50
-1973,Canberra,Australia,12.34,8.95
-1974,Canberra,Australia,11.55,8.47
-1975,Canberra,Australia,11.88,8.74
-1976,Canberra,Australia,11.32,8.35
-1977,Canberra,Australia,11.70,8.85
-1978,Canberra,Australia,11.68,8.69
-1979,Canberra,Australia,12.06,8.73
-1980,Canberra,Australia,12.40,8.98
-1981,Canberra,Australia,12.20,9.17
-1982,Canberra,Australia,12.13,8.64
-1983,Canberra,Australia,12.08,9.03
-1984,Canberra,Australia,11.17,8.69
-1985,Canberra,Australia,11.65,8.66
-1986,Canberra,Australia,11.42,8.83
-1987,Canberra,Australia,11.70,8.99
-1988,Canberra,Australia,12.54,9.20
-1989,Canberra,Australia,11.83,8.92
-1990,Canberra,Australia,12.11,9.23
-1991,Canberra,Australia,12.22,9.18
-1992,Canberra,Australia,11.21,8.84
-1993,Canberra,Australia,11.84,8.87
-1994,Canberra,Australia,11.60,9.04
-1995,Canberra,Australia,11.39,9.35
-1996,Canberra,Australia,11.29,9.04
-1997,Canberra,Australia,12.13,9.20
-1998,Canberra,Australia,12.46,9.52
-1999,Canberra,Australia,12.10,9.29
-2000,Canberra,Australia,12.09,9.20
-2001,Canberra,Australia,12.29,9.41
-2002,Canberra,Australia,12.31,9.57
-2003,Canberra,Australia,12.23,9.53
-2004,Canberra,Australia,12.35,9.32
-2005,Canberra,Australia,12.48,9.70
-2006,Canberra,Australia,12.51,9.53
-2007,Canberra,Australia,12.83,9.73
-2008,Canberra,Australia,12.00,9.43
-2009,Canberra,Australia,12.87,9.51
-2010,Canberra,Australia,12.37,9.70
-2011,Canberra,Australia,12.16,9.52
-2012,Canberra,Australia,11.79,9.51
-2013,Canberra,Australia,12.19,9.61
-1796,Kathmandu,Nepal,14.51,8.27
-1797,Kathmandu,Nepal,15.88,8.51
-1798,Kathmandu,Nepal,14.33,8.67
-1799,Kathmandu,Nepal,14.76,8.51
-1800,Kathmandu,Nepal,14.69,8.48
-1801,Kathmandu,Nepal,14.26,8.59
-1802,Kathmandu,Nepal,15.10,8.58
-1803,Kathmandu,Nepal,14.85,8.50
-1804,Kathmandu,Nepal,15.15,8.84
-1805,Kathmandu,Nepal,14.78,8.56
-1806,Kathmandu,Nepal,14.70,8.43
-1807,Kathmandu,Nepal,14.68,8.28
-1808,Kathmandu,Nepal,,7.63
-1809,Kathmandu,Nepal,,7.08
-1810,Kathmandu,Nepal,,6.92
-1811,Kathmandu,Nepal,,6.86
-1812,Kathmandu,Nepal,,7.05
-1813,Kathmandu,Nepal,14.04,7.74
-1814,Kathmandu,Nepal,13.52,7.59
-1815,Kathmandu,Nepal,13.56,7.24
-1816,Kathmandu,Nepal,13.25,6.94
-1817,Kathmandu,Nepal,13.34,6.98
-1818,Kathmandu,Nepal,13.67,7.83
-1819,Kathmandu,Nepal,13.26,7.37
-1820,Kathmandu,Nepal,13.53,7.62
-1821,Kathmandu,Nepal,14.35,8.09
-1822,Kathmandu,Nepal,14.51,8.19
-1823,Kathmandu,Nepal,14.14,7.72
-1824,Kathmandu,Nepal,14.77,8.55
-1825,Kathmandu,Nepal,14.59,8.39
-1826,Kathmandu,Nepal,14.59,8.36
-1827,Kathmandu,Nepal,14.84,8.81
-1828,Kathmandu,Nepal,14.38,8.17
-1829,Kathmandu,Nepal,14.18,7.94
-1830,Kathmandu,Nepal,14.55,8.52
-1831,Kathmandu,Nepal,13.89,7.64
-1832,Kathmandu,Nepal,14.15,7.45
-1833,Kathmandu,Nepal,14.34,8.01
-1834,Kathmandu,Nepal,14.23,8.15
-1835,Kathmandu,Nepal,13.25,7.39
-1836,Kathmandu,Nepal,14.10,7.70
-1837,Kathmandu,Nepal,13.95,7.38
-1838,Kathmandu,Nepal,13.89,7.51
-1839,Kathmandu,Nepal,13.93,7.63
-1840,Kathmandu,Nepal,14.29,7.80
-1841,Kathmandu,Nepal,14.15,7.69
-1842,Kathmandu,Nepal,14.24,8.02
-1843,Kathmandu,Nepal,14.28,8.17
-1844,Kathmandu,Nepal,13.82,7.65
-1845,Kathmandu,Nepal,14.05,7.85
-1846,Kathmandu,Nepal,14.46,8.55
-1847,Kathmandu,Nepal,14.05,8.09
-1848,Kathmandu,Nepal,13.81,7.98
-1849,Kathmandu,Nepal,13.89,7.98
-1850,Kathmandu,Nepal,14.37,7.90
-1851,Kathmandu,Nepal,14.28,8.18
-1852,Kathmandu,Nepal,14.04,8.10
-1853,Kathmandu,Nepal,14.44,8.04
-1854,Kathmandu,Nepal,14.53,8.21
-1855,Kathmandu,Nepal,14.74,8.11
-1856,Kathmandu,Nepal,13.67,8.00
-1857,Kathmandu,Nepal,13.78,7.76
-1858,Kathmandu,Nepal,,8.10
-1859,Kathmandu,Nepal,,8.25
-1860,Kathmandu,Nepal,,7.96
-1861,Kathmandu,Nepal,,7.85
-1862,Kathmandu,Nepal,,7.56
-1863,Kathmandu,Nepal,,8.11
-1864,Kathmandu,Nepal,,7.98
-1865,Kathmandu,Nepal,16.56,8.18
-1866,Kathmandu,Nepal,14.52,8.29
-1867,Kathmandu,Nepal,14.62,8.44
-1868,Kathmandu,Nepal,14.27,8.25
-1869,Kathmandu,Nepal,15.29,8.43
-1870,Kathmandu,Nepal,14.34,8.20
-1871,Kathmandu,Nepal,14.45,8.12
-1872,Kathmandu,Nepal,14.47,8.19
-1873,Kathmandu,Nepal,14.55,8.35
-1874,Kathmandu,Nepal,14.40,8.43
-1875,Kathmandu,Nepal,14.50,7.86
-1876,Kathmandu,Nepal,14.52,8.08
-1877,Kathmandu,Nepal,14.49,8.54
-1878,Kathmandu,Nepal,14.66,8.83
-1879,Kathmandu,Nepal,14.74,8.17
-1880,Kathmandu,Nepal,14.64,8.12
-1881,Kathmandu,Nepal,14.47,8.27
-1882,Kathmandu,Nepal,14.43,8.13
-1883,Kathmandu,Nepal,14.13,7.98
-1884,Kathmandu,Nepal,14.14,7.77
-1885,Kathmandu,Nepal,14.17,7.92
-1886,Kathmandu,Nepal,14.44,7.95
-1887,Kathmandu,Nepal,14.08,7.91
-1888,Kathmandu,Nepal,14.39,8.09
-1889,Kathmandu,Nepal,14.93,8.32
-1890,Kathmandu,Nepal,14.38,7.97
-1891,Kathmandu,Nepal,14.21,8.02
-1892,Kathmandu,Nepal,14.79,8.07
-1893,Kathmandu,Nepal,13.65,8.06
-1894,Kathmandu,Nepal,14.53,8.16
-1895,Kathmandu,Nepal,14.40,8.15
-1896,Kathmandu,Nepal,15.12,8.21
-1897,Kathmandu,Nepal,14.97,8.29
-1898,Kathmandu,Nepal,14.85,8.18
-1899,Kathmandu,Nepal,14.65,8.40
-1900,Kathmandu,Nepal,14.86,8.50
-1901,Kathmandu,Nepal,14.87,8.54
-1902,Kathmandu,Nepal,14.84,8.30
-1903,Kathmandu,Nepal,14.67,8.22
-1904,Kathmandu,Nepal,14.60,8.09
-1905,Kathmandu,Nepal,13.66,8.23
-1906,Kathmandu,Nepal,14.70,8.38
-1907,Kathmandu,Nepal,14.49,7.95
-1908,Kathmandu,Nepal,15.01,8.19
-1909,Kathmandu,Nepal,14.74,8.18
-1910,Kathmandu,Nepal,14.52,8.22
-1911,Kathmandu,Nepal,14.50,8.18
-1912,Kathmandu,Nepal,14.43,8.17
-1913,Kathmandu,Nepal,14.10,8.30
-1914,Kathmandu,Nepal,14.49,8.59
-1915,Kathmandu,Nepal,15.01,8.59
-1916,Kathmandu,Nepal,14.77,8.23
-1917,Kathmandu,Nepal,14.02,8.02
-1918,Kathmandu,Nepal,14.28,8.13
-1919,Kathmandu,Nepal,14.47,8.38
-1920,Kathmandu,Nepal,14.66,8.36
-1921,Kathmandu,Nepal,14.86,8.57
-1922,Kathmandu,Nepal,14.70,8.41
-1923,Kathmandu,Nepal,14.72,8.42
-1924,Kathmandu,Nepal,14.99,8.51
-1925,Kathmandu,Nepal,14.18,8.53
-1926,Kathmandu,Nepal,14.55,8.73
-1927,Kathmandu,Nepal,14.53,8.52
-1928,Kathmandu,Nepal,15.10,8.63
-1929,Kathmandu,Nepal,14.71,8.24
-1930,Kathmandu,Nepal,14.64,8.63
-1931,Kathmandu,Nepal,15.14,8.72
-1932,Kathmandu,Nepal,14.98,8.71
-1933,Kathmandu,Nepal,14.38,8.34
-1934,Kathmandu,Nepal,14.64,8.63
-1935,Kathmandu,Nepal,14.56,8.52
-1936,Kathmandu,Nepal,14.30,8.55
-1937,Kathmandu,Nepal,14.37,8.70
-1938,Kathmandu,Nepal,14.63,8.86
-1939,Kathmandu,Nepal,14.82,8.76
-1940,Kathmandu,Nepal,14.73,8.76
-1941,Kathmandu,Nepal,15.49,8.77
-1942,Kathmandu,Nepal,15.15,8.73
-1943,Kathmandu,Nepal,14.86,8.76
-1944,Kathmandu,Nepal,14.48,8.85
-1945,Kathmandu,Nepal,14.42,8.58
-1946,Kathmandu,Nepal,14.86,8.68
-1947,Kathmandu,Nepal,15.35,8.80
-1948,Kathmandu,Nepal,14.81,8.75
-1949,Kathmandu,Nepal,14.68,8.59
-1950,Kathmandu,Nepal,14.54,8.37
-1951,Kathmandu,Nepal,15.15,8.63
-1952,Kathmandu,Nepal,15.10,8.64
-1953,Kathmandu,Nepal,15.34,8.87
-1954,Kathmandu,Nepal,15.04,8.56
-1955,Kathmandu,Nepal,14.70,8.63
-1956,Kathmandu,Nepal,14.90,8.28
-1957,Kathmandu,Nepal,14.86,8.73
-1958,Kathmandu,Nepal,15.61,8.77
-1959,Kathmandu,Nepal,15.22,8.73
-1960,Kathmandu,Nepal,15.10,8.58
-1961,Kathmandu,Nepal,14.73,8.80
-1962,Kathmandu,Nepal,14.57,8.75
-1963,Kathmandu,Nepal,14.74,8.86
-1964,Kathmandu,Nepal,15.13,8.41
-1965,Kathmandu,Nepal,14.55,8.53
-1966,Kathmandu,Nepal,15.21,8.60
-1967,Kathmandu,Nepal,14.64,8.70
-1968,Kathmandu,Nepal,14.44,8.52
-1969,Kathmandu,Nepal,15.29,8.60
-1970,Kathmandu,Nepal,14.93,8.70
-1971,Kathmandu,Nepal,14.27,8.60
-1972,Kathmandu,Nepal,14.96,8.50
-1973,Kathmandu,Nepal,15.07,8.95
-1974,Kathmandu,Nepal,15.11,8.47
-1975,Kathmandu,Nepal,14.85,8.74
-1976,Kathmandu,Nepal,14.97,8.35
-1977,Kathmandu,Nepal,14.86,8.85
-1978,Kathmandu,Nepal,14.46,8.69
-1979,Kathmandu,Nepal,15.22,8.73
-1980,Kathmandu,Nepal,15.13,8.98
-1981,Kathmandu,Nepal,14.73,9.17
-1982,Kathmandu,Nepal,14.78,8.64
-1983,Kathmandu,Nepal,14.34,9.03
-1984,Kathmandu,Nepal,15.14,8.69
-1985,Kathmandu,Nepal,15.41,8.66
-1986,Kathmandu,Nepal,14.78,8.83
-1987,Kathmandu,Nepal,15.28,8.99
-1988,Kathmandu,Nepal,15.36,9.20
-1989,Kathmandu,Nepal,14.91,8.92
-1990,Kathmandu,Nepal,15.11,9.23
-1991,Kathmandu,Nepal,14.94,9.18
-1992,Kathmandu,Nepal,14.95,8.84
-1993,Kathmandu,Nepal,15.16,8.87
-1994,Kathmandu,Nepal,15.30,9.04
-1995,Kathmandu,Nepal,15.30,9.35
-1996,Kathmandu,Nepal,15.37,9.04
-1997,Kathmandu,Nepal,14.50,9.20
-1998,Kathmandu,Nepal,15.49,9.52
-1999,Kathmandu,Nepal,15.78,9.29
-2000,Kathmandu,Nepal,15.13,9.20
-2001,Kathmandu,Nepal,15.41,9.41
-2002,Kathmandu,Nepal,15.44,9.57
-2003,Kathmandu,Nepal,15.35,9.53
-2004,Kathmandu,Nepal,15.36,9.32
-2005,Kathmandu,Nepal,15.53,9.70
-2006,Kathmandu,Nepal,15.92,9.53
-2007,Kathmandu,Nepal,15.54,9.73
-2008,Kathmandu,Nepal,15.27,9.43
-2009,Kathmandu,Nepal,15.91,9.51
-2010,Kathmandu,Nepal,15.96,9.70
-2011,Kathmandu,Nepal,15.12,9.52
-2012,Kathmandu,Nepal,15.20,9.51
-2013,Kathmandu,Nepal,15.79,9.61
-1824,Port Au Prince,Haiti,26.45,8.55
-1825,Port Au Prince,Haiti,26.51,8.39
-1826,Port Au Prince,Haiti,26.42,8.36
-1827,Port Au Prince,Haiti,26.90,8.81
-1828,Port Au Prince,Haiti,26.76,8.17
-1829,Port Au Prince,Haiti,26.09,7.94
-1830,Port Au Prince,Haiti,26.75,8.52
-1831,Port Au Prince,Haiti,25.78,7.64
-1832,Port Au Prince,Haiti,25.62,7.45
-1833,Port Au Prince,Haiti,,8.01
-1834,Port Au Prince,Haiti,,8.15
-1835,Port Au Prince,Haiti,25.63,7.39
-1836,Port Au Prince,Haiti,24.63,7.70
-1837,Port Au Prince,Haiti,26.63,7.38
-1838,Port Au Prince,Haiti,25.71,7.51
-1839,Port Au Prince,Haiti,25.93,7.63
-1840,Port Au Prince,Haiti,25.93,7.80
-1841,Port Au Prince,Haiti,25.64,7.69
-1842,Port Au Prince,Haiti,26.04,8.02
-1843,Port Au Prince,Haiti,25.93,8.17
-1844,Port Au Prince,Haiti,25.45,7.65
-1845,Port Au Prince,Haiti,25.55,7.85
-1846,Port Au Prince,Haiti,26.35,8.55
-1847,Port Au Prince,Haiti,26.05,8.09
-1848,Port Au Prince,Haiti,25.99,7.98
-1849,Port Au Prince,Haiti,26.31,7.98
-1850,Port Au Prince,Haiti,26.23,7.90
-1851,Port Au Prince,Haiti,26.18,8.18
-1852,Port Au Prince,Haiti,25.79,8.10
-1853,Port Au Prince,Haiti,26.13,8.04
-1854,Port Au Prince,Haiti,26.09,8.21
-1855,Port Au Prince,Haiti,26.32,8.11
-1856,Port Au Prince,Haiti,26.73,8.00
-1857,Port Au Prince,Haiti,25.60,7.76
-1858,Port Au Prince,Haiti,25.64,8.10
-1859,Port Au Prince,Haiti,25.82,8.25
-1860,Port Au Prince,Haiti,25.85,7.96
-1861,Port Au Prince,Haiti,26.15,7.85
-1862,Port Au Prince,Haiti,26.08,7.56
-1863,Port Au Prince,Haiti,26.16,8.11
-1864,Port Au Prince,Haiti,25.91,7.98
-1865,Port Au Prince,Haiti,26.22,8.18
-1866,Port Au Prince,Haiti,25.75,8.29
-1867,Port Au Prince,Haiti,26.10,8.44
-1868,Port Au Prince,Haiti,26.31,8.25
-1869,Port Au Prince,Haiti,26.67,8.43
-1870,Port Au Prince,Haiti,26.08,8.20
-1871,Port Au Prince,Haiti,26.17,8.12
-1872,Port Au Prince,Haiti,26.35,8.19
-1873,Port Au Prince,Haiti,25.89,8.35
-1874,Port Au Prince,Haiti,26.05,8.43
-1875,Port Au Prince,Haiti,26.15,7.86
-1876,Port Au Prince,Haiti,26.37,8.08
-1877,Port Au Prince,Haiti,26.69,8.54
-1878,Port Au Prince,Haiti,27.03,8.83
-1879,Port Au Prince,Haiti,26.35,8.17
-1880,Port Au Prince,Haiti,26.16,8.12
-1881,Port Au Prince,Haiti,25.94,8.27
-1882,Port Au Prince,Haiti,25.81,8.13
-1883,Port Au Prince,Haiti,26.15,7.98
-1884,Port Au Prince,Haiti,25.79,7.77
-1885,Port Au Prince,Haiti,26.14,7.92
-1886,Port Au Prince,Haiti,25.86,7.95
-1887,Port Au Prince,Haiti,25.75,7.91
-1888,Port Au Prince,Haiti,26.13,8.09
-1889,Port Au Prince,Haiti,26.27,8.32
-1890,Port Au Prince,Haiti,25.92,7.97
-1891,Port Au Prince,Haiti,26.16,8.02
-1892,Port Au Prince,Haiti,25.91,8.07
-1893,Port Au Prince,Haiti,25.78,8.06
-1894,Port Au Prince,Haiti,25.83,8.16
-1895,Port Au Prince,Haiti,26.14,8.15
-1896,Port Au Prince,Haiti,26.38,8.21
-1897,Port Au Prince,Haiti,26.67,8.29
-1898,Port Au Prince,Haiti,26.27,8.18
-1899,Port Au Prince,Haiti,26.35,8.40
-1900,Port Au Prince,Haiti,26.72,8.50
-1901,Port Au Prince,Haiti,26.40,8.54
-1902,Port Au Prince,Haiti,26.25,8.30
-1903,Port Au Prince,Haiti,26.45,8.22
-1904,Port Au Prince,Haiti,26.00,8.09
-1905,Port Au Prince,Haiti,26.43,8.23
-1906,Port Au Prince,Haiti,26.21,8.38
-1907,Port Au Prince,Haiti,26.20,7.95
-1908,Port Au Prince,Haiti,26.27,8.19
-1909,Port Au Prince,Haiti,26.01,8.18
-1910,Port Au Prince,Haiti,25.84,8.22
-1911,Port Au Prince,Haiti,26.25,8.18
-1912,Port Au Prince,Haiti,26.43,8.17
-1913,Port Au Prince,Haiti,25.98,8.30
-1914,Port Au Prince,Haiti,26.42,8.59
-1915,Port Au Prince,Haiti,26.67,8.59
-1916,Port Au Prince,Haiti,25.91,8.23
-1917,Port Au Prince,Haiti,25.68,8.02
-1918,Port Au Prince,Haiti,25.94,8.13
-1919,Port Au Prince,Haiti,26.54,8.38
-1920,Port Au Prince,Haiti,26.47,8.36
-1921,Port Au Prince,Haiti,26.16,8.57
-1922,Port Au Prince,Haiti,26.20,8.41
-1923,Port Au Prince,Haiti,26.35,8.42
-1924,Port Au Prince,Haiti,26.58,8.51
-1925,Port Au Prince,Haiti,26.33,8.53
-1926,Port Au Prince,Haiti,26.85,8.73
-1927,Port Au Prince,Haiti,26.54,8.52
-1928,Port Au Prince,Haiti,26.56,8.63
-1929,Port Au Prince,Haiti,26.42,8.24
-1930,Port Au Prince,Haiti,26.55,8.63
-1931,Port Au Prince,Haiti,26.61,8.72
-1932,Port Au Prince,Haiti,26.52,8.71
-1933,Port Au Prince,Haiti,26.41,8.34
-1934,Port Au Prince,Haiti,26.28,8.63
-1935,Port Au Prince,Haiti,26.27,8.52
-1936,Port Au Prince,Haiti,26.70,8.55
-1937,Port Au Prince,Haiti,26.66,8.70
-1938,Port Au Prince,Haiti,26.41,8.86
-1939,Port Au Prince,Haiti,26.45,8.76
-1940,Port Au Prince,Haiti,26.93,8.76
-1941,Port Au Prince,Haiti,27.07,8.77
-1942,Port Au Prince,Haiti,26.89,8.73
-1943,Port Au Prince,Haiti,26.51,8.76
-1944,Port Au Prince,Haiti,26.45,8.85
-1945,Port Au Prince,Haiti,26.32,8.58
-1946,Port Au Prince,Haiti,26.51,8.68
-1947,Port Au Prince,Haiti,26.79,8.80
-1948,Port Au Prince,Haiti,27.01,8.75
-1949,Port Au Prince,Haiti,26.52,8.59
-1950,Port Au Prince,Haiti,26.14,8.37
-1951,Port Au Prince,Haiti,26.39,8.63
-1952,Port Au Prince,Haiti,26.73,8.64
-1953,Port Au Prince,Haiti,26.89,8.87
-1954,Port Au Prince,Haiti,26.52,8.56
-1955,Port Au Prince,Haiti,26.21,8.63
-1956,Port Au Prince,Haiti,26.34,8.28
-1957,Port Au Prince,Haiti,26.73,8.73
-1958,Port Au Prince,Haiti,26.88,8.77
-1959,Port Au Prince,Haiti,27.02,8.73
-1960,Port Au Prince,Haiti,26.97,8.58
-1961,Port Au Prince,Haiti,26.70,8.80
-1962,Port Au Prince,Haiti,26.65,8.75
-1963,Port Au Prince,Haiti,26.66,8.86
-1964,Port Au Prince,Haiti,26.69,8.41
-1965,Port Au Prince,Haiti,26.54,8.53
-1966,Port Au Prince,Haiti,26.70,8.60
-1967,Port Au Prince,Haiti,26.74,8.70
-1968,Port Au Prince,Haiti,26.73,8.52
-1969,Port Au Prince,Haiti,26.98,8.60
-1970,Port Au Prince,Haiti,26.64,8.70
-1971,Port Au Prince,Haiti,26.38,8.60
-1972,Port Au Prince,Haiti,26.61,8.50
-1973,Port Au Prince,Haiti,26.73,8.95
-1974,Port Au Prince,Haiti,26.38,8.47
-1975,Port Au Prince,Haiti,26.59,8.74
-1976,Port Au Prince,Haiti,26.48,8.35
-1977,Port Au Prince,Haiti,26.91,8.85
-1978,Port Au Prince,Haiti,26.88,8.69
-1979,Port Au Prince,Haiti,26.71,8.73
-1980,Port Au Prince,Haiti,27.20,8.98
-1981,Port Au Prince,Haiti,26.95,9.17
-1982,Port Au Prince,Haiti,26.89,8.64
-1983,Port Au Prince,Haiti,27.26,9.03
-1984,Port Au Prince,Haiti,26.68,8.69
-1985,Port Au Prince,Haiti,26.69,8.66
-1986,Port Au Prince,Haiti,26.82,8.83
-1987,Port Au Prince,Haiti,27.10,8.99
-1988,Port Au Prince,Haiti,27.07,9.20
-1989,Port Au Prince,Haiti,26.84,8.92
-1990,Port Au Prince,Haiti,27.11,9.23
-1991,Port Au Prince,Haiti,27.01,9.18
-1992,Port Au Prince,Haiti,26.81,8.84
-1993,Port Au Prince,Haiti,26.78,8.87
-1994,Port Au Prince,Haiti,27.28,9.04
-1995,Port Au Prince,Haiti,27.30,9.35
-1996,Port Au Prince,Haiti,26.85,9.04
-1997,Port Au Prince,Haiti,27.74,9.20
-1998,Port Au Prince,Haiti,27.57,9.52
-1999,Port Au Prince,Haiti,27.01,9.29
-2000,Port Au Prince,Haiti,26.76,9.20
-2001,Port Au Prince,Haiti,27.21,9.41
-2002,Port Au Prince,Haiti,27.42,9.57
-2003,Port Au Prince,Haiti,27.50,9.53
-2004,Port Au Prince,Haiti,27.37,9.32
-2005,Port Au Prince,Haiti,27.35,9.70
-2006,Port Au Prince,Haiti,27.41,9.53
-2007,Port Au Prince,Haiti,27.47,9.73
-2008,Port Au Prince,Haiti,27.08,9.43
-2009,Port Au Prince,Haiti,27.35,9.51
-2010,Port Au Prince,Haiti,27.19,9.70
-2011,Port Au Prince,Haiti,27.10,9.52
-2012,Port Au Prince,Haiti,27.20,9.51
-2013,Port Au Prince,Haiti,27.20,9.61
-1796,Vadodara,India,26.13,8.27
-1797,Vadodara,India,27.13,8.51
-1798,Vadodara,India,25.69,8.67
-1799,Vadodara,India,26.41,8.51
-1800,Vadodara,India,26.37,8.48
-1801,Vadodara,India,25.60,8.59
-1802,Vadodara,India,26.84,8.58
-1803,Vadodara,India,26.60,8.50
-1804,Vadodara,India,26.95,8.84
-1805,Vadodara,India,26.48,8.56
-1806,Vadodara,India,26.38,8.43
-1807,Vadodara,India,25.80,8.28
-1808,Vadodara,India,,7.63
-1809,Vadodara,India,,7.08
-1810,Vadodara,India,,6.92
-1811,Vadodara,India,,6.86
-1812,Vadodara,India,,7.05
-1813,Vadodara,India,25.73,7.74
-1814,Vadodara,India,25.13,7.59
-1815,Vadodara,India,25.26,7.24
-1816,Vadodara,India,24.83,6.94
-1817,Vadodara,India,25.05,6.98
-1818,Vadodara,India,25.54,7.83
-1819,Vadodara,India,25.19,7.37
-1820,Vadodara,India,25.34,7.62
-1821,Vadodara,India,25.95,8.09
-1822,Vadodara,India,25.99,8.19
-1823,Vadodara,India,25.90,7.72
-1824,Vadodara,India,26.51,8.55
-1825,Vadodara,India,26.25,8.39
-1826,Vadodara,India,26.32,8.36
-1827,Vadodara,India,26.42,8.81
-1828,Vadodara,India,26.08,8.17
-1829,Vadodara,India,25.90,7.94
-1830,Vadodara,India,26.13,8.52
-1831,Vadodara,India,25.70,7.64
-1832,Vadodara,India,25.91,7.45
-1833,Vadodara,India,25.99,8.01
-1834,Vadodara,India,26.03,8.15
-1835,Vadodara,India,25.19,7.39
-1836,Vadodara,India,25.66,7.70
-1837,Vadodara,India,25.59,7.38
-1838,Vadodara,India,25.63,7.51
-1839,Vadodara,India,25.72,7.63
-1840,Vadodara,India,25.83,7.80
-1841,Vadodara,India,25.59,7.69
-1842,Vadodara,India,25.92,8.02
-1843,Vadodara,India,25.72,8.17
-1844,Vadodara,India,25.55,7.65
-1845,Vadodara,India,25.82,7.85
-1846,Vadodara,India,26.39,8.55
-1847,Vadodara,India,25.84,8.09
-1848,Vadodara,India,25.80,7.98
-1849,Vadodara,India,25.74,7.98
-1850,Vadodara,India,25.92,7.90
-1851,Vadodara,India,25.87,8.18
-1852,Vadodara,India,25.88,8.10
-1853,Vadodara,India,26.07,8.04
-1854,Vadodara,India,26.20,8.21
-1855,Vadodara,India,26.21,8.11
-1856,Vadodara,India,25.75,8.00
-1857,Vadodara,India,25.42,7.76
-1858,Vadodara,India,26.03,8.10
-1859,Vadodara,India,26.12,8.25
-1860,Vadodara,India,25.88,7.96
-1861,Vadodara,India,25.76,7.85
-1862,Vadodara,India,22.03,7.56
-1863,Vadodara,India,,8.11
-1864,Vadodara,India,,7.98
-1865,Vadodara,India,26.24,8.18
-1866,Vadodara,India,26.27,8.29
-1867,Vadodara,India,26.35,8.44
-1868,Vadodara,India,26.22,8.25
-1869,Vadodara,India,26.34,8.43
-1870,Vadodara,India,26.01,8.20
-1871,Vadodara,India,26.01,8.12
-1872,Vadodara,India,26.03,8.19
-1873,Vadodara,India,26.13,8.35
-1874,Vadodara,India,26.15,8.43
-1875,Vadodara,India,26.27,7.86
-1876,Vadodara,India,26.37,8.08
-1877,Vadodara,India,26.61,8.54
-1878,Vadodara,India,26.65,8.83
-1879,Vadodara,India,25.88,8.17
-1880,Vadodara,India,26.39,8.12
-1881,Vadodara,India,26.12,8.27
-1882,Vadodara,India,25.98,8.13
-1883,Vadodara,India,25.61,7.98
-1884,Vadodara,India,25.53,7.77
-1885,Vadodara,India,25.84,7.92
-1886,Vadodara,India,26.12,7.95
-1887,Vadodara,India,25.76,7.91
-1888,Vadodara,India,26.11,8.09
-1889,Vadodara,India,26.36,8.32
-1890,Vadodara,India,26.25,7.97
-1891,Vadodara,India,26.11,8.02
-1892,Vadodara,India,26.46,8.07
-1893,Vadodara,India,25.35,8.06
-1894,Vadodara,India,26.01,8.16
-1895,Vadodara,India,26.27,8.15
-1896,Vadodara,India,26.88,8.21
-1897,Vadodara,India,26.48,8.29
-1898,Vadodara,India,26.68,8.18
-1899,Vadodara,India,26.81,8.40
-1900,Vadodara,India,26.80,8.50
-1901,Vadodara,India,26.55,8.54
-1902,Vadodara,India,27.06,8.30
-1903,Vadodara,India,26.04,8.22
-1904,Vadodara,India,26.38,8.09
-1905,Vadodara,India,26.05,8.23
-1906,Vadodara,India,26.05,8.38
-1907,Vadodara,India,26.22,7.95
-1908,Vadodara,India,25.93,8.19
-1909,Vadodara,India,25.99,8.18
-1910,Vadodara,India,25.89,8.22
-1911,Vadodara,India,26.45,8.18
-1912,Vadodara,India,26.66,8.17
-1913,Vadodara,India,26.23,8.30
-1914,Vadodara,India,26.40,8.59
-1915,Vadodara,India,26.71,8.59
-1916,Vadodara,India,26.32,8.23
-1917,Vadodara,India,25.48,8.02
-1918,Vadodara,India,26.38,8.13
-1919,Vadodara,India,26.29,8.38
-1920,Vadodara,India,26.51,8.36
-1921,Vadodara,India,26.76,8.57
-1922,Vadodara,India,26.26,8.41
-1923,Vadodara,India,26.33,8.42
-1924,Vadodara,India,26.52,8.51
-1925,Vadodara,India,26.44,8.53
-1926,Vadodara,India,26.45,8.73
-1927,Vadodara,India,26.04,8.52
-1928,Vadodara,India,26.42,8.63
-1929,Vadodara,India,26.56,8.24
-1930,Vadodara,India,26.39,8.63
-1931,Vadodara,India,26.71,8.72
-1932,Vadodara,India,26.62,8.71
-1933,Vadodara,India,26.12,8.34
-1934,Vadodara,India,26.09,8.63
-1935,Vadodara,India,25.99,8.52
-1936,Vadodara,India,26.28,8.55
-1937,Vadodara,India,26.08,8.70
-1938,Vadodara,India,26.21,8.86
-1939,Vadodara,India,26.42,8.76
-1940,Vadodara,India,26.32,8.76
-1941,Vadodara,India,27.15,8.77
-1942,Vadodara,India,26.55,8.73
-1943,Vadodara,India,26.37,8.76
-1944,Vadodara,India,26.33,8.85
-1945,Vadodara,India,25.89,8.58
-1946,Vadodara,India,26.53,8.68
-1947,Vadodara,India,26.56,8.80
-1948,Vadodara,India,26.84,8.75
-1949,Vadodara,India,26.77,8.59
-1950,Vadodara,India,26.01,8.37
-1951,Vadodara,India,26.80,8.63
-1952,Vadodara,India,26.92,8.64
-1953,Vadodara,India,26.89,8.87
-1954,Vadodara,India,26.53,8.56
-1955,Vadodara,India,26.40,8.63
-1956,Vadodara,India,26.21,8.28
-1957,Vadodara,India,26.52,8.73
-1958,Vadodara,India,27.03,8.77
-1959,Vadodara,India,26.65,8.73
-1960,Vadodara,India,26.65,8.58
-1961,Vadodara,India,26.19,8.80
-1962,Vadodara,India,26.42,8.75
-1963,Vadodara,India,26.72,8.86
-1964,Vadodara,India,26.34,8.41
-1965,Vadodara,India,26.65,8.53
-1966,Vadodara,India,26.86,8.60
-1967,Vadodara,India,26.45,8.70
-1968,Vadodara,India,26.29,8.52
-1969,Vadodara,India,27.11,8.60
-1970,Vadodara,India,26.45,8.70
-1971,Vadodara,India,26.21,8.60
-1972,Vadodara,India,26.82,8.50
-1973,Vadodara,India,26.57,8.95
-1974,Vadodara,India,26.79,8.47
-1975,Vadodara,India,26.11,8.74
-1976,Vadodara,India,26.76,8.35
-1977,Vadodara,India,27.01,8.85
-1978,Vadodara,India,26.57,8.69
-1979,Vadodara,India,26.78,8.73
-1980,Vadodara,India,26.95,8.98
-1981,Vadodara,India,26.64,9.17
-1982,Vadodara,India,26.73,8.64
-1983,Vadodara,India,26.10,9.03
-1984,Vadodara,India,26.43,8.69
-1985,Vadodara,India,26.81,8.66
-1986,Vadodara,India,26.81,8.83
-1987,Vadodara,India,27.65,8.99
-1988,Vadodara,India,27.25,9.20
-1989,Vadodara,India,26.60,8.92
-1990,Vadodara,India,26.63,9.23
-1991,Vadodara,India,26.70,9.18
-1992,Vadodara,India,26.78,8.84
-1993,Vadodara,India,27.04,8.87
-1994,Vadodara,India,26.55,9.04
-1995,Vadodara,India,27.03,9.35
-1996,Vadodara,India,27.01,9.04
-1997,Vadodara,India,26.53,9.20
-1998,Vadodara,India,27.32,9.52
-1999,Vadodara,India,26.96,9.29
-2000,Vadodara,India,27.03,9.20
-2001,Vadodara,India,26.90,9.41
-2002,Vadodara,India,27.35,9.57
-2003,Vadodara,India,27.23,9.53
-2004,Vadodara,India,27.29,9.32
-2005,Vadodara,India,26.72,9.70
-2006,Vadodara,India,27.15,9.53
-2007,Vadodara,India,27.31,9.73
-2008,Vadodara,India,26.83,9.43
-2009,Vadodara,India,27.82,9.51
-2010,Vadodara,India,27.68,9.70
-2011,Vadodara,India,27.02,9.52
-2012,Vadodara,India,26.89,9.51
-2013,Vadodara,India,27.44,9.61
+1775,Denver,United States,10.32,9.18
+1776,Denver,United States,6.23,8.30
+1777,Denver,United States,,8.26
+1778,Denver,United States,,8.54
+1779,Denver,United States,,8.98
+1780,Denver,United States,,9.43
+1781,Denver,United States,,8.10
+1782,Denver,United States,,7.90
+1783,Denver,United States,,7.68
+1784,Denver,United States,,7.86
+1785,Denver,United States,,7.36
+1786,Denver,United States,,8.26
+1787,Denver,United States,,8.03
+1788,Denver,United States,,8.45
+1789,Denver,United States,,8.33
+1790,Denver,United States,,7.98
+1791,Denver,United States,,8.23
+1792,Denver,United States,,8.09
+1793,Denver,United States,,8.23
+1794,Denver,United States,,8.53
+1795,Denver,United States,,8.35
+1796,Denver,United States,,8.27
+1797,Denver,United States,,8.51
+1798,Denver,United States,,8.67
+1799,Denver,United States,,8.51
+1800,Denver,United States,,8.48
+1801,Denver,United States,,8.59
+1802,Denver,United States,,8.58
+1803,Denver,United States,,8.50
+1804,Denver,United States,,8.84
+1805,Denver,United States,,8.56
+1806,Denver,United States,,8.43
+1807,Denver,United States,,8.28
+1808,Denver,United States,,7.63
+1809,Denver,United States,,7.08
+1810,Denver,United States,,6.92
+1811,Denver,United States,,6.86
+1812,Denver,United States,,7.05
+1813,Denver,United States,,7.74
+1814,Denver,United States,,7.59
+1815,Denver,United States,,7.24
+1816,Denver,United States,,6.94
+1817,Denver,United States,,6.98
+1818,Denver,United States,,7.83
+1819,Denver,United States,,7.37
+1820,Denver,United States,7.43,7.62
+1821,Denver,United States,8.11,8.09
+1822,Denver,United States,8.36,8.19
+1823,Denver,United States,8.03,7.72
+1824,Denver,United States,8.43,8.55
+1825,Denver,United States,9.10,8.39
+1826,Denver,United States,8.44,8.36
+1827,Denver,United States,9.20,8.81
+1828,Denver,United States,8.60,8.17
+1829,Denver,United States,8.50,7.94
+1830,Denver,United States,9.33,8.52
+1831,Denver,United States,7.61,7.64
+1832,Denver,United States,8.35,7.45
+1833,Denver,United States,9.07,8.01
+1834,Denver,United States,10.31,8.15
+1835,Denver,United States,7.42,7.39
+1836,Denver,United States,7.46,7.70
+1837,Denver,United States,8.00,7.38
+1838,Denver,United States,7.34,7.51
+1839,Denver,United States,8.57,7.63
+1840,Denver,United States,8.10,7.80
+1841,Denver,United States,8.11,7.69
+1842,Denver,United States,8.48,8.02
+1843,Denver,United States,7.76,8.17
+1844,Denver,United States,8.11,7.65
+1845,Denver,United States,8.71,7.85
+1846,Denver,United States,9.44,8.55
+1847,Denver,United States,7.67,8.09
+1848,Denver,United States,7.87,7.98
+1849,Denver,United States,8.23,7.98
+1850,Denver,United States,8.24,7.90
+1851,Denver,United States,8.83,8.18
+1852,Denver,United States,7.84,8.10
+1853,Denver,United States,8.52,8.04
+1854,Denver,United States,9.22,8.21
+1855,Denver,United States,8.81,8.11
+1856,Denver,United States,8.11,8.00
+1857,Denver,United States,8.57,7.76
+1858,Denver,United States,8.45,8.10
+1859,Denver,United States,7.81,8.25
+1860,Denver,United States,8.95,7.96
+1861,Denver,United States,9.21,7.85
+1862,Denver,United States,8.59,7.56
+1863,Denver,United States,8.92,8.11
+1864,Denver,United States,8.53,7.98
+1865,Denver,United States,8.49,8.18
+1866,Denver,United States,8.46,8.29
+1867,Denver,United States,9.26,8.44
+1868,Denver,United States,8.49,8.25
+1869,Denver,United States,7.75,8.43
+1870,Denver,United States,8.84,8.20
+1871,Denver,United States,9.35,8.12
+1872,Denver,United States,7.73,8.19
+1873,Denver,United States,8.10,8.35
+1874,Denver,United States,8.72,8.43
+1875,Denver,United States,7.68,7.86
+1876,Denver,United States,8.37,8.08
+1877,Denver,United States,8.23,8.54
+1878,Denver,United States,8.68,8.83
+1879,Denver,United States,9.29,8.17
+1880,Denver,United States,7.80,8.12
+1881,Denver,United States,8.92,8.27
+1882,Denver,United States,8.62,8.13
+1883,Denver,United States,7.94,7.98
+1884,Denver,United States,7.90,7.77
+1885,Denver,United States,8.24,7.92
+1886,Denver,United States,8.47,7.95
+1887,Denver,United States,8.75,7.91
+1888,Denver,United States,8.85,8.09
+1889,Denver,United States,8.73,8.32
+1890,Denver,United States,9.10,7.97
+1891,Denver,United States,7.75,8.02
+1892,Denver,United States,8.00,8.07
+1893,Denver,United States,8.78,8.06
+1894,Denver,United States,8.80,8.16
+1895,Denver,United States,7.60,8.15
+1896,Denver,United States,9.24,8.21
+1897,Denver,United States,8.45,8.29
+1898,Denver,United States,7.97,8.18
+1899,Denver,United States,8.01,8.40
+1900,Denver,United States,9.32,8.50
+1901,Denver,United States,9.05,8.54
+1902,Denver,United States,8.82,8.30
+1903,Denver,United States,7.93,8.22
+1904,Denver,United States,8.86,8.09
+1905,Denver,United States,8.13,8.23
+1906,Denver,United States,8.49,8.38
+1907,Denver,United States,9.01,7.95
+1908,Denver,United States,8.60,8.19
+1909,Denver,United States,8.04,8.18
+1910,Denver,United States,9.78,8.22
+1911,Denver,United States,8.85,8.18
+1912,Denver,United States,7.21,8.17
+1913,Denver,United States,7.85,8.30
+1914,Denver,United States,8.94,8.59
+1915,Denver,United States,8.16,8.59
+1916,Denver,United States,8.34,8.23
+1917,Denver,United States,8.06,8.02
+1918,Denver,United States,8.46,8.13
+1919,Denver,United States,8.29,8.38
+1920,Denver,United States,8.19,8.36
+1921,Denver,United States,9.77,8.57
+1922,Denver,United States,8.75,8.41
+1923,Denver,United States,7.99,8.42
+1924,Denver,United States,7.76,8.51
+1925,Denver,United States,9.13,8.53
+1926,Denver,United States,8.88,8.73
+1927,Denver,United States,8.79,8.52
+1928,Denver,United States,8.32,8.63
+1929,Denver,United States,7.75,8.24
+1930,Denver,United States,8.37,8.63
+1931,Denver,United States,9.35,8.72
+1932,Denver,United States,8.54,8.71
+1933,Denver,United States,9.87,8.34
+1934,Denver,United States,10.92,8.63
+1935,Denver,United States,9.36,8.52
+1936,Denver,United States,9.39,8.55
+1937,Denver,United States,8.74,8.70
+1938,Denver,United States,9.54,8.86
+1939,Denver,United States,9.52,8.76
+1940,Denver,United States,9.07,8.76
+1941,Denver,United States,9.05,8.77
+1942,Denver,United States,8.46,8.73
+1943,Denver,United States,9.55,8.76
+1944,Denver,United States,8.58,8.85
+1945,Denver,United States,8.60,8.58
+1946,Denver,United States,9.57,8.68
+1947,Denver,United States,8.68,8.80
+1948,Denver,United States,8.50,8.75
+1949,Denver,United States,8.77,8.59
+1950,Denver,United States,9.32,8.37
+1951,Denver,United States,8.06,8.63
+1952,Denver,United States,9.15,8.64
+1953,Denver,United States,9.73,8.87
+1954,Denver,United States,10.62,8.56
+1955,Denver,United States,8.94,8.63
+1956,Denver,United States,9.38,8.28
+1957,Denver,United States,8.72,8.73
+1958,Denver,United States,9.32,8.77
+1959,Denver,United States,8.70,8.73
+1960,Denver,United States,8.50,8.58
+1961,Denver,United States,8.30,8.80
+1962,Denver,United States,9.17,8.75
+1963,Denver,United States,9.90,8.86
+1964,Denver,United States,8.73,8.41
+1965,Denver,United States,8.73,8.53
+1966,Denver,United States,8.97,8.60
+1967,Denver,United States,8.91,8.70
+1968,Denver,United States,8.72,8.52
+1969,Denver,United States,8.95,8.60
+1970,Denver,United States,8.87,8.70
+1971,Denver,United States,8.75,8.60
+1972,Denver,United States,8.71,8.50
+1973,Denver,United States,8.42,8.95
+1974,Denver,United States,9.06,8.47
+1975,Denver,United States,8.72,8.74
+1976,Denver,United States,9.19,8.35
+1977,Denver,United States,9.89,8.85
+1978,Denver,United States,8.59,8.69
+1979,Denver,United States,8.47,8.73
+1980,Denver,United States,9.46,8.98
+1981,Denver,United States,10.25,9.17
+1982,Denver,United States,8.67,8.64
+1983,Denver,United States,8.43,9.03
+1984,Denver,United States,8.54,8.69
+1985,Denver,United States,8.33,8.66
+1986,Denver,United States,9.99,8.83
+1987,Denver,United States,9.33,8.99
+1988,Denver,United States,9.19,9.20
+1989,Denver,United States,9.07,8.92
+1990,Denver,United States,9.28,9.23
+1991,Denver,United States,9.32,9.18
+1992,Denver,United States,9.16,8.84
+1993,Denver,United States,8.18,8.87
+1994,Denver,United States,10.02,9.04
+1995,Denver,United States,9.21,9.35
+1996,Denver,United States,9.31,9.04
+1997,Denver,United States,8.85,9.20
+1998,Denver,United States,9.81,9.52
+1999,Denver,United States,10.05,9.29
+2000,Denver,United States,10.00,9.20
+2001,Denver,United States,10.01,9.41
+2002,Denver,United States,9.61,9.57
+2003,Denver,United States,10.04,9.53
+2004,Denver,United States,9.54,9.32
+2005,Denver,United States,10.06,9.70
+2006,Denver,United States,9.96,9.53
+2007,Denver,United States,9.48,9.73
+2008,Denver,United States,9.09,9.43
+2009,Denver,United States,8.89,9.51
+2010,Denver,United States,9.76,9.70
+2011,Denver,United States,9.38,9.52
+2012,Denver,United States,10.92,9.51
+2013,Denver,United States,11.21,9.61
+1857,Pretoria,South Africa,17.53,7.76
+1858,Pretoria,South Africa,17.84,8.10
+1859,Pretoria,South Africa,17.92,8.25
+1860,Pretoria,South Africa,18.01,7.96
+1861,Pretoria,South Africa,17.84,7.85
+1862,Pretoria,South Africa,17.45,7.56
+1863,Pretoria,South Africa,17.87,8.11
+1864,Pretoria,South Africa,17.86,7.98
+1865,Pretoria,South Africa,18.17,8.18
+1866,Pretoria,South Africa,18.10,8.29
+1867,Pretoria,South Africa,18.21,8.44
+1868,Pretoria,South Africa,17.88,8.25
+1869,Pretoria,South Africa,18.21,8.43
+1870,Pretoria,South Africa,17.90,8.20
+1871,Pretoria,South Africa,17.98,8.12
+1872,Pretoria,South Africa,17.98,8.19
+1873,Pretoria,South Africa,17.04,8.35
+1874,Pretoria,South Africa,18.03,8.43
+1875,Pretoria,South Africa,17.73,7.86
+1876,Pretoria,South Africa,17.74,8.08
+1877,Pretoria,South Africa,18.22,8.54
+1878,Pretoria,South Africa,18.17,8.83
+1879,Pretoria,South Africa,17.67,8.17
+1880,Pretoria,South Africa,18.27,8.12
+1881,Pretoria,South Africa,17.93,8.27
+1882,Pretoria,South Africa,17.76,8.13
+1883,Pretoria,South Africa,17.95,7.98
+1884,Pretoria,South Africa,17.65,7.77
+1885,Pretoria,South Africa,18.03,7.92
+1886,Pretoria,South Africa,18.15,7.95
+1887,Pretoria,South Africa,17.73,7.91
+1888,Pretoria,South Africa,18.02,8.09
+1889,Pretoria,South Africa,18.49,8.32
+1890,Pretoria,South Africa,17.89,7.97
+1891,Pretoria,South Africa,18.00,8.02
+1892,Pretoria,South Africa,18.05,8.07
+1893,Pretoria,South Africa,17.81,8.06
+1894,Pretoria,South Africa,17.86,8.16
+1895,Pretoria,South Africa,18.04,8.15
+1896,Pretoria,South Africa,18.54,8.21
+1897,Pretoria,South Africa,18.13,8.29
+1898,Pretoria,South Africa,17.52,8.18
+1899,Pretoria,South Africa,17.91,8.40
+1900,Pretoria,South Africa,18.44,8.50
+1901,Pretoria,South Africa,17.85,8.54
+1902,Pretoria,South Africa,17.81,8.30
+1903,Pretoria,South Africa,17.98,8.22
+1904,Pretoria,South Africa,17.52,8.09
+1905,Pretoria,South Africa,17.96,8.23
+1906,Pretoria,South Africa,17.65,8.38
+1907,Pretoria,South Africa,17.50,7.95
+1908,Pretoria,South Africa,18.14,8.19
+1909,Pretoria,South Africa,18.08,8.18
+1910,Pretoria,South Africa,17.51,8.22
+1911,Pretoria,South Africa,17.85,8.18
+1912,Pretoria,South Africa,18.48,8.17
+1913,Pretoria,South Africa,18.55,8.30
+1914,Pretoria,South Africa,18.66,8.59
+1915,Pretoria,South Africa,18.09,8.59
+1916,Pretoria,South Africa,18.31,8.23
+1917,Pretoria,South Africa,17.68,8.02
+1918,Pretoria,South Africa,17.75,8.13
+1919,Pretoria,South Africa,18.32,8.38
+1920,Pretoria,South Africa,18.42,8.36
+1921,Pretoria,South Africa,17.81,8.57
+1922,Pretoria,South Africa,18.60,8.41
+1923,Pretoria,South Africa,18.66,8.42
+1924,Pretoria,South Africa,17.82,8.51
+1925,Pretoria,South Africa,18.03,8.53
+1926,Pretoria,South Africa,18.58,8.73
+1927,Pretoria,South Africa,18.36,8.52
+1928,Pretoria,South Africa,18.47,8.63
+1929,Pretoria,South Africa,18.52,8.24
+1930,Pretoria,South Africa,17.95,8.63
+1931,Pretoria,South Africa,18.44,8.72
+1932,Pretoria,South Africa,18.62,8.71
+1933,Pretoria,South Africa,18.39,8.34
+1934,Pretoria,South Africa,18.49,8.63
+1935,Pretoria,South Africa,17.90,8.52
+1936,Pretoria,South Africa,17.98,8.55
+1937,Pretoria,South Africa,18.19,8.70
+1938,Pretoria,South Africa,18.58,8.86
+1939,Pretoria,South Africa,17.77,8.76
+1940,Pretoria,South Africa,18.55,8.76
+1941,Pretoria,South Africa,19.13,8.77
+1942,Pretoria,South Africa,18.73,8.73
+1943,Pretoria,South Africa,18.15,8.76
+1944,Pretoria,South Africa,18.49,8.85
+1945,Pretoria,South Africa,18.33,8.58
+1946,Pretoria,South Africa,18.57,8.68
+1947,Pretoria,South Africa,18.76,8.80
+1948,Pretoria,South Africa,18.34,8.75
+1949,Pretoria,South Africa,18.61,8.59
+1950,Pretoria,South Africa,18.70,8.37
+1951,Pretoria,South Africa,18.21,8.63
+1952,Pretoria,South Africa,18.63,8.64
+1953,Pretoria,South Africa,18.02,8.87
+1954,Pretoria,South Africa,18.24,8.56
+1955,Pretoria,South Africa,17.75,8.63
+1956,Pretoria,South Africa,18.46,8.28
+1957,Pretoria,South Africa,18.69,8.73
+1958,Pretoria,South Africa,18.73,8.77
+1959,Pretoria,South Africa,18.37,8.73
+1960,Pretoria,South Africa,18.44,8.58
+1961,Pretoria,South Africa,18.65,8.80
+1962,Pretoria,South Africa,18.95,8.75
+1963,Pretoria,South Africa,18.38,8.86
+1964,Pretoria,South Africa,18.50,8.41
+1965,Pretoria,South Africa,18.59,8.53
+1966,Pretoria,South Africa,18.95,8.60
+1967,Pretoria,South Africa,18.11,8.70
+1968,Pretoria,South Africa,18.45,8.52
+1969,Pretoria,South Africa,18.90,8.60
+1970,Pretoria,South Africa,19.25,8.70
+1971,Pretoria,South Africa,18.38,8.60
+1972,Pretoria,South Africa,18.52,8.50
+1973,Pretoria,South Africa,18.74,8.95
+1974,Pretoria,South Africa,18.19,8.47
+1975,Pretoria,South Africa,18.23,8.74
+1976,Pretoria,South Africa,17.89,8.35
+1977,Pretoria,South Africa,18.78,8.85
+1978,Pretoria,South Africa,18.57,8.69
+1979,Pretoria,South Africa,18.93,8.73
+1980,Pretoria,South Africa,18.20,8.98
+1981,Pretoria,South Africa,17.97,9.17
+1982,Pretoria,South Africa,18.92,8.64
+1983,Pretoria,South Africa,19.50,9.03
+1984,Pretoria,South Africa,18.98,8.69
+1985,Pretoria,South Africa,19.02,8.66
+1986,Pretoria,South Africa,18.99,8.83
+1987,Pretoria,South Africa,19.21,8.99
+1988,Pretoria,South Africa,18.63,9.20
+1989,Pretoria,South Africa,18.55,8.92
+1990,Pretoria,South Africa,18.91,9.23
+1991,Pretoria,South Africa,18.86,9.18
+1992,Pretoria,South Africa,19.95,8.84
+1993,Pretoria,South Africa,19.32,8.87
+1994,Pretoria,South Africa,18.48,9.04
+1995,Pretoria,South Africa,19.23,9.35
+1996,Pretoria,South Africa,18.49,9.04
+1997,Pretoria,South Africa,18.64,9.20
+1998,Pretoria,South Africa,19.42,9.52
+1999,Pretoria,South Africa,19.27,9.29
+2000,Pretoria,South Africa,18.26,9.20
+2001,Pretoria,South Africa,18.92,9.41
+2002,Pretoria,South Africa,19.28,9.57
+2003,Pretoria,South Africa,19.86,9.53
+2004,Pretoria,South Africa,18.75,9.32
+2005,Pretoria,South Africa,19.74,9.70
+2006,Pretoria,South Africa,18.42,9.53
+2007,Pretoria,South Africa,18.98,9.73
+2008,Pretoria,South Africa,18.91,9.43
+2009,Pretoria,South Africa,18.67,9.51
+2010,Pretoria,South Africa,19.31,9.70
+2011,Pretoria,South Africa,18.75,9.52
+2012,Pretoria,South Africa,19.14,9.51
+2013,Pretoria,South Africa,18.00,9.61
+1750,Ufa,Russia,,8.72
+1751,Ufa,Russia,,7.98
+1752,Ufa,Russia,-5.96,5.78
+1753,Ufa,Russia,1.78,8.39
+1754,Ufa,Russia,2.09,8.47
+1755,Ufa,Russia,1.90,8.36
+1756,Ufa,Russia,2.35,8.85
+1757,Ufa,Russia,2.41,9.02
+1758,Ufa,Russia,0.07,6.74
+1759,Ufa,Russia,1.21,7.99
+1760,Ufa,Russia,0.22,7.19
+1761,Ufa,Russia,,8.77
+1762,Ufa,Russia,,8.61
+1763,Ufa,Russia,,7.50
+1764,Ufa,Russia,,8.40
+1765,Ufa,Russia,,8.25
+1766,Ufa,Russia,,8.41
+1767,Ufa,Russia,,8.22
+1768,Ufa,Russia,,6.78
+1769,Ufa,Russia,,7.69
+1770,Ufa,Russia,,7.69
+1771,Ufa,Russia,,7.85
+1772,Ufa,Russia,,8.19
+1773,Ufa,Russia,,8.22
+1774,Ufa,Russia,,8.77
+1775,Ufa,Russia,,9.18
+1776,Ufa,Russia,1.96,8.30
+1777,Ufa,Russia,1.70,8.26
+1778,Ufa,Russia,1.87,8.54
+1779,Ufa,Russia,2.14,8.98
+1780,Ufa,Russia,2.62,9.43
+1781,Ufa,Russia,1.51,8.10
+1782,Ufa,Russia,1.36,7.90
+1783,Ufa,Russia,1.15,7.68
+1784,Ufa,Russia,1.90,7.86
+1785,Ufa,Russia,1.04,7.36
+1786,Ufa,Russia,1.84,8.26
+1787,Ufa,Russia,1.89,8.03
+1788,Ufa,Russia,1.88,8.45
+1789,Ufa,Russia,1.98,8.33
+1790,Ufa,Russia,1.53,7.98
+1791,Ufa,Russia,2.12,8.23
+1792,Ufa,Russia,1.65,8.09
+1793,Ufa,Russia,1.92,8.23
+1794,Ufa,Russia,2.24,8.53
+1795,Ufa,Russia,2.06,8.35
+1796,Ufa,Russia,1.89,8.27
+1797,Ufa,Russia,2.06,8.51
+1798,Ufa,Russia,2.20,8.67
+1799,Ufa,Russia,2.13,8.51
+1800,Ufa,Russia,1.88,8.48
+1801,Ufa,Russia,,8.59
+1802,Ufa,Russia,,8.58
+1803,Ufa,Russia,,8.50
+1804,Ufa,Russia,,8.84
+1805,Ufa,Russia,2.10,8.56
+1806,Ufa,Russia,1.95,8.43
+1807,Ufa,Russia,1.69,8.28
+1808,Ufa,Russia,1.18,7.63
+1809,Ufa,Russia,-0.25,7.08
+1810,Ufa,Russia,-0.27,6.92
+1811,Ufa,Russia,0.28,6.86
+1812,Ufa,Russia,0.46,7.05
+1813,Ufa,Russia,1.24,7.74
+1814,Ufa,Russia,0.76,7.59
+1815,Ufa,Russia,0.60,7.24
+1816,Ufa,Russia,0.41,6.94
+1817,Ufa,Russia,-0.09,6.98
+1818,Ufa,Russia,1.60,7.83
+1819,Ufa,Russia,0.17,7.37
+1820,Ufa,Russia,1.25,7.62
+1821,Ufa,Russia,1.80,8.09
+1822,Ufa,Russia,2.24,8.19
+1823,Ufa,Russia,1.32,7.72
+1824,Ufa,Russia,2.19,8.55
+1825,Ufa,Russia,2.08,8.39
+1826,Ufa,Russia,2.40,8.36
+1827,Ufa,Russia,2.58,8.81
+1828,Ufa,Russia,0.78,8.17
+1829,Ufa,Russia,0.87,7.94
+1830,Ufa,Russia,2.33,8.52
+1831,Ufa,Russia,1.05,7.64
+1832,Ufa,Russia,0.61,7.45
+1833,Ufa,Russia,1.42,8.01
+1834,Ufa,Russia,1.10,8.15
+1835,Ufa,Russia,0.43,7.39
+1836,Ufa,Russia,1.65,7.70
+1837,Ufa,Russia,0.59,7.38
+1838,Ufa,Russia,0.90,7.51
+1839,Ufa,Russia,1.19,7.63
+1840,Ufa,Russia,0.63,7.80
+1841,Ufa,Russia,1.42,7.69
+1842,Ufa,Russia,1.33,8.02
+1843,Ufa,Russia,3.11,8.17
+1844,Ufa,Russia,0.97,7.65
+1845,Ufa,Russia,1.10,7.85
+1846,Ufa,Russia,1.28,8.55
+1847,Ufa,Russia,1.61,8.09
+1848,Ufa,Russia,1.18,7.98
+1849,Ufa,Russia,1.63,7.98
+1850,Ufa,Russia,0.78,7.90
+1851,Ufa,Russia,2.30,8.18
+1852,Ufa,Russia,1.05,8.10
+1853,Ufa,Russia,1.60,8.04
+1854,Ufa,Russia,2.54,8.21
+1855,Ufa,Russia,1.89,8.11
+1856,Ufa,Russia,1.48,8.00
+1857,Ufa,Russia,0.49,7.76
+1858,Ufa,Russia,1.23,8.10
+1859,Ufa,Russia,2.78,8.25
+1860,Ufa,Russia,0.28,7.96
+1861,Ufa,Russia,0.89,7.85
+1862,Ufa,Russia,-0.34,7.56
+1863,Ufa,Russia,2.91,8.11
+1864,Ufa,Russia,1.86,7.98
+1865,Ufa,Russia,1.14,8.18
+1866,Ufa,Russia,2.08,8.29
+1867,Ufa,Russia,2.23,8.44
+1868,Ufa,Russia,1.40,8.25
+1869,Ufa,Russia,2.81,8.43
+1870,Ufa,Russia,1.04,8.20
+1871,Ufa,Russia,1.16,8.12
+1872,Ufa,Russia,1.54,8.19
+1873,Ufa,Russia,1.28,8.35
+1874,Ufa,Russia,2.39,8.43
+1875,Ufa,Russia,-0.32,7.86
+1876,Ufa,Russia,1.19,8.08
+1877,Ufa,Russia,1.64,8.54
+1878,Ufa,Russia,3.44,8.83
+1879,Ufa,Russia,1.83,8.17
+1880,Ufa,Russia,1.27,8.12
+1881,Ufa,Russia,1.19,8.27
+1882,Ufa,Russia,1.63,8.13
+1883,Ufa,Russia,1.78,7.98
+1884,Ufa,Russia,0.72,7.77
+1885,Ufa,Russia,0.90,7.92
+1886,Ufa,Russia,0.97,7.95
+1887,Ufa,Russia,2.51,7.91
+1888,Ufa,Russia,1.46,8.09
+1889,Ufa,Russia,1.19,8.32
+1890,Ufa,Russia,1.77,7.97
+1891,Ufa,Russia,0.78,8.02
+1892,Ufa,Russia,1.14,8.07
+1893,Ufa,Russia,1.78,8.06
+1894,Ufa,Russia,0.84,8.16
+1895,Ufa,Russia,1.31,8.15
+1896,Ufa,Russia,0.34,8.21
+1897,Ufa,Russia,1.27,8.29
+1898,Ufa,Russia,1.08,8.18
+1899,Ufa,Russia,2.35,8.40
+1900,Ufa,Russia,0.85,8.50
+1901,Ufa,Russia,1.85,8.54
+1902,Ufa,Russia,0.68,8.30
+1903,Ufa,Russia,2.16,8.22
+1904,Ufa,Russia,1.56,8.09
+1905,Ufa,Russia,2.31,8.23
+1906,Ufa,Russia,2.48,8.38
+1907,Ufa,Russia,0.46,7.95
+1908,Ufa,Russia,-0.51,8.19
+1909,Ufa,Russia,2.50,8.18
+1910,Ufa,Russia,1.92,8.22
+1911,Ufa,Russia,1.19,8.18
+1912,Ufa,Russia,1.25,8.17
+1913,Ufa,Russia,2.06,8.30
+1914,Ufa,Russia,1.63,8.59
+1915,Ufa,Russia,2.36,8.59
+1916,Ufa,Russia,1.67,8.23
+1917,Ufa,Russia,2.12,8.02
+1918,Ufa,Russia,0.87,8.13
+1919,Ufa,Russia,0.64,8.38
+1920,Ufa,Russia,1.82,8.36
+1921,Ufa,Russia,2.53,8.57
+1922,Ufa,Russia,2.18,8.41
+1923,Ufa,Russia,2.73,8.42
+1924,Ufa,Russia,2.02,8.51
+1925,Ufa,Russia,3.48,8.53
+1926,Ufa,Russia,1.15,8.73
+1927,Ufa,Russia,1.47,8.52
+1928,Ufa,Russia,1.17,8.63
+1929,Ufa,Russia,0.67,8.24
+1930,Ufa,Russia,1.82,8.63
+1931,Ufa,Russia,2.10,8.72
+1932,Ufa,Russia,2.60,8.71
+1933,Ufa,Russia,0.65,8.34
+1934,Ufa,Russia,2.13,8.63
+1935,Ufa,Russia,2.59,8.52
+1936,Ufa,Russia,3.17,8.55
+1937,Ufa,Russia,2.19,8.70
+1938,Ufa,Russia,2.35,8.86
+1939,Ufa,Russia,2.27,8.76
+1940,Ufa,Russia,1.62,8.76
+1941,Ufa,Russia,0.00,8.77
+1942,Ufa,Russia,0.85,8.73
+1943,Ufa,Russia,2.37,8.76
+1944,Ufa,Russia,2.81,8.85
+1945,Ufa,Russia,0.41,8.58
+1946,Ufa,Russia,1.90,8.68
+1947,Ufa,Russia,2.14,8.80
+1948,Ufa,Russia,2.72,8.75
+1949,Ufa,Russia,2.31,8.59
+1950,Ufa,Russia,1.51,8.37
+1951,Ufa,Russia,2.35,8.63
+1952,Ufa,Russia,2.27,8.64
+1953,Ufa,Russia,1.95,8.87
+1954,Ufa,Russia,1.66,8.56
+1955,Ufa,Russia,1.99,8.63
+1956,Ufa,Russia,0.99,8.28
+1957,Ufa,Russia,3.07,8.73
+1958,Ufa,Russia,2.38,8.77
+1959,Ufa,Russia,1.68,8.73
+1960,Ufa,Russia,1.51,8.58
+1961,Ufa,Russia,3.16,8.80
+1962,Ufa,Russia,3.75,8.75
+1963,Ufa,Russia,2.15,8.86
+1964,Ufa,Russia,1.95,8.41
+1965,Ufa,Russia,2.29,8.53
+1966,Ufa,Russia,1.96,8.60
+1967,Ufa,Russia,3.47,8.70
+1968,Ufa,Russia,1.42,8.52
+1969,Ufa,Russia,-0.53,8.60
+1970,Ufa,Russia,2.16,8.70
+1971,Ufa,Russia,2.78,8.60
+1972,Ufa,Russia,1.72,8.50
+1973,Ufa,Russia,2.43,8.95
+1974,Ufa,Russia,3.20,8.47
+1975,Ufa,Russia,4.08,8.74
+1976,Ufa,Russia,1.01,8.35
+1977,Ufa,Russia,2.62,8.85
+1978,Ufa,Russia,1.99,8.69
+1979,Ufa,Russia,2.26,8.73
+1980,Ufa,Russia,1.94,8.98
+1981,Ufa,Russia,4.05,9.17
+1982,Ufa,Russia,3.11,8.64
+1983,Ufa,Russia,4.18,9.03
+1984,Ufa,Russia,1.87,8.69
+1985,Ufa,Russia,1.97,8.66
+1986,Ufa,Russia,1.49,8.83
+1987,Ufa,Russia,1.71,8.99
+1988,Ufa,Russia,3.08,9.20
+1989,Ufa,Russia,3.51,8.92
+1990,Ufa,Russia,3.45,9.23
+1991,Ufa,Russia,3.73,9.18
+1992,Ufa,Russia,2.57,8.84
+1993,Ufa,Russia,1.56,8.87
+1994,Ufa,Russia,2.03,9.04
+1995,Ufa,Russia,4.77,9.35
+1996,Ufa,Russia,1.90,9.04
+1997,Ufa,Russia,2.63,9.20
+1998,Ufa,Russia,2.67,9.52
+1999,Ufa,Russia,3.12,9.29
+2000,Ufa,Russia,3.69,9.20
+2001,Ufa,Russia,3.16,9.41
+2002,Ufa,Russia,2.95,9.57
+2003,Ufa,Russia,3.58,9.53
+2004,Ufa,Russia,3.79,9.32
+2005,Ufa,Russia,3.55,9.70
+2006,Ufa,Russia,3.12,9.53
+2007,Ufa,Russia,3.49,9.73
+2008,Ufa,Russia,4.52,9.43
+2009,Ufa,Russia,3.32,9.51
+2010,Ufa,Russia,3.64,9.70
+2011,Ufa,Russia,2.52,9.52
+2012,Ufa,Russia,3.95,9.51
+2013,Ufa,Russia,5.00,9.61
+1816,Vientiane,Laos,23.52,6.94
+1817,Vientiane,Laos,22.75,6.98
+1818,Vientiane,Laos,23.45,7.83
+1819,Vientiane,Laos,22.80,7.37
+1820,Vientiane,Laos,23.62,7.62
+1821,Vientiane,Laos,23.75,8.09
+1822,Vientiane,Laos,23.89,8.19
+1823,Vientiane,Laos,23.87,7.72
+1824,Vientiane,Laos,,8.55
+1825,Vientiane,Laos,24.06,8.39
+1826,Vientiane,Laos,,8.36
+1827,Vientiane,Laos,,8.81
+1828,Vientiane,Laos,,8.17
+1829,Vientiane,Laos,,7.94
+1830,Vientiane,Laos,,8.52
+1831,Vientiane,Laos,,7.64
+1832,Vientiane,Laos,,7.45
+1833,Vientiane,Laos,23.77,8.01
+1834,Vientiane,Laos,23.75,8.15
+1835,Vientiane,Laos,22.79,7.39
+1836,Vientiane,Laos,23.19,7.70
+1837,Vientiane,Laos,23.73,7.38
+1838,Vientiane,Laos,25.41,7.51
+1839,Vientiane,Laos,24.51,7.63
+1840,Vientiane,Laos,23.68,7.80
+1841,Vientiane,Laos,24.21,7.69
+1842,Vientiane,Laos,23.79,8.02
+1843,Vientiane,Laos,23.86,8.17
+1844,Vientiane,Laos,23.34,7.65
+1845,Vientiane,Laos,23.17,7.85
+1846,Vientiane,Laos,23.67,8.55
+1847,Vientiane,Laos,23.24,8.09
+1848,Vientiane,Laos,23.36,7.98
+1849,Vientiane,Laos,23.52,7.98
+1850,Vientiane,Laos,23.68,7.90
+1851,Vientiane,Laos,23.82,8.18
+1852,Vientiane,Laos,23.65,8.10
+1853,Vientiane,Laos,23.98,8.04
+1854,Vientiane,Laos,23.97,8.21
+1855,Vientiane,Laos,23.74,8.11
+1856,Vientiane,Laos,23.37,8.00
+1857,Vientiane,Laos,23.99,7.76
+1858,Vientiane,Laos,23.78,8.10
+1859,Vientiane,Laos,23.82,8.25
+1860,Vientiane,Laos,23.66,7.96
+1861,Vientiane,Laos,23.54,7.85
+1862,Vientiane,Laos,19.15,7.56
+1863,Vientiane,Laos,23.53,8.11
+1864,Vientiane,Laos,23.40,7.98
+1865,Vientiane,Laos,23.92,8.18
+1866,Vientiane,Laos,23.89,8.29
+1867,Vientiane,Laos,23.90,8.44
+1868,Vientiane,Laos,24.00,8.25
+1869,Vientiane,Laos,23.54,8.43
+1870,Vientiane,Laos,23.67,8.20
+1871,Vientiane,Laos,23.79,8.12
+1872,Vientiane,Laos,23.95,8.19
+1873,Vientiane,Laos,23.90,8.35
+1874,Vientiane,Laos,23.94,8.43
+1875,Vientiane,Laos,23.55,7.86
+1876,Vientiane,Laos,23.45,8.08
+1877,Vientiane,Laos,23.98,8.54
+1878,Vientiane,Laos,24.45,8.83
+1879,Vientiane,Laos,24.03,8.17
+1880,Vientiane,Laos,23.67,8.12
+1881,Vientiane,Laos,23.87,8.27
+1882,Vientiane,Laos,23.79,8.13
+1883,Vientiane,Laos,23.54,7.98
+1884,Vientiane,Laos,23.27,7.77
+1885,Vientiane,Laos,23.69,7.92
+1886,Vientiane,Laos,23.67,7.95
+1887,Vientiane,Laos,23.59,7.91
+1888,Vientiane,Laos,24.04,8.09
+1889,Vientiane,Laos,24.14,8.32
+1890,Vientiane,Laos,23.94,7.97
+1891,Vientiane,Laos,24.02,8.02
+1892,Vientiane,Laos,23.42,8.07
+1893,Vientiane,Laos,23.29,8.06
+1894,Vientiane,Laos,23.67,8.16
+1895,Vientiane,Laos,23.95,8.15
+1896,Vientiane,Laos,23.97,8.21
+1897,Vientiane,Laos,24.23,8.29
+1898,Vientiane,Laos,23.98,8.18
+1899,Vientiane,Laos,23.69,8.40
+1900,Vientiane,Laos,24.06,8.50
+1901,Vientiane,Laos,24.08,8.54
+1902,Vientiane,Laos,24.53,8.30
+1903,Vientiane,Laos,23.89,8.22
+1904,Vientiane,Laos,23.79,8.09
+1905,Vientiane,Laos,24.06,8.23
+1906,Vientiane,Laos,24.27,8.38
+1907,Vientiane,Laos,23.62,7.95
+1908,Vientiane,Laos,23.67,8.19
+1909,Vientiane,Laos,24.06,8.18
+1910,Vientiane,Laos,23.95,8.22
+1911,Vientiane,Laos,24.40,8.18
+1912,Vientiane,Laos,23.84,8.17
+1913,Vientiane,Laos,23.54,8.30
+1914,Vientiane,Laos,24.44,8.59
+1915,Vientiane,Laos,24.37,8.59
+1916,Vientiane,Laos,23.68,8.23
+1917,Vientiane,Laos,23.44,8.02
+1918,Vientiane,Laos,23.73,8.13
+1919,Vientiane,Laos,24.42,8.38
+1920,Vientiane,Laos,24.22,8.36
+1921,Vientiane,Laos,23.98,8.57
+1922,Vientiane,Laos,24.25,8.41
+1923,Vientiane,Laos,24.34,8.42
+1924,Vientiane,Laos,24.28,8.51
+1925,Vientiane,Laos,23.76,8.53
+1926,Vientiane,Laos,24.19,8.73
+1927,Vientiane,Laos,24.16,8.52
+1928,Vientiane,Laos,24.12,8.63
+1929,Vientiane,Laos,24.03,8.24
+1930,Vientiane,Laos,23.93,8.63
+1931,Vientiane,Laos,24.69,8.72
+1932,Vientiane,Laos,23.81,8.71
+1933,Vientiane,Laos,23.92,8.34
+1934,Vientiane,Laos,23.60,8.63
+1935,Vientiane,Laos,24.78,8.52
+1936,Vientiane,Laos,23.83,8.55
+1937,Vientiane,Laos,24.63,8.70
+1938,Vientiane,Laos,24.21,8.86
+1939,Vientiane,Laos,24.27,8.76
+1940,Vientiane,Laos,24.37,8.76
+1941,Vientiane,Laos,25.04,8.77
+1942,Vientiane,Laos,24.56,8.73
+1943,Vientiane,Laos,24.02,8.76
+1944,Vientiane,Laos,24.67,8.85
+1945,Vientiane,Laos,24.16,8.58
+1946,Vientiane,Laos,25.01,8.68
+1947,Vientiane,Laos,24.54,8.80
+1948,Vientiane,Laos,24.27,8.75
+1949,Vientiane,Laos,24.39,8.59
+1950,Vientiane,Laos,24.22,8.37
+1951,Vientiane,Laos,24.22,8.63
+1952,Vientiane,Laos,24.40,8.64
+1953,Vientiane,Laos,24.63,8.87
+1954,Vientiane,Laos,24.57,8.56
+1955,Vientiane,Laos,24.01,8.63
+1956,Vientiane,Laos,24.23,8.28
+1957,Vientiane,Laos,24.85,8.73
+1958,Vientiane,Laos,24.50,8.77
+1959,Vientiane,Laos,24.72,8.73
+1960,Vientiane,Laos,24.62,8.58
+1961,Vientiane,Laos,24.58,8.80
+1962,Vientiane,Laos,24.11,8.75
+1963,Vientiane,Laos,24.18,8.86
+1964,Vientiane,Laos,24.28,8.41
+1965,Vientiane,Laos,24.61,8.53
+1966,Vientiane,Laos,25.10,8.60
+1967,Vientiane,Laos,24.04,8.70
+1968,Vientiane,Laos,24.40,8.52
+1969,Vientiane,Laos,24.69,8.60
+1970,Vientiane,Laos,24.59,8.70
+1971,Vientiane,Laos,23.72,8.60
+1972,Vientiane,Laos,24.46,8.50
+1973,Vientiane,Laos,24.60,8.95
+1974,Vientiane,Laos,24.08,8.47
+1975,Vientiane,Laos,24.38,8.74
+1976,Vientiane,Laos,24.04,8.35
+1977,Vientiane,Laos,24.44,8.85
+1978,Vientiane,Laos,24.48,8.69
+1979,Vientiane,Laos,24.87,8.73
+1980,Vientiane,Laos,24.88,8.98
+1981,Vientiane,Laos,24.46,9.17
+1982,Vientiane,Laos,24.40,8.64
+1983,Vientiane,Laos,24.33,9.03
+1984,Vientiane,Laos,24.24,8.69
+1985,Vientiane,Laos,24.34,8.66
+1986,Vientiane,Laos,24.28,8.83
+1987,Vientiane,Laos,24.79,8.99
+1988,Vientiane,Laos,24.48,9.20
+1989,Vientiane,Laos,24.28,8.92
+1990,Vientiane,Laos,24.53,9.23
+1991,Vientiane,Laos,24.85,9.18
+1992,Vientiane,Laos,24.30,8.84
+1993,Vientiane,Laos,24.34,8.87
+1994,Vientiane,Laos,24.50,9.04
+1995,Vientiane,Laos,24.53,9.35
+1996,Vientiane,Laos,24.16,9.04
+1997,Vientiane,Laos,24.67,9.20
+1998,Vientiane,Laos,25.46,9.52
+1999,Vientiane,Laos,24.38,9.29
+2000,Vientiane,Laos,24.34,9.20
+2001,Vientiane,Laos,24.76,9.41
+2002,Vientiane,Laos,24.75,9.57
+2003,Vientiane,Laos,24.80,9.53
+2004,Vientiane,Laos,24.35,9.32
+2005,Vientiane,Laos,24.91,9.70
+2006,Vientiane,Laos,24.92,9.53
+2007,Vientiane,Laos,24.81,9.73
+2008,Vientiane,Laos,24.06,9.43
+2009,Vientiane,Laos,24.94,9.51
+2010,Vientiane,Laos,25.50,9.70
+2011,Vientiane,Laos,24.14,9.52
+2012,Vientiane,Laos,25.53,9.51
+2013,Vientiane,Laos,25.94,9.61
+1841,Wuhan,China,15.86,7.69
+1842,Wuhan,China,16.31,8.02
+1843,Wuhan,China,16.41,8.17
+1844,Wuhan,China,16.18,7.65
+1845,Wuhan,China,16.20,7.85
+1846,Wuhan,China,16.75,8.55
+1847,Wuhan,China,16.53,8.09
+1848,Wuhan,China,15.98,7.98
+1849,Wuhan,China,16.28,7.98
+1850,Wuhan,China,16.38,7.90
+1851,Wuhan,China,16.31,8.18
+1852,Wuhan,China,16.37,8.10
+1853,Wuhan,China,16.78,8.04
+1854,Wuhan,China,16.78,8.21
+1855,Wuhan,China,16.49,8.11
+1856,Wuhan,China,16.14,8.00
+1857,Wuhan,China,16.52,7.76
+1858,Wuhan,China,16.34,8.10
+1859,Wuhan,China,16.59,8.25
+1860,Wuhan,China,16.11,7.96
+1861,Wuhan,China,16.15,7.85
+1862,Wuhan,China,15.46,7.56
+1863,Wuhan,China,16.15,8.11
+1864,Wuhan,China,15.84,7.98
+1865,Wuhan,China,16.65,8.18
+1866,Wuhan,China,16.51,8.29
+1867,Wuhan,China,16.83,8.44
+1868,Wuhan,China,16.82,8.25
+1869,Wuhan,China,16.93,8.43
+1870,Wuhan,China,16.86,8.20
+1871,Wuhan,China,16.94,8.12
+1872,Wuhan,China,16.94,8.19
+1873,Wuhan,China,16.69,8.35
+1874,Wuhan,China,16.64,8.43
+1875,Wuhan,China,16.54,7.86
+1876,Wuhan,China,16.47,8.08
+1877,Wuhan,China,16.36,8.54
+1878,Wuhan,China,16.50,8.83
+1879,Wuhan,China,16.90,8.17
+1880,Wuhan,China,16.10,8.12
+1881,Wuhan,China,16.52,8.27
+1882,Wuhan,China,16.41,8.13
+1883,Wuhan,China,16.14,7.98
+1884,Wuhan,China,15.75,7.77
+1885,Wuhan,China,15.82,7.92
+1886,Wuhan,China,15.95,7.95
+1887,Wuhan,China,16.39,7.91
+1888,Wuhan,China,16.63,8.09
+1889,Wuhan,China,16.40,8.32
+1890,Wuhan,China,16.86,7.97
+1891,Wuhan,China,16.71,8.02
+1892,Wuhan,China,16.36,8.07
+1893,Wuhan,China,16.09,8.06
+1894,Wuhan,China,16.74,8.16
+1895,Wuhan,China,16.25,8.15
+1896,Wuhan,China,16.57,8.21
+1897,Wuhan,China,16.49,8.29
+1898,Wuhan,China,16.95,8.18
+1899,Wuhan,China,16.66,8.40
+1900,Wuhan,China,16.55,8.50
+1901,Wuhan,China,16.43,8.54
+1902,Wuhan,China,17.23,8.30
+1903,Wuhan,China,16.40,8.22
+1904,Wuhan,China,16.53,8.09
+1905,Wuhan,China,15.88,8.23
+1906,Wuhan,China,16.33,8.38
+1907,Wuhan,China,16.55,7.95
+1908,Wuhan,China,16.69,8.19
+1909,Wuhan,China,16.73,8.18
+1910,Wuhan,China,16.05,8.22
+1911,Wuhan,China,16.23,8.18
+1912,Wuhan,China,16.48,8.17
+1913,Wuhan,China,16.50,8.30
+1914,Wuhan,China,17.37,8.59
+1915,Wuhan,China,16.69,8.59
+1916,Wuhan,China,16.11,8.23
+1917,Wuhan,China,16.23,8.02
+1918,Wuhan,China,16.31,8.13
+1919,Wuhan,China,17.00,8.38
+1920,Wuhan,China,16.66,8.36
+1921,Wuhan,China,16.66,8.57
+1922,Wuhan,China,17.14,8.41
+1923,Wuhan,China,17.01,8.42
+1924,Wuhan,China,16.82,8.51
+1925,Wuhan,China,17.12,8.53
+1926,Wuhan,China,17.07,8.73
+1927,Wuhan,China,17.14,8.52
+1928,Wuhan,China,17.42,8.63
+1929,Wuhan,China,16.84,8.24
+1930,Wuhan,China,16.77,8.63
+1931,Wuhan,China,16.42,8.72
+1932,Wuhan,China,17.04,8.71
+1933,Wuhan,China,16.61,8.34
+1934,Wuhan,China,16.89,8.63
+1935,Wuhan,China,17.17,8.52
+1936,Wuhan,China,16.66,8.55
+1937,Wuhan,China,16.77,8.70
+1938,Wuhan,China,17.43,8.86
+1939,Wuhan,China,17.12,8.76
+1940,Wuhan,China,17.33,8.76
+1941,Wuhan,China,17.41,8.77
+1942,Wuhan,China,17.40,8.73
+1943,Wuhan,China,17.13,8.76
+1944,Wuhan,China,16.86,8.85
+1945,Wuhan,China,17.20,8.58
+1946,Wuhan,China,17.80,8.68
+1947,Wuhan,China,17.15,8.80
+1948,Wuhan,China,17.23,8.75
+1949,Wuhan,China,17.36,8.59
+1950,Wuhan,China,17.02,8.37
+1951,Wuhan,China,16.96,8.63
+1952,Wuhan,China,16.89,8.64
+1953,Wuhan,China,17.46,8.87
+1954,Wuhan,China,16.51,8.56
+1955,Wuhan,China,16.90,8.63
+1956,Wuhan,China,16.50,8.28
+1957,Wuhan,China,16.49,8.73
+1958,Wuhan,China,16.95,8.77
+1959,Wuhan,China,17.36,8.73
+1960,Wuhan,China,17.12,8.58
+1961,Wuhan,China,17.81,8.80
+1962,Wuhan,China,17.11,8.75
+1963,Wuhan,China,17.47,8.86
+1964,Wuhan,China,17.14,8.41
+1965,Wuhan,China,17.03,8.53
+1966,Wuhan,China,17.30,8.60
+1967,Wuhan,China,16.80,8.70
+1968,Wuhan,China,17.28,8.52
+1969,Wuhan,China,16.45,8.60
+1970,Wuhan,China,16.60,8.70
+1971,Wuhan,China,16.74,8.60
+1972,Wuhan,China,16.64,8.50
+1973,Wuhan,China,17.13,8.95
+1974,Wuhan,China,16.88,8.47
+1975,Wuhan,China,17.08,8.74
+1976,Wuhan,China,16.65,8.35
+1977,Wuhan,China,16.94,8.85
+1978,Wuhan,China,17.61,8.69
+1979,Wuhan,China,17.53,8.73
+1980,Wuhan,China,16.63,8.98
+1981,Wuhan,China,16.85,9.17
+1982,Wuhan,China,16.88,8.64
+1983,Wuhan,China,17.15,9.03
+1984,Wuhan,China,16.40,8.69
+1985,Wuhan,China,16.81,8.66
+1986,Wuhan,China,17.03,8.83
+1987,Wuhan,China,17.17,8.99
+1988,Wuhan,China,17.04,9.20
+1989,Wuhan,China,16.78,8.92
+1990,Wuhan,China,17.65,9.23
+1991,Wuhan,China,16.91,9.18
+1992,Wuhan,China,17.15,8.84
+1993,Wuhan,China,16.65,8.87
+1994,Wuhan,China,17.54,9.04
+1995,Wuhan,China,17.33,9.35
+1996,Wuhan,China,16.90,9.04
+1997,Wuhan,China,17.43,9.20
+1998,Wuhan,China,18.16,9.52
+1999,Wuhan,China,17.61,9.29
+2000,Wuhan,China,17.44,9.20
+2001,Wuhan,China,17.69,9.41
+2002,Wuhan,China,17.79,9.57
+2003,Wuhan,China,17.48,9.53
+2004,Wuhan,China,17.97,9.32
+2005,Wuhan,China,17.55,9.70
+2006,Wuhan,China,18.03,9.53
+2007,Wuhan,China,18.24,9.73
+2008,Wuhan,China,17.60,9.43
+2009,Wuhan,China,17.82,9.51
+2010,Wuhan,China,17.57,9.70
+2011,Wuhan,China,17.39,9.52
+2012,Wuhan,China,17.15,9.51
+2013,Wuhan,China,19.29,9.61

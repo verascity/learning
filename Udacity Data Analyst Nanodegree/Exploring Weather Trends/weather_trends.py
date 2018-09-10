@@ -42,4 +42,7 @@ weather2 = pd.read_csv("weather_data2.csv")
 weather2["location"] = weather2["city"] + ", " + weather2["country"]
 weather2 = weather2[["year", "location", "city_temp", "global_temp"]]
 weather2 = weather2.interpolate()
-print(weather2.describe())
+
+
+grouped = weather2[["year", "city_temp"]].groupby(weather2["location"])
+print(grouped.get_group("Canberra, Australia"))
