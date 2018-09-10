@@ -53,3 +53,12 @@ pretoria = grouped.get_group("Pretoria, South Africa")
 ufa = grouped.get_group("Ufa, Russia")
 vientiane = grouped.get_group("Vientiane, Laos")
 wuhan = grouped.get_group("Wuhan, China")
+
+plt.figure(figsize=(12,8))
+plt.plot(weather["year"], weather["global_mov_avg"], "blue", weather["year"], weather["ny_mov_avg"], "orange",
+         denver["year"], denver["city_mov_avg"], "green", wuhan["year"], wuhan["city_mov_avg"], "pink",
+         pretoria["year"], pretoria["city_mov_avg"], "black", ufa["year"], ufa["city_mov_avg"], "gray",
+         vientiane["year"], vientiane["city_mov_avg"], "red")
+plt.xlabel("Year")
+plt.ylabel("Temperature in Celsius")
+plt.suptitle("10-Year Moving Average Temperatures, Globally and in Six Cities, 1750-2015") #I prefer suptitle for spacing.
