@@ -19,7 +19,7 @@ weather = weather.bfill() #The ny_temp for 1779 is an outlier at 0.25, so backfi
 #Calculate 10-year moving averages:
 weather["ny_mov_avg"] = weather["ny_temp"].rolling(window=10).mean() 
 weather["global_mov_avg"] = weather["global_temp"].rolling(window=10).mean()
-"""
+
 #Plot the data:
 plt.figure(figsize=(10, 5)) 
 plt.plot(weather["year"], weather["ny_mov_avg"], 'orange', weather["year"], weather["global_mov_avg"], 'blue')
@@ -31,7 +31,7 @@ plt.legend(["New York", "Global"])
 #Calculate the correlation coefficient for the two moving averages:
 corr = weather["ny_mov_avg"].corr(weather["global_mov_avg"]) 
 print(corr)
-"""
+
 
 """
 After looking at this data, I was curious about how other cities would
@@ -43,6 +43,13 @@ weather2["location"] = weather2["city"] + ", " + weather2["country"]
 weather2 = weather2[["year", "location", "city_temp", "global_temp"]]
 weather2 = weather2.interpolate()
 
+#Applies 10-year moving average to each city:
+weather2["city_mov_avg"] = weather2.groupby(weather2["location"]).city_temp.apply(lambda x: x.rolling(10).mean())
+grouped = weather2.groupby(weather2["location"])
 
-grouped = weather2[["year", "city_temp"]].groupby(weather2["location"])
-print(grouped.get_group("Canberra, Australia"))
+#Giving each city its own dataframe:
+denver = grouped.get_group("Denver, United States")
+pretoria = grouped.get_group("Pretoria, South Africa")
+ufa = grouped.get_group("Ufa, Russia")
+vientiane = grouped.get_group("Vientiane, Laos")
+wuhan = grouped.get_group("Wuhan, China")
