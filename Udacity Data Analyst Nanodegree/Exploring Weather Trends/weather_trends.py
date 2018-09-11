@@ -27,6 +27,7 @@ plt.xlabel("Year")
 plt.ylabel("Temperature in Celsius")
 plt.suptitle("10-Year Moving Average Temperatures, Globally and in New York City, 1750-2015") #I prefer suptitle for spacing.
 plt.legend(["New York", "Global"])
+plt.savefig("ny_global.png")
 
 """
 After looking at this data, I'm curious about how other cities will
@@ -68,3 +69,4 @@ plt.xlabel("Year")
 plt.ylabel("Temperature in Celsius")
 plt.suptitle("10-Year Moving Average Temperatures, Globally and in Five Cities, 1900-2015")
 plt.legend(["Global", "Denver, USA", "Pretoria, SA", "Ufa, Russia", "Vientiane, Laos", "Wuhan, China"])
+plt.savefig("five_city_global.png")
