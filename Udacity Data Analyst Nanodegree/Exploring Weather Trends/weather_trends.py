@@ -32,10 +32,9 @@ plt.legend(["New York", "Global"])
 corr = weather["ny_mov_avg"].corr(weather["global_mov_avg"]) 
 print(corr)
 
-
 """
-After looking at this data, I was curious about how other cities would
-compare, so I generated a new csv with a random sample of five cities.
+After looking at this data, I'm curious about how other cities will
+compare, so I go back and generate a new csv with a random sample of five cities.
 """
 
 weather2 = pd.read_csv("weather_data2.csv")
@@ -55,10 +54,12 @@ vientiane = grouped.get_group("Vientiane, Laos")
 wuhan = grouped.get_group("Wuhan, China")
 
 plt.figure(figsize=(12,8))
-plt.plot(weather["year"], weather["global_mov_avg"], "blue", weather["year"], weather["ny_mov_avg"], "orange",
-         denver["year"], denver["city_mov_avg"], "green", wuhan["year"], wuhan["city_mov_avg"], "pink",
-         pretoria["year"], pretoria["city_mov_avg"], "black", ufa["year"], ufa["city_mov_avg"], "gray",
-         vientiane["year"], vientiane["city_mov_avg"], "red")
+plt.plot(weather["year"], weather["global_mov_avg"], "blue", denver["year"], denver["city_mov_avg"], "green", 
+         pretoria["year"], pretoria["city_mov_avg"], "black", 
+         ufa["year"], ufa["city_mov_avg"], "tan",
+         vientiane["year"], vientiane["city_mov_avg"], "red",
+         wuhan["year"], wuhan["city_mov_avg"], "pink")
 plt.xlabel("Year")
 plt.ylabel("Temperature in Celsius")
-plt.suptitle("10-Year Moving Average Temperatures, Globally and in Six Cities, 1750-2015") #I prefer suptitle for spacing.
+plt.suptitle("10-Year Moving Average Temperatures, Globally and in Five Cities, 1750-2015")
+plt.legend(["Global", "Denver, USA", "Pretoria, SA", "Ufa, Russia", "Vientiane, Laos", "Wuhan, China"])
