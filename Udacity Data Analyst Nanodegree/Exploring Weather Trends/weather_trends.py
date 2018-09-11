@@ -28,10 +28,6 @@ plt.ylabel("Temperature in Celsius")
 plt.suptitle("10-Year Moving Average Temperatures, Globally and in New York City, 1750-2015") #I prefer suptitle for spacing.
 plt.legend(["New York", "Global"])
 
-#Calculate the correlation coefficient for the two moving averages:
-corr = weather["ny_mov_avg"].corr(weather["global_mov_avg"]) 
-print(corr)
-
 """
 After looking at this data, I'm curious about how other cities will
 compare, so I go back and generate a new csv with a random sample of five cities.
@@ -41,7 +37,6 @@ started from 1750 again. However, that turned out to not be very useful. First,
 three of my cities only have data starting around 1825-1875. Also, it actually
 became harder to see the trends once more data was included. So I'm going to 
 retool this part to only include the 20th and 21st centuries.
-
 """
 
 weather2 = pd.read_csv("weather_data2.csv")
@@ -63,7 +58,8 @@ vientiane = grouped.get_group("Vientiane, Laos")
 wuhan = grouped.get_group("Wuhan, China")
 
 plt.figure(figsize=(12,8))
-plt.plot(weather2["year"], weather2["global_mov_avg"], "blue", denver["year"], denver["city_mov_avg"], "green", 
+plt.plot(weather2["year"], weather2["global_mov_avg"], "blue", 
+         denver["year"], denver["city_mov_avg"], "green", 
          pretoria["year"], pretoria["city_mov_avg"], "black", 
          ufa["year"], ufa["city_mov_avg"], "tan",
          vientiane["year"], vientiane["city_mov_avg"], "red",
