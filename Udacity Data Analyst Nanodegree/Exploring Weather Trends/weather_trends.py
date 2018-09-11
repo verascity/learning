@@ -35,6 +35,13 @@ print(corr)
 """
 After looking at this data, I'm curious about how other cities will
 compare, so I go back and generate a new csv with a random sample of five cities.
+
+Originally, when I ran this data, I used all the years in the global data and 
+started from 1750 again. However, that turned out to not be very useful. First,
+three of my cities only have data starting around 1825-1875. Also, it actually
+became harder to see the trends once more data was included. So I'm going to 
+retool this part to only include the 20th and 21st centuries.
+
 """
 
 weather2 = pd.read_csv("weather_data2.csv")
@@ -44,6 +51,8 @@ weather2 = weather2.interpolate()
 
 #Applies 10-year moving average to each city:
 weather2["city_mov_avg"] = weather2.groupby(weather2["location"]).city_temp.apply(lambda x: x.rolling(10).mean())
+weather2["global_mov_avg"] = weather["global_mov_avg"]
+weather2 = weather2[weather2["year"] >= 1900]
 grouped = weather2.groupby(weather2["location"])
 
 #Giving each city its own dataframe:
@@ -54,12 +63,12 @@ vientiane = grouped.get_group("Vientiane, Laos")
 wuhan = grouped.get_group("Wuhan, China")
 
 plt.figure(figsize=(12,8))
-plt.plot(weather["year"], weather["global_mov_avg"], "blue", denver["year"], denver["city_mov_avg"], "green", 
+plt.plot(weather2["year"], weather2["global_mov_avg"], "blue", denver["year"], denver["city_mov_avg"], "green", 
          pretoria["year"], pretoria["city_mov_avg"], "black", 
          ufa["year"], ufa["city_mov_avg"], "tan",
          vientiane["year"], vientiane["city_mov_avg"], "red",
          wuhan["year"], wuhan["city_mov_avg"], "pink")
 plt.xlabel("Year")
 plt.ylabel("Temperature in Celsius")
-plt.suptitle("10-Year Moving Average Temperatures, Globally and in Five Cities, 1750-2015")
+plt.suptitle("10-Year Moving Average Temperatures, Globally and in Five Cities, 1900-2015")
 plt.legend(["Global", "Denver, USA", "Pretoria, SA", "Ufa, Russia", "Vientiane, Laos", "Wuhan, China"])
