@@ -11,12 +11,7 @@ import seaborn as sns
 
 pd.options.display.max_columns = None
 
-def load_data(filename):
-    df = pd.read_csv(filename)
-    return df
-
-
-df = load_data('noshowappointments.csv')
+df = pd.read_csv('noshowappointments.csv')
 
 """
 Data Cleaning/Wrangling:
@@ -40,10 +35,19 @@ in the 'Age' and new 'TimeBetween' columns, so I'll also restrict those to
 avoid extreme outliers.
 """
 def between_params(df, col, params):
+    """
+    Takes in a dataframe, column name, and tuple or list of 2
+    parameters, and returns the dataframe with the column's values now
+    falling between the parameters.
+    """
     df = df[(df[col] >= params[0]) & (df[col] <= params[1])]
     return df
     
 def obj_to_date(col):
+    """
+    Takes in a column with a datetime-like string object and returns the 
+    column as a date object.
+    """
     col = pd.to_datetime(col, infer_datetime_format=True).dt.date
     return col
  
@@ -111,4 +115,4 @@ they? In other words, what age group most represents no-shows?
 bin_edges = [0, 18, 37, 55, 95]
 bins = ['child', 'young adult', 'adult', 'senior']
 df['age_group'] = pd.cut(df['Age'], bin_edges, labels=bins)
-print(df.head())
+
