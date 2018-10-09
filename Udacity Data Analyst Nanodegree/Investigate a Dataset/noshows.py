@@ -11,7 +11,11 @@ import seaborn as sns
 
 pd.options.display.max_columns = None
 
-df = pd.read_csv('noshowappointments.csv')
+def load_data(filename):
+    df = pd.read_csv(filename)
+    return df
+
+df = load_data('noshowappointments.csv')
 
 """
 Data Cleaning/Wrangling:
@@ -34,18 +38,26 @@ Finally, after looking through the data, I realized there are some wonky values
 in the 'Age' and new 'TimeBetween' columns, so I'll also restrict those to 
 avoid extreme outliers.
 """
-
+def between_params(df, col, params):
+    df = df[(df[col] >= params[0]) & (df[col] <= params[1])]
+    return df
+    
+def obj_to_date(col):
+    col = pd.to_datetime(col, infer_datetime_format=True).dt.date
+    return col
+ 
 df = df.set_index('AppointmentID')
 df['Duplicate'] = df['PatientId'].duplicated()
 df = df.rename(index=str, columns={"Hipertension":"Hypertension", 
                                    "Handcap" : "Disability"})
-df = df[(df['Age'] >= 0) & (df['Age'] <= 95)]
 
-df['AppointmentDay'] = pd.to_datetime(df['AppointmentDay'], infer_datetime_format=True).dt.date
-df['ScheduledDay'] = pd.to_datetime(df['ScheduledDay'], infer_datetime_format=True).dt.date
+df['AppointmentDay'] = obj_to_date(df['AppointmentDay'])
+df['ScheduledDay'] = obj_to_date(df['ScheduledDay'])
 df['TimeBetween'] = (df['AppointmentDay'] - df['ScheduledDay']).dt.days
+
+df = between_params(df, 'Age', (0, 95))
+df = between_params(df, 'TimeBetween', (0, 100))
 df = df.drop(['AppointmentDay', 'ScheduledDay', 'PatientId', 'Neighbourhood'], axis=1)
-df = df[(df['TimeBetween'] >= 0) & (df['TimeBetween'] <= 100)]
 
 
 """
@@ -58,12 +70,19 @@ timebetween, with a slight possibility of association with SMS_received.
 """
 
 noshows = df.groupby('No-show').mean()
-print(noshows) # There aren't a lot of strong associations!
+#print(noshows) # There aren't a lot of strong associations!
 #print(df.describe())
 
 noshows = noshows[['Age', 'TimeBetween', 'SMS_received']]
 
 def bar_plots_from_x(df, lim_list, label_list):
+    '''
+    This function takes in a dataframe, list of limits, and list of labels,
+    and outputs a figure and bar charts with the same X-axis, corresponding to
+    the dataframe index, and Y-axes showing the column data. Setting y-limits
+    helps keep the chart proportionate and avoids overestimating differences.
+    '''
+    
     cols = list(df.columns)
     ax_no = len(cols)
     axes = tuple('ax'+str(i) for i in range(1,ax_no+1))
@@ -74,17 +93,15 @@ def bar_plots_from_x(df, lim_list, label_list):
     for i, ax in enumerate(axes):
         ax.bar(x_val, df[cols[i]], color=colors[i])
         ax.set_ylim([0,lim_list[i]])
+        ax.set_xlabel(df.index.name)
         ax.set_ylabel(label_list[i])
         ax.tick_params(axis='both', length=0)
-                
+                       
     sns.despine(top=True)
     plt.show()
     
     
-bar_plots_from_x(noshows, [50,30,1], ['Age', 'Time', 'SMS'])
-
-
-
+bar_plots_from_x(noshows, [50,30,1], ['Age in Years', 'Time Btw. Schd./Appt.', 'Prob. of SMS Recvd.'])
 
 """
 Question 2: What features are associated with repeat no-shows?
