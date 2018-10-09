@@ -81,7 +81,7 @@ noshows = df.groupby('No-show').mean()
 
 noshows = noshows[['Age', 'TimeBetween', 'SMS_received']]
 
-def bar_plots_from_x(df, lim_list, label_list):
+def bar_plots_from_x(df, lim_list, label_list, title=None):
     '''
     This function takes in a dataframe, list of limits, and list of labels,
     and outputs a figure and bar charts with the same X-axis, corresponding to
@@ -104,15 +104,26 @@ def bar_plots_from_x(df, lim_list, label_list):
         ax.tick_params(axis='both', length=0)
                        
     sns.despine(top=True)
+    fig.suptitle(title)
     plt.show()
     
     
-#bar_plots_from_x(noshows, [50,30,1], ['Age in Years', 'Time Btw. Schd./Appt.', 'Prob. of SMS Recvd.'])
+bar_plots_from_x(noshows, [50,30,1], ['Age in Years', 'Time Btw. Schd./Appt.', 'Prob. of SMS Recvd.'], 
+                 title='No-Shows by Age, Time Waiting, and SMS Received')
 
 """
 Question 2: If no-shows seem slightly more likely to be young, how young are
 they? In other words, what age group most represents no-shows?
 """
+
+no_show_ages = df[df['No-show'] == 'Yes']['Age']
+yes_show_ages = df[df['No-show'] == 'No']['Age']
+plt.hist(no_show_ages, bins=20, color="black", alpha=0.5, label='No-show')
+plt.hist(yes_show_ages, bins=20, color="blue", alpha=0.5, label='Show')
+plt.title('Distribution of Show/No-Show Ages')
+sns.despine(top=True)
+plt.legend()
+plt.show()
 
 bin_edges = [0, 18, 37, 55, 95]
 bins = ['child', 'young adult', 'adult', 'senior']
@@ -131,4 +142,5 @@ def normal_table(df):
     return df
 
 df_ages = normal_table(df_ages)
-print(df_ages)
+df_ages.plot(kind='bar', ylim=(0,1), title='Proportions of Show/No-Show By Age Group')
+sns.despine(top=True)
