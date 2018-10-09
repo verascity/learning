@@ -15,6 +15,7 @@ def load_data(filename):
     df = pd.read_csv(filename)
     return df
 
+
 df = load_data('noshowappointments.csv')
 
 """
@@ -47,7 +48,6 @@ def obj_to_date(col):
     return col
  
 df = df.set_index('AppointmentID')
-df['Duplicate'] = df['PatientId'].duplicated()
 df = df.rename(index=str, columns={"Hipertension":"Hypertension", 
                                    "Handcap" : "Disability"})
 
@@ -101,10 +101,10 @@ def bar_plots_from_x(df, lim_list, label_list):
     plt.show()
     
     
-bar_plots_from_x(noshows, [50,30,1], ['Age in Years', 'Time Btw. Schd./Appt.', 'Prob. of SMS Recvd.'])
+#bar_plots_from_x(noshows, [50,30,1], ['Age in Years', 'Time Btw. Schd./Appt.', 'Prob. of SMS Recvd.'])
 
 """
-Question 2: What features are associated with repeat no-shows?
+Question 2: If no-shows seem slightly more likely to be young, how young are
+they? In other words, what age group most represents no-shows?
 """
 
-#repeats = df[df['No-show'] == 'Yes'].groupby('Duplicate')
