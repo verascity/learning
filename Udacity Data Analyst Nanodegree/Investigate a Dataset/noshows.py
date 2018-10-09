@@ -58,27 +58,30 @@ timebetween, with a slight possibility of association with SMS_received.
 """
 
 noshows = df.groupby('No-show').mean()
-#print(noshows) # There aren't a lot of strong associations!
+print(noshows) # There aren't a lot of strong associations!
 #print(df.describe())
 
 noshows = noshows[['Age', 'TimeBetween', 'SMS_received']]
-fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(8, 10))
-x_val = noshows.index
-ax1.bar(x_val, noshows['Age'], color='brown')
-ax1.set_ylim([0,50])
-ax1.set_ylabel('Age in Years')
-ax1.tick_params(axis='both', length=0)
-ax2.bar(x_val, noshows['TimeBetween'], color='green')
-ax2.set_ylim([0,30])
-ax2.set_ylabel('Time Btw Schd/Appt in Days')
-ax2.tick_params(axis='both', length=0)
-ax3.bar(x_val, noshows['SMS_received'], color='purple')
-ax3.set_ylim([0,1])
-ax3.set_ylabel('Probability of SMS Rcvd')
-ax3.tick_params(axis='both', length=0)
-sns.despine(top=True)
 
-
+def bar_plots_from_x(df, lim_list, label_list):
+    cols = list(df.columns)
+    ax_no = len(cols)
+    axes = tuple('ax'+str(i) for i in range(1,ax_no+1))
+    fig, axes = plt.subplots(len(axes), 1, figsize=(8, 10))
+    x_val = df.index
+    colors = "bgrcmykw"
+        
+    for i, ax in enumerate(axes):
+        ax.bar(x_val, df[cols[i]], color=colors[i])
+        ax.set_ylim([0,lim_list[i]])
+        ax.set_ylabel(label_list[i])
+        ax.tick_params(axis='both', length=0)
+                
+    sns.despine(top=True)
+    plt.show()
+    
+    
+bar_plots_from_x(noshows, [50,30,1], ['Age', 'Time', 'SMS'])
 
 
 
