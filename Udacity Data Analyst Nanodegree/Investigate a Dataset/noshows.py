@@ -117,10 +117,18 @@ they? In other words, what age group most represents no-shows?
 bin_edges = [0, 18, 37, 55, 95]
 bins = ['child', 'young adult', 'adult', 'senior']
 df['age_group'] = pd.cut(df['Age'], bin_edges, labels=bins, include_lowest=True)
+df_ages = df[['age_group', 'No-show']]
 
-df_ages = df[['No-show', 'age_group']]
-df_ages = df_ages.groupby(['age_group', 'No-show']).size()
-df_ages = df_ages.unstack(level=1)
-df_ages = df_ages.div(df_ages.sum(axis=1), axis=0)
+def normal_table(df):
+    """
+    Takes a dataframe containing two columns and returns that same dataframe, 
+    reshaped into a normalized pivot table.
+    """
+    cols = list(df.columns)
+    df = df.groupby(cols).size()
+    df = df.unstack(level=1)
+    df = df.div(df.sum(axis=1), axis=0)
+    return df
+
+df_ages = normal_table(df_ages)
 print(df_ages)
-df_ages.plot(kind='barh')
