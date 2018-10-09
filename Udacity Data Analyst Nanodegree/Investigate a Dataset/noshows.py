@@ -108,3 +108,7 @@ Question 2: If no-shows seem slightly more likely to be young, how young are
 they? In other words, what age group most represents no-shows?
 """
 
+bin_edges = [0, 18, 37, 55, 95]
+bins = ['child', 'young adult', 'adult', 'senior']
+df['age_group'] = pd.cut(df['Age'], bin_edges, labels=bins)
+print(df.head())
