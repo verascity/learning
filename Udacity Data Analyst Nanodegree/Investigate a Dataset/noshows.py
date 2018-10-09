@@ -4,7 +4,6 @@ This is the main project file for Udacity's Data Analyst Nanodegree Project
 containing information about no-shows to medical appointments in Brazil.
 
 """
-from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -26,8 +25,13 @@ so I'm going to create a new column to indicate duplicates, then drop the
 unwieldy 'PatientId' column. Finally, I'm going to fix some mispelled 
 column names.
 
-After looking through the data, I realized there are some wonky values in the
-'Age' column, so I'll restrict that to avoid outliers.
+Also, the 'ScheduledDay'/'AppointmentDay' columns are mostly interesting because
+of what they imply about the distance between them, so I'm going to make a 
+column for time differences.
+
+Finally, after looking through the data, I realized there are some wonky values 
+in the 'Age' and new 'TimeBetween' columns, so I'll also restrict those to 
+avoid outliers.
 """
 
 df = df.set_index('AppointmentID')
@@ -37,12 +41,21 @@ df = df.rename(index=str, columns={"Hipertension":"Hypertension",
                                    "Handcap" : "Disability"})
 df = df[(df['Age'] >= 0) & (df['Age'] <= 95)]
 
+df['AppointmentDay'] = pd.to_datetime(df['AppointmentDay'], infer_datetime_format=True).dt.date
+df['ScheduledDay'] = pd.to_datetime(df['ScheduledDay'], infer_datetime_format=True).dt.date
+df['TimeBetween'] = df['AppointmentDay'] - df['ScheduledDay']
+df = df.drop(['AppointmentDay', 'ScheduledDay'], axis=1)
+df = df[df['TimeBetween'] >= '0 days 00:00:00']
+
+
 """
-Question 1: What features are associated with no-shows, generally?
+Question 1: I chose this project thinking that handicap or welfare status might 
+have an impact, but after using groupby() and describe() to look through the features
+associated with no-shows, there actually isn't much there.
 """
 
 noshows = df.groupby('No-show').mean()
-print(noshows) # There aren't a lot of strong associations!
+#print(noshows) # There aren't a lot of strong associations!
 #print(df.describe())
 
 
