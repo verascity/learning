@@ -26,8 +26,8 @@ so I'm going to create a new column to indicate duplicates, then drop the
 unwieldy 'PatientId' column. Finally, I'm going to fix some mispelled 
 column names.
 
-After looking through some data, I realized there are some wonky values, so
-I'll also restrict those data to avoid outliers.
+After looking through the data, I realized there are some wonky values in the
+'Age' column, so I'll restrict that to avoid outliers.
 """
 
 df = df.set_index('AppointmentID')
@@ -42,8 +42,8 @@ Question 1: What features are associated with no-shows, generally?
 """
 
 noshows = df.groupby('No-show').mean()
-#print(noshows) # There aren't a lot of strong associations!
-print(df.describe())
+print(noshows) # There aren't a lot of strong associations!
+#print(df.describe())
 
 
 
