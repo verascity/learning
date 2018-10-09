@@ -36,7 +36,6 @@ avoid outliers.
 
 df = df.set_index('AppointmentID')
 df['Duplicate'] = df['PatientId'].duplicated()
-df = df.drop(['PatientId', 'Neighbourhood'], axis=1)
 df = df.rename(index=str, columns={"Hipertension":"Hypertension", 
                                    "Handcap" : "Disability"})
 df = df[(df['Age'] >= 0) & (df['Age'] <= 95)]
@@ -44,21 +43,29 @@ df = df[(df['Age'] >= 0) & (df['Age'] <= 95)]
 df['AppointmentDay'] = pd.to_datetime(df['AppointmentDay'], infer_datetime_format=True).dt.date
 df['ScheduledDay'] = pd.to_datetime(df['ScheduledDay'], infer_datetime_format=True).dt.date
 df['TimeBetween'] = (df['AppointmentDay'] - df['ScheduledDay']).dt.days
-df = df.drop(['AppointmentDay', 'ScheduledDay'], axis=1)
+df = df.drop(['AppointmentDay', 'ScheduledDay', 'PatientId', 'Neighbourhood'], axis=1)
 df = df[df['TimeBetween'] >= 0]
 
 
 """
 Question 1: I chose this project thinking that handicap or welfare status might 
-have an impact, but after using groupby() and describe() to look through the features
-associated with no-shows, there actually isn't much there.
+have an impact, but after using groupby().mean() to look through the features
+associated with no-shows, there actually doesn't seem to be much there.
+
+The features that appear most closely associated with no-shows are age and
+timebetween, with a slight possibility of association with SMS_received.
 """
 
 noshows = df.groupby('No-show').mean()
-print(noshows) # There aren't a lot of strong associations!
-print(df.describe())
+#print(noshows) # There aren't a lot of strong associations!
 
 
+noshows = noshows[['Age', 'TimeBetween', 'SMS_received']]
+fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(8, 10))
+x_val = noshows.index
+ax1.bar(x_val, noshows['Age'])
+ax2.bar(x_val, noshows['TimeBetween'])
+ax3.bar(x_val, noshows['SMS_received'])
 
 
 """
