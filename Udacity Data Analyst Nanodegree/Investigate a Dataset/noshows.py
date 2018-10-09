@@ -1,11 +1,10 @@
 """
-
 This is the main project file for Udacity's Data Analyst Nanodegree Project 
 3, "Investigate a Dataset." In this file I will read in and analyze a CSV file 
 containing information about no-shows to medical appointments in Brazil.
 
 """
-
+from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -19,8 +18,8 @@ key. There are no rows with missing data, so this shouldn't pose a problem.
 
 I'm also going to edit the columns. I know that neighbourhood does
 not interest me, so I'm going to drop that. I am interested in repeat no-shows,
-so I'm going to create a new column to indicate duplicates, then drop the
-very unwieldy 'PatientId' column. Finally, I'm going to fix some mispelled
+so I'm going to create a new column to indicate duplicates, then drop the 
+unwieldy 'PatientId' column. Finally, I'm going to fix some mispelled 
 column names.
 """
 
@@ -29,3 +28,10 @@ df['Duplicate'] = df['PatientId'].duplicated()
 df = df.drop(['PatientId', 'Neighbourhood'], axis=1)
 df = df.rename(index=str, columns={"Hipertension":"Hypertension", 
                                    "Handcap" : "Disability"})
+
+"""
+Question 1: What features are associated with repeat no-shows?
+"""
+
+repeats = df[df['No-show'] == 'Yes'].groupby('Duplicate')
+print(repeats.head())
