@@ -34,6 +34,8 @@ Finally, after looking through the data, I realized there are some wonky values
 in the 'Age' and new 'TimeBetween' columns, so I'll also restrict those to 
 avoid extreme outliers.
 """
+
+
 def between_params(df, col, params):
     """
     Takes in a dataframe, column name, and tuple or list of 2
@@ -114,5 +116,11 @@ they? In other words, what age group most represents no-shows?
 
 bin_edges = [0, 18, 37, 55, 95]
 bins = ['child', 'young adult', 'adult', 'senior']
-df['age_group'] = pd.cut(df['Age'], bin_edges, labels=bins)
+df['age_group'] = pd.cut(df['Age'], bin_edges, labels=bins, include_lowest=True)
 
+df_ages = df[['No-show', 'age_group']]
+df_ages = df_ages.groupby(['age_group', 'No-show']).size()
+df_ages = df_ages.unstack(level=1)
+df_ages = df_ages.div(df_ages.sum(axis=1), axis=0)
+print(df_ages)
+df_ages.plot(kind='barh')
