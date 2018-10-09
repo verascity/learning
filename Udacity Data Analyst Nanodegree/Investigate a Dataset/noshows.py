@@ -43,9 +43,9 @@ df = df[(df['Age'] >= 0) & (df['Age'] <= 95)]
 
 df['AppointmentDay'] = pd.to_datetime(df['AppointmentDay'], infer_datetime_format=True).dt.date
 df['ScheduledDay'] = pd.to_datetime(df['ScheduledDay'], infer_datetime_format=True).dt.date
-df['TimeBetween'] = df['AppointmentDay'] - df['ScheduledDay']
+df['TimeBetween'] = (df['AppointmentDay'] - df['ScheduledDay']).dt.days
 df = df.drop(['AppointmentDay', 'ScheduledDay'], axis=1)
-df = df[df['TimeBetween'] >= '0 days 00:00:00']
+df = df[df['TimeBetween'] >= 0]
 
 
 """
@@ -55,8 +55,8 @@ associated with no-shows, there actually isn't much there.
 """
 
 noshows = df.groupby('No-show').mean()
-#print(noshows) # There aren't a lot of strong associations!
-#print(df.describe())
+print(noshows) # There aren't a lot of strong associations!
+print(df.describe())
 
 
 
