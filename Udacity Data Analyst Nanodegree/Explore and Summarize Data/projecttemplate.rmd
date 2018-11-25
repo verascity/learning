@@ -17,6 +17,7 @@ Foster Children and Adoptees in New York City by Vera Sticker
 library(ggplot2)
 library(tidyr)
 library(dplyr)
+library(reshape)
 ```
 
 ```{r echo=FALSE, Load_the_Data}
@@ -26,47 +27,63 @@ adoptions <- read.csv('adoNY_c_f.csv')
 ```
 
 ```{r echo=FALSE, Clean_the_Data}
-
-
+#allCases <- merge(fosters, adoptions, by.x="RecNum", by.y="RecNum", all=T)
 ```
 
-> **The Data**: This project will analyze two datasets, [Dataset 200](https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=200) and [https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=201](Dataset
+##The Data
+
+This project analyzes two datasets, [Dataset 200](https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=200) and [https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=201](Dataset
 201), provided by the Adoption and Foster Care Analysis and Reporting System 
 (AFCARS), a federally-mandated data collection system which states use to report 
-adoptions and foster care placements. These datasets were modified (reduced 
-variables from 37 to 13 for adoptions and 66 to 19 for adoptions) and uploaded 
-by [Data4Democracy on Data.World](https://data.world/data4democracy/foster-care-nyc). "Fosters" contains information about 2377 foster care placements in New York 
-City in 2015. "Adoptions" contains information about 1933 adoptions in New York 
-City in 2015.
+adoptions and foster care placements. These datasets were modified (reduced
+variables and tidied) and uploaded by [Data4Democracy on Data.World](https://data.world/data4democracy/foster-care-nyc).
 
->In this analysis, I will explore these datasets to try to glean a better
-understanding of foster placements and adoptions in New York City. Specifically,
-I am curious as to whether certain factors lead to more successful adoptions vs.
-foster care placements. 
+In this analysis, I want to explore this data to glean a better understanding 
+of foster placements and adoptions in New York. Specifically, I am curious as to 
+whether certain factors lead to more successful adoptions vs. foster care 
+placements. 
 
->To prepare the data for analysis, I renamed several columns for intelligibility
-and internal consistency and factorized several variables. 
+To prepare the data for analysis, I rename several columns for intelligibility
+and internal consistency and factorized several variables. This leads to the 
+following information in the foster children dataset:
+
+```{r echo=FALSE}
+str(fosters)
+```
+
+"Fosters" contains 19 variables and 2377 observations.
+
+The adoptions dataset:
+
+```{r echo=FALSE}
+str(adoptions)
+```
+
+"Adoptions" contains 13 variables and 1933 observations.
+
+I will further explain the variable names as they are explored below. 
 
 # Univariate Plots Section
 
-> **Tip**: In this section, you should perform some preliminary exploration of
-your dataset. Run some summaries of the data and create univariate plots to
-understand the structure of the individual variables in your dataset. Don't
-forget to add a comment after each plot or closely-related group of plots!
-There should be multiple code chunks and text sections; the first one below is
-just to help you get started.
+I want to begin with the "fosters" data, since this is 
+the child pool from which adoptions are typically chosen. I
+want to know more about the characteristics of foster children as a whole.
+The first relevant piece of information that comes to mind is age. 
 
 ```{r echo=FALSE, Univariate_Plots}
 
+ggplot(aes(x=AgeAtEnd), data=fosters) +
+  geom_histogram(binwidth=1)
 
-
+#allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
+#ggplot(data=allCasesAges) +
+#  geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
+#                 alpha=0.3, binwidth=1, position="identity")
 ```
+##Age
 
-> **Tip**: Make sure that you leave a blank line between the start / end of
-each code block and the end / start of your Markdown text so that it is
-formatted nicely in the knitted text. Note as well that text on consecutive
-lines is treated as a single space. Make sure you have a blank line between
-your paragraphs so that they too are formatted for easy readability.
+
+
 
 # Univariate Analysis
 
