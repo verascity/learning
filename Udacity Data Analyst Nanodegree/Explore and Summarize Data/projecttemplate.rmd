@@ -82,6 +82,14 @@ ggplot(aes(x=AgeAtEnd), data=fosters) +
 ```
 ##Age
 
+"AgeAtEnd" contains a foster child's age either at their time of adoption (if 
+adopted) or at the end of the fiscal year (if not). This histogram shows all
+foster children, both adopted and not. It seems to have a normal-ish 
+distribution around age 14, but is slightly skewed towards the younger side. 
+
+Next, I want to look at categorical variables such as sex, disability status,
+and race of child.
+
 
 
 
