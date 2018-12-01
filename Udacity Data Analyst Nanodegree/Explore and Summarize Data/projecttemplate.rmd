@@ -32,11 +32,10 @@ adoptions <- read.csv('adoNY_c_f.csv')
 
 ##The Data
 
-This project analyzes two datasets, [Dataset 200](https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=200) and [https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=201](Dataset
-201), provided by the Adoption and Foster Care Analysis and Reporting System 
-(AFCARS), a federally-mandated data collection system which states use to report 
-adoptions and foster care placements. These datasets were modified (reduced
-variables and tidied) and uploaded by [Data4Democracy on Data.World](https://data.world/data4democracy/foster-care-nyc).
+This project analyzes [Foster Care File 2015](https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=200) from
+the Adoption and Foster Care Analysis and Reporting System (AFCARS), a 
+federally-mandated data collection system which states use to report 
+adoptions and foster care placements. This dataset was tidied and uploaded by [Data4Democracy on Data.World](https://data.world/data4democracy/foster-care-nyc).
 
 In this analysis, I want to explore this data to glean a better understanding 
 of foster placements and adoptions in New York. Specifically, I am curious as to 
@@ -45,7 +44,7 @@ placements.
 
 To prepare the data for analysis, I rename several columns for intelligibility
 and internal consistency and factorized several variables. This leads to the 
-following information in the foster children dataset:
+following information:
 
 ```{r echo=FALSE}
 str(fosters)
@@ -53,10 +52,8 @@ str(fosters)
 
 "Fosters" contains 19 variables and 2377 observations.
 
-The adoptions dataset:
-
 ```{r echo=FALSE}
-str(adoptions)
+summary(fosters)
 ```
 
 "Adoptions" contains 13 variables and 1933 observations.
@@ -65,10 +62,10 @@ I will further explain the variable names as they are explored below.
 
 # Univariate Plots Section
 
-I want to begin with the "fosters" data, since this is 
-the child pool from which adoptions are typically chosen. I
-want to know more about the characteristics of foster children as a whole.
-The first relevant piece of information that comes to mind is age. 
+I want to begin with the "fosters" data, since this is the child pool from 
+which adoptions are typically chosen. I want to know more about the 
+characteristics of foster children as a whole. The first relevant piece of 
+information that comes to mind is age. 
 
 ```{r echo=FALSE, Univariate_Plots}
 
@@ -90,16 +87,95 @@ distribution around age 14, but is slightly skewed towards the younger side.
 Next, I want to look at categorical variables such as sex, disability status,
 and race of child.
 
+```{r echo=FALSE}
+ggplot(aes(x=Sex), data=fosters) +
+  geom_bar()
 
+```
+
+```{r echo=FALSE}
+
+ggplot(aes(x=ClinDis), data=fosters) +
+  geom_bar()
+
+```
+```{r echo=FALSE}
+
+ggplot(aes(x=ChildRace), data=fosters) +
+  geom_bar()
+
+```
+
+##Sex
+
+Sex is a factor with two levels: 1 for male and 2 for female. There appear to be
+slightly more males in the fosters data. 
+
+##Disability
+
+"ClinDis," standing for Clinical Disability, is a factor with two levels: 1 for
+a child with a diagnosed disability, 2 for no diagnosis. An NA here means
+disability status is unknown. Surprisingly, there are over twice as many foster
+children with disabilities as without. 
+
+##Race
+
+Race is a factor with seven levels, each number corresponding to a 
+race/ethnicity: 1 - White, 2 - Black, 3 - American Indian, 4 - Asian, 5 - 
+Hawaiian/Pacific Islander, 6 - More than One Race, 7 - Hispanic, 99 - Unknown.
+The majority of foster children are black, then white, then Hispanic.
+
+There is one more set of variables I am interested in: those that relate to a 
+child's status in the foster system. 
+
+```{r echo=FALSE}
+ggplot(aes(x=TotalRem), data=fosters) +
+  geom_histogram(binwidth=0.5)
+```
+
+```{r echo=FALSE}
+
+ggplot(aes(x=PlacesNumber), data=fosters) +
+  geom_histogram(binwidth=1)
+
+```
+```{r echo=FALSE}
+ggplot(aes(x=MannerOfRem), data=fosters) +
+  geom_bar()
+```
+```{r echo=FALSE}
+ggplot(aes(x=Adopted), data=fosters) +
+  geom_bar()
+```
+
+##Total Removals
+"TotalRem" refers to the number of times a child has been removed from their
+birth home, including the current time. The majority of children in the data 
+appear to have been removed only once.
+
+##Number of Placements
+"PlacesNumber" refers to the number of places a child has lived, including their
+current foster home, during the current removal episode (i.e. since leaving
+their birth home the latest time). This is heavily negative-skewed, but has a 
+long tail towards the right. Some children have been in 20 or more homes!
+
+##Manner of Removal
+"MannerOfRem" refers to how a child ended up in the foster system: a voluntary
+surrender, a court order, or unknown."NA" refers to missing values in this case.
+The vast majority of children were removed by court order.
+
+##Adoptions
+Finally, "Adopted" is a factor with two levels: 0 for not adopted, 1 for 
+adopted. About 1/4 of the children in the dataset have been adopted. In the
+bivariate analysis, we can explore this, and the adoptions dataset, to see what
+factors may lead to this.
 
 
 # Univariate Analysis
 
-> **Tip**: Now that you've completed your univariate explorations, it's time to
-reflect on and summarize what you've found. Use the questions below to help you
-gather your observations and add your own if you have other thoughts!
-
 ### What is the structure of your dataset?
+
+
 
 ### What is/are the main feature(s) of interest in your dataset?
 
