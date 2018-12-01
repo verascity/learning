@@ -142,7 +142,7 @@ child's status in the foster system.
 
 ```{r echo=FALSE}
 ggplot(aes(x=TotalRem), data=fosters) +
-  geom_histogram(binwidth=0.5)
+  geom_histogram(binwidth=1)
 ```
 
 ```{r echo=FALSE}
@@ -223,11 +223,27 @@ by the long tail of "PlacesNumber" and, to a lesser extent, "TotalRem".
 
 # Bivariate Plots Section
 
-
+##Adoption by Age
 ```{r echo=FALSE, Bivariate_Plots}
 ggplot(aes(x=Adopted, y=AgeAtEnd), data=fosters) +
   geom_boxplot()
 ```
+
+Looking at the above boxplot, we can see that the median age of adoptees appears
+to be slightly lower than the median age of non-adoptees. However, there do
+appear to be a wider range of outliers among adoptees than non-adoptees,
+including at least one child (or adult, in fact) who was adopted at 20 years old.
+
+A look at the summary statistics by adoption helps clarify this data:
+
+```{r}
+by(fosters, fosters$Adopted, summary)
+```
+
+
+
+
+
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted), 
        data=subset(fosters, !is.na(ClinDis))) +
@@ -239,12 +255,41 @@ ggplot(aes(x=Adopted),
        geom_bar(aes(fill=Sex), position='fill')
 ```
 ```{r echo=FALSE}
-ggplot(aes(x=Adopted), 
-       data=subset(fosters, !is.na(ChildRace))) +
-       geom_bar(aes(fill=ChildRace), position='fill')
+ ggplot(aes(x=Adopted), 
+        data=subset(fosters, !is.na(ChildRace))) +
+        geom_bar(aes(fill=ChildRace), position='fill')
+```
+
+
+
+##Adoption by Disability Status
+
+##Adoption by Sex
+
+##Adoption by Race
+
+
+
+
+
+
+
+
+```{r echo=FALSE}
+ggplot(aes(x=TotalRem), data=fosters) +
+  geom_histogram(aes(y=..count../sum(..count..)), binwidth=1) +
+  facet_grid(Adopted ~ .)
+```
+```{r echo=FALSE}
+
+ggplot(aes(x=PlacesNumber), data=fosters) +
+  geom_histogram(aes(y=..count../sum(..count..)), binwidth=1) +
+  facet_grid(Adopted ~ .)
 
 ```
-```{r}
+```{r echo=FALSE}
+
+
 
 ```
 
