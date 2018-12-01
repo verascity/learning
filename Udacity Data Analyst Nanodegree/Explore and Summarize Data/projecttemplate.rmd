@@ -106,6 +106,11 @@ ggplot(aes(x=ChildRace), data=fosters) +
 
 ```
 
+```{r echo=FALSE}
+ggplot(aes(x=Transracial), data=fosters) +
+  geom_bar()
+```
+
 ##Sex
 
 Sex is a factor with two levels: 1 for male and 2 for female. There appear to be
@@ -125,6 +130,13 @@ race/ethnicity: 1 - White, 2 - Black, 3 - American Indian, 4 - Asian, 5 -
 Hawaiian/Pacific Islander, 6 - More than One Race, 7 - Hispanic, 99 - Unknown.
 The majority of foster children are black, then white, then Hispanic.
 
+##Transracial Placements
+I also want to see if the child's race differs from the foster family's race.
+"Transracial" is a factor with five levels, each number corresponding to a
+status: 0 - not transracial, 1 - white parent/non-white child, 2 - non-white
+parent/white child, 3 - other transracial placement, 9 - unknown, NA - missing.
+Most known cases appear to be same-race placements. 
+
 There is one more set of variables I am interested in: those that relate to a 
 child's status in the foster system. 
 
@@ -137,7 +149,6 @@ ggplot(aes(x=TotalRem), data=fosters) +
 
 ggplot(aes(x=PlacesNumber), data=fosters) +
   geom_histogram(binwidth=1)
-
 ```
 ```{r echo=FALSE}
 ggplot(aes(x=MannerOfRem), data=fosters) +
@@ -170,32 +181,48 @@ adopted. About 1/4 of the children in the dataset have been adopted. In the
 bivariate analysis, we can explore this, and the adoptions dataset, to see what
 factors may lead to this.
 
-
 # Univariate Analysis
 
 ### What is the structure of your dataset?
 
-
+My dataset is a dataframe containing 19 variables and 2377 observations. 12
+variables are categorical (ordinal) and 6 are numeric (4 continuous, 2 discrete);
+the remaining variable is RecNum which contains primary key information.
 
 ### What is/are the main feature(s) of interest in your dataset?
+
+The feature of most interest is the "adopted" variable, which indicates whether
+a child was adopted or not. About 1/4 of the children in the dataset were
+adopted. I think that most of the bivariate and multivariate analyses I run will
+contain this feature.
+
+Based on the above plots, I would say that child characteristics such as age,
+sex, race, and disability status will be of interest. 
 
 ### What other features in the dataset do you think will help support your \
 investigation into your feature(s) of interest?
 
+I am still interested in doing some analysis on number of removals and number
+of places per removal as it relates to adoptions. I am wondering if children 
+who go through a number of removals, or a number of placements, are more or less
+likely to be adopted, possibly as a multivariate analysis with some of the child
+characteristics.
+
 ### Did you create any new variables from existing variables in the dataset?
 
-### Of the features you investigated, were there any unusual distributions? \
-Did you perform any operations on the data to tidy, adjust, or change the form \
-of the data? If so, why did you do this?
+I did not create new variables for this project. I did rename most of the
+existing variables for easier intelligibility and factorized the categorical 
+variables. 
+
+### Of the features you investigated, were there any unusual distributions?
+
+I was surprised by the distribution of "ClinDis", which shows a nearly three-to-
+one ratio of children with disabilities to children without. I was also surprised
+by the long tail of "PlacesNumber" and, to a lesser extent, "TotalRem".
 
 
 # Bivariate Plots Section
 
-> **Tip**: Based on what you saw in the univariate plots, what relationships
-between variables might be interesting to look at in this section? Don't limit
-yourself to relationships between a main output feature and one of the
-supporting variables. Try to look at relationships between supporting variables
-as well.
 
 ```{r echo=FALSE, Bivariate_Plots}
 
