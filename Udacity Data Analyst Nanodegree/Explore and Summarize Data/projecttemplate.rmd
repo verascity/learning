@@ -225,6 +225,26 @@ by the long tail of "PlacesNumber" and, to a lesser extent, "TotalRem".
 
 
 ```{r echo=FALSE, Bivariate_Plots}
+ggplot(aes(x=Adopted, y=AgeAtEnd), data=fosters) +
+  geom_boxplot()
+```
+```{r echo=FALSE}
+ggplot(aes(x=Adopted), 
+       data=subset(fosters, !is.na(ClinDis))) +
+       geom_bar(aes(fill=ClinDis), position='fill')
+```
+```{r echo=FALSE}
+ggplot(aes(x=Adopted), 
+       data=subset(fosters, !is.na(Sex))) +
+       geom_bar(aes(fill=Sex), position='fill')
+```
+```{r echo=FALSE}
+ggplot(aes(x=Adopted), 
+       data=subset(fosters, !is.na(ChildRace))) +
+       geom_bar(aes(fill=ChildRace), position='fill')
+
+```
+```{r}
 
 ```
 
