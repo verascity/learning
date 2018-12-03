@@ -18,6 +18,7 @@ library(ggplot2)
 library(tidyr)
 library(dplyr)
 library(reshape)
+library(scales)
 ```
 
 ```{r echo=FALSE, Load_the_Data}
@@ -233,7 +234,7 @@ including at least one child (or adult, in fact) who was adopted at 20 years old
 A look at the summary statistics by adoption helps clarify this data, as well
 as the data below:
 
-```{r}
+```{r echo=FALSE}
 by(fosters, fosters$Adopted, summary)
 ```
 
@@ -274,8 +275,14 @@ This shows us that foster children do, indeed, appear to be heavily clustered
 around the higher age range, while adoptees have a much flatter distribution
 that includes far more younger children. Indeed, looking at the summary
 statistics above, we can see that the children in the adoptions dataset have
-a median of 6 rather than 12. This indicates that there is probably a strong
-relationship between age and adoption status.
+a median of 6 rather than 12. 
+
+>**Note**: It is worth noting that the youngest child in the
+foster dataset was 8 years old, while the youngest adoptee is 0 (a newborn), 
+so it is possible that this difference arises in part because of different 
+samples. However, the boxplots above also showed a difference. Between the two 
+plots, it seems possible that there is a strong relationship between age and 
+adoption status, but we cannot say so for sure. 
 
 ##Adoption by Disability Status
 
@@ -379,6 +386,44 @@ which way does that connection work? That is, are children who are at risk of
 multiple removals/placements less likely to be adopted, or does adoption cut
 down on the potential for multiple removals/placements? 
 
+##Placement Numbers by Age
+
+```{r echo=FALSE}
+ggplot(aes(x=AgeAtEnd, y=PlacesNumber), data=fosters) +
+  geom_point(alpha=0.25, position=position_jitter(height=0))
+```
+
+##Total Removals by Age
+
+```{r echo=FALSE}
+
+ggplot(aes(x=AgeAtEnd, y=TotalRem), data=fosters) +
+  geom_point(alpha=1/15, position=position_jitter(height=0))
+```
+
+
+I decided to see if age (as a proxy for time) would have a clear relationship
+with either placements or removals, such that it could explain one or the other
+connection with adoption. However, neither variable appears to have a linear 
+relationship with age. That is, foster children at all ages are seeing multiple removals or placements. 
+
+##Number of Placements by Total Removals
+
+```{r echo=FALSE}
+ggplot(aes(y=PlacesNumber, x=TotalRem), data=fosters) +
+  geom_point(alpha=0.2, position=position_jitter(height=0))
+```
+
+Finally, I decided to see if there is any relationship between the number of 
+removals and number of placements. Based on this plot, there does not appear to 
+be a clear linear relationship between the two. Children are most likely to have
+a low number of both removals and placements, but may also have many placements 
+ontheir first removal. It does appear that as the number of removals grows, the
+number of placements does typically decrease, but it is not clear if that is a
+true relationship or simply a relative lack of data at the higher removal levels.
+
+
+
 # Bivariate Analysis
 
 ### Talk about some of the relationships you observed in this part of the \
@@ -386,15 +431,17 @@ investigation. How did the feature(s) of interest vary with other features in \
 the dataset?
 
 As expected, adoption rates varied depending on certain factors. Age, disability
-status, and race (in some cases) appear to have an impact on adoption rates. Sex
-did not appear to have an impact on adoption rates, however. The number of 
-removals and placements appear to be connected to adoption rates in some way, 
-but it is difficult to tell what the nature of that connection is.
+status, and race (in some cases) appear to have some relationship to adoption 
+rates. Sex did not appear to have a relationship with adoption rates, however. 
+The number of removals and placements appear to be connected to adoption rates 
+in some way, but it is difficult to tell what the nature of that connection is.
 
 ### Did you observe any interesting relationships between the other features \
 (not the main feature(s) of interest)?
 
-I did not analyze other relationships. 
+Age (as a proxy for time) did not appear to be related to either number of
+removals or number of placements per removal. Number of removals and placement
+per removal also did not appear to be related to each other. 
 
 ### What was the strongest relationship you found?
 
@@ -407,10 +454,14 @@ foster care system.
 
 # Multivariate Plots Section
 
-
+After exploring the bivariate relationships above, I want to take a more
+nuanced look at the relationships between age, removals, and placements. I am
+wondering if there are ways to tease out the directionality of the relationship.
+Is it possible that other characteristics of children or placements modify those
+relationships in a revealing way?
 
 ```{r echo=FALSE, Multivariate_Plots}
-
+ggplot(aes(x=AgeAtEnd, y=Places))
 ```
 
 # Multivariate Analysis
