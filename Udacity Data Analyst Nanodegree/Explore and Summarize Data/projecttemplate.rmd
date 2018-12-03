@@ -56,7 +56,6 @@ str(fosters)
 summary(fosters)
 ```
 
-"Adoptions" contains 13 variables and 1933 observations.
 
 I will further explain the variable names as they are explored below. 
 
@@ -72,10 +71,6 @@ information that comes to mind is age.
 ggplot(aes(x=AgeAtEnd), data=fosters) +
   geom_histogram(binwidth=1)
 
-#allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
-#ggplot(data=allCasesAges) +
-#  geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
-#                 alpha=0.3, binwidth=1, position="identity")
 ```
 ##Age
 
@@ -121,7 +116,7 @@ slightly more males in the fosters data.
 "ClinDis," standing for Clinical Disability, is a factor with two levels: 1 for
 a child with a diagnosed disability, 2 for no diagnosis. An NA here means
 disability status is unknown. Surprisingly, there are over twice as many foster
-children with disabilities as without. 
+children with disabilities as without (a ratio of 2.44 to 1, specifically). 
 
 ##Race
 
@@ -234,14 +229,52 @@ to be slightly lower than the median age of non-adoptees. However, there do
 appear to be a wider range of outliers among adoptees than non-adoptees,
 including at least one child (or adult, in fact) who was adopted at 20 years old.
 
-A look at the summary statistics by adoption helps clarify this data:
+A look at the summary statistics by adoption helps clarify this data, as well
+as the data below:
 
 ```{r}
 by(fosters, fosters$Adopted, summary)
 ```
 
 
+We can see that the median age of adoptees is 12, while the median of non-
+adoptees is 13. The max of adoptees is indeed 20, while the max of
+non-adoptees is only 17. The IQR of both groups is 4, which indicates a very
+similar distribution overall.
 
+I want to look more at the age distribution question, and I think I need more 
+data. The Data4Democracy link also hosts an adoptions dataset based on the
+[Adoptions File 2015](https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=201). This contains 1933 observations of 13 variables, including characteristic
+data like age, sex, race, and special needs status.
+
+```{r echo=FALSE}
+summary(adoptions)
+
+```
+
+I merge the two datasets into an "allCases" dataframe and melted the age
+information to plot a dual histogram, which gives us age distribution by adoption
+status.
+
+>**Note**: To get the most accurate distinction between adoptees and 
+non-adoptees, I plotted this histogram using only non-adoptees ("Adopted=='0'") 
+from the foster care dataset. 
+
+```{r echo=FALSE}
+
+#allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
+ggplot(data=allCasesAges) +
+  geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
+                 alpha=0.75, binwidth=1, position="identity")
+
+```
+
+This shows us that foster children do, indeed, appear to be heavily clustered 
+around the higher age range, while adoptees have a much flatter distribution
+that includes far more younger children. Indeed, looking at the summary
+statistics above, we can see that the children in the adoptions dataset have
+a median of 6 rather than 12. This indicates that there is probably a strong
+relationship between age and adoption status.
 
 
 ```{r echo=FALSE}
@@ -249,30 +282,72 @@ ggplot(aes(x=Adopted),
        data=subset(fosters, !is.na(ClinDis))) +
        geom_bar(aes(fill=ClinDis), position='fill')
 ```
+
+##Adoption by Disability Status
+
+This stacked bar plot shows that children with disabilities (red) are,
+proportionally, adopted slightly less than children without disabilities. This
+seems to track when we compare the numbers between the fosters and adoptions
+datasets above. 
+
+While we must exercise caution in assuming that "Clinical
+Disability" and "Special Needs" refer to the same children, we *can* see that
+while there are 2.44 as many children with disabilities as without in 
+the foster care file, there are a whopping 95.65 children without special needs 
+to 1 child with special needs in the adoption file.
+
+
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted), 
        data=subset(fosters, !is.na(Sex))) +
        geom_bar(aes(fill=Sex), position='fill')
 ```
+
+##Adoption by Sex
+
+Sex, on the other hand, seems to be roughly equal, and this also tracks with the
+adoption information above (where the ratio of male to female is 1.06 to 1). 
+
 ```{r echo=FALSE}
  ggplot(aes(x=Adopted), 
         data=subset(fosters, !is.na(ChildRace))) +
         geom_bar(aes(fill=ChildRace), position='fill')
 ```
 
-
-
-##Adoption by Disability Status
-
-##Adoption by Sex
-
 ##Adoption by Race
 
+There seem to be a few small differences in adoption by race. White children
+(red bar) and Hispanic children (purple bar) seem to be adopted slightly more 
+often, while black children (tan bar) seem to be adopted slightly less. Because 
+this is a slightly more complex question than sex, and because both datasets
+share the same "ChildRace" variable (with the same coding), I want to see if I 
+can get any further information by running another combined plot.
 
+```{r echo=FALSE}
+#allCasesRace <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "ChildRace.x", "ChildRace.y")], id.vars='RecNum')
 
+ggplot(data=subset(allCasesRace, !is.na(value))) +
+  geom_bar(aes(x=variable, fill=value), position="fill")
 
+```
 
+```{r echo=FALSE}
 
+"Fosters (non-adoptees):"
+summary(subset(fosters, Adopted=='0')$ChildRace)
+
+"Adoptions:"
+summary(adoptions$ChildRace)
+
+```
+
+Based on the above, it seems as though our observations mostly hold true when
+we combine the datasets. Going by the numbers, white children represent 27% of
+the 1811 non-adoptees in the foster care file, but 32% of children in the
+adoptions file. Black children represent 49% of non-adoptees and 41% of adoptees.
+However, Hispanic children represent 13% of non-adoptees and 14% of adoptees,
+which appears to be a smaller difference than using only the foster care file
+made it seem. 
 
 
 ```{r echo=FALSE}
@@ -280,6 +355,10 @@ ggplot(aes(x=TotalRem), data=fosters) +
   geom_histogram(aes(y=..count../sum(..count..)), binwidth=1) +
   facet_grid(Adopted ~ .)
 ```
+
+##Adoption by Removal Status
+
+
 ```{r echo=FALSE}
 
 ggplot(aes(x=PlacesNumber), data=fosters) +
