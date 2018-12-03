@@ -349,33 +349,34 @@ However, Hispanic children represent 13% of non-adoptees and 14% of adoptees,
 which appears to be a smaller difference than using only the foster care file
 made it seem. 
 
-
 ```{r echo=FALSE}
-ggplot(aes(x=TotalRem), data=fosters) +
-  geom_histogram(aes(y=..count../sum(..count..)), binwidth=1) +
-  facet_grid(Adopted ~ .)
+ggplot(aes(x=Adopted, y=TotalRem), data=fosters) +
+  geom_boxplot()
 ```
 
 ##Adoption by Removal Status
 
+This plot shows the distribution of number of removals by adoption status. It
+appears that while children who have been removed up to six times are being 
+adopted, the vast majority of adoptees are on their first removal. The majority
+of non-adoptees are on either their first or second removal. 
 
 ```{r echo=FALSE}
-
-ggplot(aes(x=PlacesNumber), data=fosters) +
-  geom_histogram(aes(y=..count../sum(..count..)), binwidth=1) +
-  facet_grid(Adopted ~ .)
-
+ggplot(aes(x=Adopted, y=PlacesNumber), data=fosters) +
+  geom_boxplot()
 ```
-```{r echo=FALSE}
 
+##Adoption by Number of Placements
 
-
-```
+This plot yields a very interesting result: while the median number of
+placements for adopted and non-adopted children are identical (3), adoptees
+appear equally distributed around this median from 1 to 5, while non-adoptees 
+mostly fall between 2 and 6 with a longer tail in the positive direction. Indeed,
+the mean of this group is 4.436 placements, while the mean of adoptees is 3.535.
+This indicates that while the two groups are similar around the median, some
+non-adoptees are experiencing much higher numbers of placements than adoptees. 
 
 # Bivariate Analysis
-
-> **Tip**: As before, summarize what you found in your bivariate explorations
-here. Use the questions below to guide your discussion.
 
 ### Talk about some of the relationships you observed in this part of the \
 investigation. How did the feature(s) of interest vary with other features in \
