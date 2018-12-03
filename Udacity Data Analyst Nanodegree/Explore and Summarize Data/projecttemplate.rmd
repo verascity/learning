@@ -219,6 +219,7 @@ by the long tail of "PlacesNumber" and, to a lesser extent, "TotalRem".
 # Bivariate Plots Section
 
 ##Adoption by Age
+
 ```{r echo=FALSE, Bivariate_Plots}
 ggplot(aes(x=Adopted, y=AgeAtEnd), data=fosters) +
   geom_boxplot()
@@ -276,6 +277,7 @@ statistics above, we can see that the children in the adoptions dataset have
 a median of 6 rather than 12. This indicates that there is probably a strong
 relationship between age and adoption status.
 
+##Adoption by Disability Status
 
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted), 
@@ -283,19 +285,17 @@ ggplot(aes(x=Adopted),
        geom_bar(aes(fill=ClinDis), position='fill')
 ```
 
-##Adoption by Disability Status
-
 This stacked bar plot shows that children with disabilities (red) are,
-proportionally, adopted slightly less than children without disabilities. This
-seems to track when we compare the numbers between the fosters and adoptions
-datasets above. 
+proportionally, adopted slightly less than children without disabilities. 
 
-While we must exercise caution in assuming that "Clinical
-Disability" and "Special Needs" refer to the same children, we *can* see that
-while there are 2.44 as many children with disabilities as without in 
+This seems to track when we compare the numbers between the fosters and 
+adoptions datasets above. While we must exercise caution in assuming that 
+"Clinical Disability" and "Special Needs" refer to the same children, we *can* 
+see that while there are 2.44 as many children with disabilities as without in 
 the foster care file, there are a whopping 95.65 children without special needs 
 to 1 child with special needs in the adoption file.
 
+##Adoption by Sex
 
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted), 
@@ -303,18 +303,16 @@ ggplot(aes(x=Adopted),
        geom_bar(aes(fill=Sex), position='fill')
 ```
 
-##Adoption by Sex
-
 Sex, on the other hand, seems to be roughly equal, and this also tracks with the
 adoption information above (where the ratio of male to female is 1.06 to 1). 
+
+##Adoption by Race
 
 ```{r echo=FALSE}
  ggplot(aes(x=Adopted), 
         data=subset(fosters, !is.na(ChildRace))) +
         geom_bar(aes(fill=ChildRace), position='fill')
 ```
-
-##Adoption by Race
 
 There seem to be a few small differences in adoption by race. White children
 (red bar) and Hispanic children (purple bar) seem to be adopted slightly more 
@@ -349,32 +347,33 @@ However, Hispanic children represent 13% of non-adoptees and 14% of adoptees,
 which appears to be a smaller difference than using only the foster care file
 made it seem. 
 
+##Adoption by Removal Status
+
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted, y=TotalRem), data=fosters) +
   geom_boxplot()
 ```
-
-##Adoption by Removal Status
 
 This plot shows the distribution of number of removals by adoption status. It
 appears that while children who have been removed up to six times are being 
 adopted, the vast majority of adoptees are on their first removal. The majority
 of non-adoptees are on either their first or second removal. 
 
+##Adoption by Number of Placements
+
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted, y=PlacesNumber), data=fosters) +
   geom_boxplot()
 ```
 
-##Adoption by Number of Placements
+This plot yields an interesting result: while the median number of placements 
+for adopted and non-adopted children are identical (3), adoptees appear equally distributed around this median from 1 to 5, while non-adoptees 
+mostly fall between 2 and 6 with a longer tail in the positive direction. 
 
-This plot yields a very interesting result: while the median number of
-placements for adopted and non-adopted children are identical (3), adoptees
-appear equally distributed around this median from 1 to 5, while non-adoptees 
-mostly fall between 2 and 6 with a longer tail in the positive direction. Indeed,
-the mean of this group is 4.436 placements, while the mean of adoptees is 3.535.
-This indicates that while the two groups are similar around the median, some
-non-adoptees are experiencing much higher numbers of placements than adoptees. 
+Indeed, the mean of this group is 4.436 placements, while the mean of adoptees 
+is 3.535. This indicates that while the two groups are similar around the 
+median, some non-adoptees are experiencing much higher numbers of placements 
+than adoptees. 
 
 # Bivariate Analysis
 
