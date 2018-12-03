@@ -373,7 +373,11 @@ mostly fall between 2 and 6 with a longer tail in the positive direction.
 Indeed, the mean of this group is 4.436 placements, while the mean of adoptees 
 is 3.535. This indicates that while the two groups are similar around the 
 median, some non-adoptees are experiencing much higher numbers of placements 
-than adoptees. 
+than adoptees. However, both this and the removals graph above raise a
+new question: if there is a connection between placements/removals and adoption,
+which way does that connection work? That is, are children who are at risk of
+multiple removals/placements less likely to be adopted, or does adoption cut
+down on the potential for multiple removals/placements? 
 
 # Bivariate Analysis
 
@@ -381,20 +385,29 @@ than adoptees.
 investigation. How did the feature(s) of interest vary with other features in \
 the dataset?
 
+As expected, adoption rates varied depending on certain factors. Age, disability
+status, and race (in some cases) appear to have an impact on adoption rates. Sex
+did not appear to have an impact on adoption rates, however. The number of 
+removals and placements appear to be connected to adoption rates in some way, 
+but it is difficult to tell what the nature of that connection is.
+
 ### Did you observe any interesting relationships between the other features \
 (not the main feature(s) of interest)?
 
+I did not analyze other relationships. 
+
 ### What was the strongest relationship you found?
 
+The strongest relationship appears to be between age and adoption. There is a
+very clear difference in ages between children who are adopted and foster 
+children who were never adopted. Again, this may be something of a two-way
+relationship, in which older children are less likely to be adopted, and
+simultaneously, non-adoptees are disadvantaged by continuing to age in the 
+foster care system.
 
 # Multivariate Plots Section
 
-> **Tip**: Now it's time to put everything together. Based on what you found in
-the bivariate plots section, create a few multivariate plots to investigate
-more complex interactions between variables. Make sure that the plots that you
-create here are justified by the plots you explored in the previous section. If
-you plan on creating any mathematical models, this is the section where you
-will do that.
+
 
 ```{r echo=FALSE, Multivariate_Plots}
 
