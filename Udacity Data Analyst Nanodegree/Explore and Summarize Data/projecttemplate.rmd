@@ -78,7 +78,7 @@ ggplot(aes(x=AgeAtEnd), data=fosters) +
 "AgeAtEnd" contains a foster child's age either at their time of adoption (if 
 adopted) or at the end of the fiscal year (if not). This histogram shows all
 foster children, both adopted and not. It seems to have a normal-ish 
-distribution around age 14, but is slightly skewed towards the younger side. 
+distribution around age 13, but is slightly skewed towards the younger side. 
 
 Next, I want to look at categorical variables such as sex, disability status,
 and race of child.
@@ -251,7 +251,6 @@ data like age, sex, race, and special needs status.
 
 ```{r echo=FALSE}
 summary(adoptions)
-
 ```
 
 I merge the two datasets into an "allCases" dataframe and melted the age
@@ -456,13 +455,78 @@ foster care system.
 
 After exploring the bivariate relationships above, I want to take a more
 nuanced look at the relationships between age, removals, and placements. I am
-wondering if there are ways to tease out the directionality of the relationship.
-Is it possible that other characteristics of children or placements modify those
-relationships in a revealing way?
+wondering if there are ways to tease out the directionality of those 
+relationships. Is it possible that other characteristics of children or 
+placements modify those relationships in a revealing way?
+
+##Adoptions and Age by Total Removals
 
 ```{r echo=FALSE, Multivariate_Plots}
-ggplot(aes(x=AgeAtEnd, y=Places))
+
+ggplot(aes(x=Adopted, y=AgeAtEnd, fill=TotalRem), data=fosters) +
+  geom_boxplot(alpha=0.5) +
+  facet_wrap(~TotalRem)
 ```
+
+This plot shows the breakdown of adoptee/non-adoptee age at every step of 
+total removals (e.g. each boxplot is adoption by age, from one removals to six).
+At all but the highest number of removals, non-adoptees have a higher median age
+than adoptees. However, there are no other notable patterns or relationship
+markers.
+
+##Age and Number of Placements by Adoption Status
+
+```{r echo=FALSE}
+
+ggplot(aes(y=PlacesNumber, x=AgeAtEnd, color=Adopted), data=fosters) +
+  geom_jitter(alpha=0.5)
+
+```
+
+This plot remakes the Number of Placements by Age plot and factors in adoption
+status. There does not appear to be any additional relationship here.
+
+##Adoptions and Age by Disability Status
+
+```{r echo=FALSE}
+
+ggplot(aes(y=AgeAtEnd, x=Adopted, fill=Adopted), 
+       data=subset(fosters, !is.na(ClinDis))) +
+  geom_boxplot() +
+  facet_wrap(~ClinDis)
+
+```
+
+I decided next to explore other characteristics through the lens of age and
+our feature, adoption. One item of interest appears in this plot of age/adoption
+broken down by disability status: while non-adoptees have virtually identical
+age distributions across disability status, adoptees with disabilities have a 
+slightly higher median age than adoptees without disabilities. 
+
+More specifically, adoptees with disabilities have a median age of just over 12, 
+while adoptees without disabilities have a median age of around 11. Non-adoptees
+with and without disabilities have a median age of around 13. 
+
+##Race and Age by Adoption Status
+
+```{r echo=FALSE}
+
+ggplot(aes(y=AgeAtEnd, x=ChildRace, fill=ChildRace),
+       data=subset(fosters, !is.na(ChildRace))) +
+  geom_boxplot() +
+  facet_grid(Adopted ~ .)
+
+```
+
+This plot shows the age distributions of the different races, broken down by
+adoption status. As expected, the median ages of adoptees continue to be lower
+than the median ages of non-adoptees. However, there are two items of interest
+here: first, this plot highlights the spread of adoption into the higher ages,
+as nearly every race band has more positive outliers among adoptees than non-
+adoptees. Second, that the lowering of the median age appears largely uniform
+between white and black children, contrary to my own expectation (that black
+adoptees would skew younger than white adoptees). 
+
 
 # Multivariate Analysis
 
