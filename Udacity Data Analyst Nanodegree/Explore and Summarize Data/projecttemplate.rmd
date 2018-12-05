@@ -422,7 +422,6 @@ number of placements does typically decrease, but it is not clear if that is a
 true relationship or simply a relative lack of data at the higher removal levels.
 
 
-
 # Bivariate Analysis
 
 ### Talk about some of the relationships you observed in this part of the \
@@ -534,10 +533,22 @@ adoptees would skew younger than white adoptees).
 investigation. Were there features that strengthened each other in terms of \
 looking at your feature(s) of interest?
 
+The multivariate plots relating to age tended to strengthen the idea that age
+and adoption status are related, and that adoptees have lower ages on the whole
+than non-adoptees. Additionally, looking at age and disability status across
+adoption revealed that adoptees with disabilities have a higher median age than
+adoptees without disabilities, though still lower than non-adoptees of any
+disability status.
+
 ### Were there any interesting or surprising interactions between features?
 
-### OPTIONAL: Did you create any models with your dataset? Discuss the \
-strengths and limitations of your model.
+I felt that the interaction of age and race was interesting and somewhat 
+surprising. I had expected that black adoptees would skew noticeably younger
+than white adoptees; in other words, that the age effect would somewhat
+mitigate the disproportionate non-adoption of black children. Instead, the 
+lowering of the median age across races was very consistent among race groups.
+Also, every race group showed adoptions of much older children as outliers, 
+including legal adults.
 
 ------
 
@@ -554,6 +565,9 @@ make sure you justify why you chose each plot by describing what it shows.
 ### Plot One
 ```{r echo=FALSE, Plot_One}
 
+
+ggplot(aes(x=ClinDis), data=fosters) +
+  geom_bar()
 ```
 
 ### Description One
@@ -562,6 +576,10 @@ make sure you justify why you chose each plot by describing what it shows.
 ### Plot Two
 ```{r echo=FALSE, Plot_Two}
 
+ggplot(data=allCasesAges) +
+  geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
+                 alpha=0.75, binwidth=1, position="identity")
+
 ```
 
 ### Description Two
@@ -569,7 +587,8 @@ make sure you justify why you chose each plot by describing what it shows.
 
 ### Plot Three
 ```{r echo=FALSE, Plot_Three}
-
+ggplot(data=subset(allCasesRace, !is.na(value))) +
+  geom_bar(aes(x=variable, fill=value), position="fill")
 ```
 
 ### Description Three
