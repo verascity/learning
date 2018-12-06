@@ -40,16 +40,17 @@ library(scales)
 #                       "AdoptDadAge", "AdoptFamStr", "AdoptMomRace", "AdoptDadRace",
 #                       "Transracial")
 
-f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
-                   "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race", 
-                   "F2Race", "Transracial")
-a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptFamStr",
-                   "AdoptMomRace", "AdoptDadRace", "Transracial")
-
-fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
-adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
+# f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
+#                    "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race", 
+#                    "F2Race", "Transracial")
+# a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptFamStr",
+#                    "AdoptMomRace", "AdoptDadRace", "Transracial")
+# 
+# fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
+# adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
 
 #allCases <- merge(fosters, adoptions, by.x="RecNum", by.y="RecNum", all=T)
+
 ```
 
 ##The Data
@@ -349,7 +350,7 @@ share the same "ChildRace" variable (with the same coding), I want to see if I
 can get any further information by running another combined plot.
 
 ```{r echo=FALSE}
-#allCasesRace <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "ChildRace.x", "ChildRace.y")], id.vars='RecNum')
+allCasesRace <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "ChildRace.x", "ChildRace.y")], id.vars='RecNum')
 
 ggplot(data=subset(allCasesRace, !is.na(value))) +
   geom_bar(aes(x=variable, fill=value), position="fill")
@@ -545,7 +546,11 @@ here: first, this plot highlights the spread of adoption into the higher ages,
 as nearly every race band has more positive outliers among adoptees than non-
 adoptees. Second, that the lowering of the median age appears largely uniform
 between white and black children, contrary to my own expectation (that black
-adoptees would skew younger than white adoptees). 
+adoptees would skew younger than white adoptees). It is also worth noting
+something that was very difficult to see on the previous plot, which is that
+amongst the fosters dataset, no American Indian children were adopted. However,
+there are American Indian adoptees in the adoptions dataset, as shown in the
+printout above. 
 
 
 # Multivariate Analysis
