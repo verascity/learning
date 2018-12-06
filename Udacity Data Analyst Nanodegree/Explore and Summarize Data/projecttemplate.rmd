@@ -40,13 +40,14 @@ library(scales)
 #                       "AdoptDadAge", "AdoptFamStr", "AdoptMomRace", "AdoptDadRace",
 #                       "Transracial")
 
-# f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "MannerOfRem", "RemRsnChil",
-#                    "IsPR", "Adopted", "FosFamStr", "F1Race", "F2Race", "Transracial")
-# a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptMomRace",
-#                    "AdoptDadRace", "Transracial")
-# 
-# fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
-# adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
+f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
+                   "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race", 
+                   "F2Race", "Transracial")
+a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptFamStr",
+                   "AdoptMomRace", "AdoptDadRace", "Transracial")
+
+fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
+adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
 
 #allCases <- merge(fosters, adoptions, by.x="RecNum", by.y="RecNum", all=T)
 ```
