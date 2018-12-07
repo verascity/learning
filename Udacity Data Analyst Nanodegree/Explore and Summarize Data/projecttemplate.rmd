@@ -23,11 +23,15 @@ library(scales)
 
 ```{r echo=FALSE, Load_the_Data}
 
+#Loading the CSV files. "Adoptions" will be used later on.
+
 # fosters <- read.csv('fosNY_c_f.csv')
 # adoptions <- read.csv('adoNY_c_f.csv')
 ```
 
 ```{r echo=FALSE, Clean_the_Data}
+
+#Changing column names for readability/sense:
 
 # names(fosters) <- c("RecNum", "Sex", "ClinDis", "AgeAtEnd", "ChildRace", 
 #                     "PrinAgeAtBirth", "PrinFamStr", "TotalRem", "PlacesNumber",
@@ -39,6 +43,8 @@ library(scales)
 #                       "BioMomAgeAtBirth", "BioMomMarried", "AdoptMomAge",
 #                       "AdoptDadAge", "AdoptFamStr", "AdoptMomRace", "AdoptDadRace",
 #                       "Transracial")
+
+#Making factors out of int columns:
 
 # f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
 #                    "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race", 
@@ -591,12 +597,27 @@ make sure you justify why you chose each plot by describing what it shows.
 ### Plot One
 ```{r echo=FALSE, Plot_One}
 
-ggplot(aes(x=ClinDis), data=fosters) +
-  geom_bar()
+ggplot(aes(x=ClinDis), data=subset(fosters, !is.na(ClinDis))) +
+  geom_bar(aes(fill=ClinDis)) +
+  labs(x = "Clinical Disability Status", y="Number of Foster Children",
+       title="Clinical Disability Status of Foster Children") +
+  scale_x_discrete(labels=c("Children With Disabilities", "Children Without Disabilities")) +
+  guides(fill=FALSE) +
+  scale_fill_hue(l=40)
 ```
 
 ### Description One
+The above plot shows the distribution of children with and without disabilities
+in the foster care system in New York in 2015. I chose this plot because the
+distribution surprised me: per this data, there are almost three times as many
+children with disabilities as without in foster care. 
 
+It is important to note that "clinical disability" is an extremely broad 
+category that can include anything from physical disabilities like paralysis and cerebral palsy, to educational disabilities like ADHD, to emotional disabilities
+like major depression or bipolar. Additionally, the experience of going into the
+foster care system in and of itself can contribute to intellectual and emotional
+disabilities. However, even taking that into account, I still found this
+information surprising and interesting.
 
 ### Plot Two
 ```{r echo=FALSE, Plot_Two}
