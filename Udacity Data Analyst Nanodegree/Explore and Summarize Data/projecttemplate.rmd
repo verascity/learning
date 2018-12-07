@@ -624,12 +624,28 @@ information surprising and interesting.
 
 ggplot(data=allCasesAges) +
   geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
-                 alpha=0.75, binwidth=1, position="identity")
+                 alpha=0.75, binwidth=1, position="identity") +
+  coord_cartesian(xlim=c(8.5, 18.5)) +
+  scale_fill_manual(values=c("#E69F00", "#0072B2"), name="Age", 
+                    labels=c("Foster Children\n(Age at End of Year)", 
+                             "Adoptees\n(Age at Adoption)")) +
+  labs(x="Age", y="Proportion of Children",
+       title="Ages of Foster Children and Adoptees")
 
 ```
 
 ### Description Two
 
+The above plot shows the age distribution of non-adoptees in the foster system (measured by age at the end of the fiscal year) contrasted with the age 
+distribution of adoptees (at their age of adoption). Because the minimum age in
+the foster care file is 8, compared to 0 for the adoption file, I chose to focus 
+on ages 8-18. 
+
+While the lack of younger children in the foster care file may lead to some skew
+in this data, there was also a clear difference in ages between adoptees and non-
+adoptees in the foster care file alone. I chose this plot because it is a more
+visually-striking way to depict the difference in ages. Clearly, younger children
+are favored in the adoption system.
 
 ### Plot Three
 ```{r echo=FALSE, Plot_Three}
