@@ -26,37 +26,39 @@ library(RColorBrewer)
 
 #Loading the CSV files. "Adoptions" will be used later on.
 
-# fosters <- read.csv('fosNY_c_f.csv')
-# adoptions <- read.csv('adoNY_c_f.csv')
+fosters <- read.csv('fosNY_c_f.csv')
+adoptions <- read.csv('adoNY_c_f.csv')
 ```
 
 ```{r echo=FALSE, Clean_the_Data}
 
 #Changing column names for readability/sense:
 
-# names(fosters) <- c("RecNum", "Sex", "ClinDis", "AgeAtEnd", "ChildRace", 
-#                     "PrinAgeAtBirth", "PrinFamStr", "TotalRem", "PlacesNumber",
-#                     "MannerOfRem", "RemRsnChil", "IsPR", "Adopted", "F1Age",
-#                     "F2Age", "FosFamStr", "F1Race", "F2Race", "Transracial")
+names(fosters) <- c("RecNum", "Sex", "ClinDis", "AgeAtEnd", "ChildRace",
+                    "PrinAgeAtBirth", "PrinFamStr", "TotalRem", "PlacesNumber",
+                    "MannerOfRem", "RemRsnChil", "IsPR", "Adopted", "F1Age",
+                    "F2Age", "FosFamStr", "F1Race", "F2Race", "Transracial")
 
 
-# names(adoptions) <- c("RecNum", "Sex", "SpecNeeds", "AgeAtAdopt", "ChildRace",
-#                       "BioMomAgeAtBirth", "BioMomMarried", "AdoptMomAge",
-#                       "AdoptDadAge", "AdoptFamStr", "AdoptMomRace", "AdoptDadRace",
-#                       "Transracial")
+names(adoptions) <- c("RecNum", "Sex", "SpecNeeds", "AgeAtAdopt", "ChildRace",
+                      "BioMomAgeAtBirth", "BioMomMarried", "AdoptMomAge",
+                      "AdoptDadAge", "AdoptFamStr", "AdoptMomRace", "AdoptDadRace",
+                      "Transracial")
 
 #Making factors out of int columns:
 
-# f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
-#                    "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race", 
-#                    "F2Race", "Transracial")
-# a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptFamStr",
-#                    "AdoptMomRace", "AdoptDadRace", "Transracial")
-# 
-# fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
-# adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
+f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
+                   "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race",
+                   "F2Race", "Transracial")
+a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptFamStr",
+                   "AdoptMomRace", "AdoptDadRace", "Transracial")
 
-#allCases <- merge(fosters, adoptions, by.x="RecNum", by.y="RecNum", all=T)
+fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
+adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
+
+#Making "allCases" to use later:
+
+allCases <- merge(fosters, adoptions, by.x="RecNum", by.y="RecNum", all=T)
 
 ```
 
@@ -292,7 +294,8 @@ from the foster care dataset.
 
 ```{r echo=FALSE}
 
-#allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
+allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
+
 ggplot(data=allCasesAges) +
   geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
                  alpha=0.75, binwidth=1, position="identity")
@@ -587,14 +590,6 @@ including legal adults.
 
 # Final Plots and Summary
 
-> **Tip**: You've done a lot of exploration and have built up an understanding
-of the structure of and relationships between the variables in your dataset.
-Here, you will select three plots from all of your previous exploration to
-present here as a summary of some of your most interesting findings. Make sure
-that you have refined your selected plots for good titling, axis labels (with
-units), and good aesthetic choices (e.g. color, transparency). After each plot,
-make sure you justify why you chose each plot by describing what it shows.
-
 ### Plot One
 ```{r echo=FALSE, Plot_One}
 
@@ -677,10 +672,38 @@ to read as a trend. The differences between white and black foster children and 
 
 # Reflection
 
-> **Tip**: Here's the final step! Reflect on the exploration you performed and
-the insights you found. What were some of the struggles that you went through?
-What went well? What was surprising? Make sure you include an insight into
-future work that could be done with the dataset.
+For this assignment, I wanted to look at the characteristics of foster children
+in New York in 2015 and explore for any characteristics of the children
+themselves, or their circumstances/experiences in the foster system, that would
+show which children are more likely to be adopted or not adopted. I am coming
+to this Nanodegree program from a background in early childhood and special 
+education, and I want to keep working with and for children, so I chose this 
+dataset as one that really reflects my professional and research interests. 
 
-> **Tip**: Don't forget to remove this, and the other **Tip** sections before
-saving your final work and knitting the final report!
+I think that it was good that I chose a dataset that I really connected with, 
+because it was good motivation to dig deep and really focus on the problem and
+the variables I thought relevant. On the other hand, I think my choice of
+dataset caused a few struggles, especially because most of the variables I had
+to work with were categorical. I could have had a wider variety of plot, and
+done more interesting and varied things with the plots, if I had more continuous
+numerical data to work with. Because I was so focused on the children themselves,
+I really only had age, number of removals, and number of placements to work with,
+and the latter two did not yield many interesting results. I also did not end up
+yielding much from the multivariate plots, and I think again that was partly due
+to the limitations of categorical variables. In the future, for an assignment 
+like this, I might try to look for an option that would contain more
+continuous variables to work with. 
+
+However, that's not to say that categorical variables are useless, or that I 
+learned nothing from this dataset! I saw important differences in age, race, and
+disability status between adoptees and non-adoptees, and I can think of many
+future projects that could be done on any one of those variables. Because my
+background is in special education, I might particularly like to take a closer
+look at disability, and see if I can find additional data such as types of 
+disability, or if one type of disability is more likely to lead to adoption than
+another.
+
+All in all, despite some struggles and frustrations with variety or applicability
+of plots, I am pleased with the results of this assignment. I think I will be 
+taking another look at this dataset, or similar datasets, as a personal project
+once the Nanodegree is over. 
