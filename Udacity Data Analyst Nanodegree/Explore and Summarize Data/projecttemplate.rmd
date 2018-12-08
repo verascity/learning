@@ -104,7 +104,7 @@ ggplot(aes(x=AgeAtEnd), data=fosters) +
   geom_histogram(binwidth=1)
 
 ```
-##Age
+###Age
 
 "AgeAtEnd" contains a foster child's age either at their time of adoption (if 
 adopted) or at the end of the fiscal year (if not). This histogram shows all
@@ -138,26 +138,26 @@ ggplot(aes(x=Transracial), data=fosters) +
   geom_bar()
 ```
 
-##Sex
+###Sex
 
 Sex is a factor with two levels: 1 for male and 2 for female. There appear to be
 slightly more males in the fosters data. 
 
-##Disability
+###Disability
 
 "ClinDis," standing for Clinical Disability, is a factor with two levels: 1 for
 a child with a diagnosed disability, 2 for no diagnosis. An NA here means
 disability status is unknown. Surprisingly, there are over twice as many foster
 children with disabilities as without (a ratio of 2.44 to 1, specifically). 
 
-##Race
+###Race
 
 Race is a factor with seven levels, each number corresponding to a 
 race/ethnicity: 1 - White, 2 - Black, 3 - American Indian, 4 - Asian, 5 - 
 Hawaiian/Pacific Islander, 6 - More than One Race, 7 - Hispanic, 99 - Unknown.
 The majority of foster children are black, then white, then Hispanic.
 
-##Transracial Placements
+###Transracial Placements
 I also want to see if the child's race differs from the foster family's race.
 "Transracial" is a factor with five levels, each number corresponding to a
 status: 0 - not transracial, 1 - white parent/non-white child, 2 - non-white
@@ -186,23 +186,23 @@ ggplot(aes(x=Adopted), data=fosters) +
   geom_bar()
 ```
 
-##Total Removals
+###Total Removals
 "TotalRem" refers to the number of times a child has been removed from their
 birth home, including the current time. The majority of children in the data 
 appear to have been removed only once.
 
-##Number of Placements
+###Number of Placements
 "PlacesNumber" refers to the number of places a child has lived, including their
 current foster home, during the current removal episode (i.e. since leaving
 their birth home the latest time). This is heavily negative-skewed, but has a 
 long tail towards the right. Some children have been in 20 or more homes!
 
-##Manner of Removal
+###Manner of Removal
 "MannerOfRem" refers to how a child ended up in the foster system: a voluntary
 surrender, a court order, or unknown."NA" refers to missing values in this case.
 The vast majority of children were removed by court order.
 
-##Adoptions
+###Adoptions
 Finally, "Adopted" is a factor with two levels: 0 for not adopted, 1 for 
 adopted. About 1/4 of the children in the dataset have been adopted. In the
 bivariate analysis, we can explore this, and the adoptions dataset, to see what
@@ -250,7 +250,7 @@ by the long tail of "PlacesNumber" and, to a lesser extent, "TotalRem".
 
 # Bivariate Plots Section
 
-##Adoption by Age
+###Adoption by Age
 
 ```{r echo=FALSE, Bivariate_Plots}
 ggplot(aes(x=Adopted, y=AgeAtEnd), data=fosters) +
@@ -292,7 +292,7 @@ status.
 non-adoptees, I plotted this histogram using only non-adoptees ("Adopted=='0'") 
 from the foster care dataset. 
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
 
@@ -315,7 +315,7 @@ samples. However, the boxplots above also showed a difference. Between the two
 plots, it seems possible that there is a strong relationship between age and 
 adoption status, but we cannot say so for sure. 
 
-##Adoption by Disability Status
+###Adoption by Disability Status
 
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted), 
@@ -333,7 +333,7 @@ see that while there are 2.44 as many children with disabilities as without in
 the foster care file, there are a whopping 95.65 children without special needs 
 to 1 child with special needs in the adoption file.
 
-##Adoption by Sex
+###Adoption by Sex
 
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted), 
@@ -344,7 +344,7 @@ ggplot(aes(x=Adopted),
 Sex, on the other hand, seems to be roughly equal, and this also tracks with the
 adoption information above (where the ratio of male to female is 1.06 to 1). 
 
-##Adoption by Race
+###Adoption by Race
 
 ```{r echo=FALSE}
  ggplot(aes(x=Adopted), 
@@ -385,7 +385,7 @@ However, Hispanic children represent 13% of non-adoptees and 14% of adoptees,
 which appears to be a smaller difference than using only the foster care file
 made it seem. 
 
-##Adoption by Removal Status
+###Adoption by Removal Status
 
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted, y=TotalRem), data=fosters) +
@@ -397,7 +397,7 @@ appears that while children who have been removed up to six times are being
 adopted, the vast majority of adoptees are on their first removal. The majority
 of non-adoptees are on either their first or second removal. 
 
-##Adoption by Number of Placements
+###Adoption by Number of Placements
 
 ```{r echo=FALSE}
 ggplot(aes(x=Adopted, y=PlacesNumber), data=fosters) +
@@ -417,14 +417,14 @@ which way does that connection work? That is, are children who are at risk of
 multiple removals/placements less likely to be adopted, or does adoption cut
 down on the potential for multiple removals/placements? 
 
-##Placement Numbers by Age
+###Placement Numbers by Age
 
 ```{r echo=FALSE}
 ggplot(aes(x=AgeAtEnd, y=PlacesNumber), data=fosters) +
   geom_point(alpha=0.25, position=position_jitter(height=0))
 ```
 
-##Total Removals by Age
+###Total Removals by Age
 
 ```{r echo=FALSE}
 
@@ -438,7 +438,7 @@ with either placements or removals, such that it could explain one or the other
 connection with adoption. However, neither variable appears to have a linear 
 relationship with age. That is, foster children at all ages are seeing multiple removals or placements. 
 
-##Number of Placements by Total Removals
+###Number of Placements by Total Removals
 
 ```{r echo=FALSE}
 ggplot(aes(y=PlacesNumber, x=TotalRem), data=fosters) +
@@ -490,7 +490,7 @@ wondering if there are ways to tease out the directionality of those
 relationships. Is it possible that other characteristics of children or 
 placements modify those relationships in a revealing way?
 
-##Adoptions and Age by Total Removals
+###Adoptions and Age by Total Removals
 
 ```{r echo=FALSE, Multivariate_Plots}
 
@@ -505,7 +505,7 @@ At all but the highest number of removals, non-adoptees have a higher median age
 than adoptees. However, there are no other notable patterns or relationship
 markers.
 
-##Age and Number of Placements by Adoption Status
+###Age and Number of Placements by Adoption Status
 
 ```{r echo=FALSE}
 
@@ -517,7 +517,7 @@ ggplot(aes(y=PlacesNumber, x=AgeAtEnd, color=Adopted), data=fosters) +
 This plot remakes the Number of Placements by Age plot and factors in adoption
 status. There does not appear to be any additional relationship here.
 
-##Adoptions and Age by Disability Status
+###Adoptions and Age by Disability Status
 
 ```{r echo=FALSE}
 
@@ -538,7 +538,7 @@ More specifically, adoptees with disabilities have a median age of just over 12,
 while adoptees without disabilities have a median age of around 11. Non-adoptees
 with and without disabilities have a median age of around 13. 
 
-##Race and Age by Adoption Status
+###Race and Age by Adoption Status
 
 ```{r echo=FALSE}
 
@@ -616,7 +616,7 @@ disabilities. However, even taking that into account, I still found this
 information surprising and interesting.
 
 ### Plot Two
-```{r echo=FALSE, Plot_Two}
+```{r echo=FALSE, message=FALSE, warning=FALSE, Plot_Two}
 
 ggplot(data=allCasesAges) +
   geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
