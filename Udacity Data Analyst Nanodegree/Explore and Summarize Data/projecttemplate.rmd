@@ -19,6 +19,7 @@ library(tidyr)
 library(dplyr)
 library(reshape)
 library(scales)
+library(RColorBrewer)
 ```
 
 ```{r echo=FALSE, Load_the_Data}
@@ -650,10 +651,27 @@ are favored in the adoption system.
 ### Plot Three
 ```{r echo=FALSE, Plot_Three}
 ggplot(data=subset(allCasesRace, !is.na(value))) +
-  geom_bar(aes(x=variable, fill=value), position="fill")
+  geom_bar(aes(x=variable, fill=value), position="fill") +
+  labs(x="Adoption Status", y="Proportion by Race/Ethnicity",
+       title="Adoption by Race or Ethnicity") +
+  scale_x_discrete(labels=c("Foster Children", "Adoptees")) +
+  scale_fill_brewer(palette="Set1", name="Race/Ethnicity",
+                    labels=c("White", "Black", "American Indian", "Asian",
+                             "Multiracial", "Hispanic Origin",
+                             "Unknown"))
 ```
 
 ### Description Three
+
+
+The above plot shows the distribution of races and ethnicities among foster 
+children and adoptees. I chose this plot because it makes certain trends very,
+alarmingly clear: proportionally, black children appear to be adopted less, 
+while white children appear to be adopted more. The new color bands also make it clearer that there are vastly fewer American Indian children in the adoptees, 
+as well as fewer Asian childen; however, since those numbers were small to begin
+with, it is difficult to know if that applies to the same broader trend. There
+also appear to be a few more Hispanic adoptions, but it is similarly difficult
+to read as a trend. The differences between white and black foster children and adoptees are much starker, to the point of being fairly undeniable.
 
 ------
 
