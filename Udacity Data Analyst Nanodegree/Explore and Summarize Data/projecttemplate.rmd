@@ -1,5 +1,17 @@
-Foster Children and Adoptees in New York City by Vera Sticker
-========================================================
+---
+title: "Foster Children and Adoptees in New York City"
+author: "Vera Sticker"
+date: "December 8, 2018"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: lumen
+    highlight: textmate
+---
+
+_________________
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
 # Load all of the packages that you end up using in your analysis in this code
@@ -14,17 +26,23 @@ Foster Children and Adoptees in New York City by Vera Sticker
 # for other code chunks once you have verified that each plot comes out as you
 # want it to. This will clean up the flow of your report.
 
-library(ggplot2)
-library(tidyr)
-library(dplyr)
-library(reshape)
-library(scales)
-library(RColorBrewer)
+
+# To set figsize options for knitting:
+knitr::opts_chunk$set(fig.width=9,fig.height=5,fig.path='Figs/',
+                      fig.align='center',tidy=TRUE,
+                      echo=FALSE,warning=FALSE,message=FALSE)
+
+
+
+library(ggplot2) # For plotting
+library(reshape) # For melting the dataframes
+library(scales) # For additional options when plotting
+library(RColorBrewer) # For color palettes
 ```
 
 ```{r echo=FALSE, Load_the_Data}
 
-#Loading the CSV files. "Adoptions" will be used later on.
+# Loading the CSV files. "Adoptions" will be used later on.
 
 fosters <- read.csv('fosNY_c_f.csv')
 adoptions <- read.csv('adoNY_c_f.csv')
@@ -32,31 +50,32 @@ adoptions <- read.csv('adoNY_c_f.csv')
 
 ```{r echo=FALSE, Clean_the_Data}
 
-#Changing column names for readability/sense:
+# Changing column names for readability/sense:
 
-names(fosters) <- c("RecNum", "Sex", "ClinDis", "AgeAtEnd", "ChildRace",
+names(fosters) <- c("RecNum", "Sex", "ClinDis", "AgeAtEnd", "CRaceEthn",
                     "PrinAgeAtBirth", "PrinFamStr", "TotalRem", "PlacesNumber",
                     "MannerOfRem", "RemRsnChil", "IsPR", "Adopted", "F1Age",
-                    "F2Age", "FosFamStr", "F1Race", "F2Race", "Transracial")
+                    "F2Age", "FosFamStr", "F1RaceEthn", "F2RaceEthn", 
+                    "Transracial")
 
 
-names(adoptions) <- c("RecNum", "Sex", "SpecNeeds", "AgeAtAdopt", "ChildRace",
+names(adoptions) <- c("RecNum", "Sex", "SpecNeeds", "AgeAtAdopt", "CRaceEthn",
                       "BioMomAgeAtBirth", "BioMomMarried", "AdoptMomAge",
-                      "AdoptDadAge", "AdoptFamStr", "AdoptMomRace", "AdoptDadRace",
-                      "Transracial")
+                      "AdoptDadAge", "AdoptFamStr", "AdoptMomRaceEthn", 
+                      "AdoptDadRaceEthn", "Transracial")
 
-#Making factors out of int columns:
+# Making factors out of int columns:
 
-f_factor_cols <- c("Sex", "ClinDis", "ChildRace", "PrinFamStr", "MannerOfRem",
-                   "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1Race",
-                   "F2Race", "Transracial")
-a_factor_cols <- c("Sex", "SpecNeeds", "ChildRace", "BioMomMarried", "AdoptFamStr",
-                   "AdoptMomRace", "AdoptDadRace", "Transracial")
+f_factor_cols <- c("Sex", "ClinDis", "CRaceEthn", "PrinFamStr", "MannerOfRem",
+                   "RemRsnChil", "IsPR", "Adopted", "FosFamStr", "F1RaceEthn",
+                   "F2RaceEthn", "Transracial")
+a_factor_cols <- c("Sex", "SpecNeeds", "CRaceEthn", "BioMomMarried", "AdoptFamStr",
+                   "AdoptMomRaceEthn", "AdoptDadRaceEthn", "Transracial")
 
 fosters[f_factor_cols] <- lapply(fosters[f_factor_cols], as.factor)
 adoptions[a_factor_cols] <- lapply(adoptions[a_factor_cols], as.factor)
 
-#Making "allCases" to use later:
+# Making "allCases" to use later:
 
 allCases <- merge(fosters, adoptions, by.x="RecNum", by.y="RecNum", all=T)
 
@@ -79,13 +98,13 @@ and internal consistency and factorized several variables. This leads to the
 following information:
 
 ```{r echo=FALSE}
-str(fosters)
+str(fosters) # Dataframe structure
 ```
 
 "Fosters" contains 19 variables and 2377 observations.
 
 ```{r echo=FALSE}
-summary(fosters)
+summary(fosters) # Summary statistics
 ```
 
 
@@ -98,13 +117,14 @@ which adoptions are typically chosen. I want to know more about the
 characteristics of foster children as a whole. The first relevant piece of 
 information that comes to mind is age. 
 
+###Age
+
 ```{r echo=FALSE, Univariate_Plots}
 
 ggplot(aes(x=AgeAtEnd), data=fosters) +
-  geom_histogram(binwidth=1)
+  geom_histogram(binwidth=1) # A histogram is appropriate for age data
 
 ```
-###Age
 
 "AgeAtEnd" contains a foster child's age either at their time of adoption (if 
 adopted) or at the end of the fiscal year (if not). This histogram shows all
@@ -114,11 +134,19 @@ distribution around age 13, but is slightly skewed towards the younger side.
 Next, I want to look at categorical variables such as sex, disability status,
 and race of child.
 
+###Sex
+
 ```{r echo=FALSE}
 ggplot(aes(x=Sex), data=fosters) +
-  geom_bar()
+  geom_bar() # Bar plots are better for categorical data, like this and the 
+             # others below
 
 ```
+
+Sex is a factor with two levels: 1 for male and 2 for female. There appear to be
+slightly more males in the fosters data. 
+
+###Disability
 
 ```{r echo=FALSE}
 
@@ -126,38 +154,33 @@ ggplot(aes(x=ClinDis), data=fosters) +
   geom_bar()
 
 ```
+
+"ClinDis," standing for Clinical Disability, is a factor with two levels: 1 for
+a child with a diagnosed disability, 2 for no diagnosis. An NA here means
+disability status is unknown. Surprisingly, there are over twice as many foster
+children with disabilities as without (a ratio of 2.44 to 1, specifically).
+
+###Race/Ethnicity
+
 ```{r echo=FALSE}
 
-ggplot(aes(x=ChildRace), data=fosters) +
+ggplot(aes(x=CRaceEthn), data=fosters) +
   geom_bar()
 
 ```
+
+"CRaceEthn" is a factor with seven levels, each number corresponding to a 
+race/ethnicity: 1 - White, 2 - Black, 3 - American Indian, 4 - Asian, 5 - 
+Hawaiian/Pacific Islander, 6 - More than One Race, 7 - Hispanic, 99 - Unknown.
+The majority of foster children are black, then white, then Hispanic.
+
+###Transracial Placements
 
 ```{r echo=FALSE}
 ggplot(aes(x=Transracial), data=fosters) +
   geom_bar()
 ```
 
-###Sex
-
-Sex is a factor with two levels: 1 for male and 2 for female. There appear to be
-slightly more males in the fosters data. 
-
-###Disability
-
-"ClinDis," standing for Clinical Disability, is a factor with two levels: 1 for
-a child with a diagnosed disability, 2 for no diagnosis. An NA here means
-disability status is unknown. Surprisingly, there are over twice as many foster
-children with disabilities as without (a ratio of 2.44 to 1, specifically). 
-
-###Race
-
-Race is a factor with seven levels, each number corresponding to a 
-race/ethnicity: 1 - White, 2 - Black, 3 - American Indian, 4 - Asian, 5 - 
-Hawaiian/Pacific Islander, 6 - More than One Race, 7 - Hispanic, 99 - Unknown.
-The majority of foster children are black, then white, then Hispanic.
-
-###Transracial Placements
 I also want to see if the child's race differs from the foster family's race.
 "Transracial" is a factor with five levels, each number corresponding to a
 status: 0 - not transracial, 1 - white parent/non-white child, 2 - non-white
@@ -167,42 +190,48 @@ Most known cases appear to be same-race placements.
 There is one more set of variables I am interested in: those that relate to a 
 child's status in the foster system. 
 
+###Total Removals
+
 ```{r echo=FALSE}
 ggplot(aes(x=TotalRem), data=fosters) +
-  geom_histogram(binwidth=1)
+  geom_histogram(binwidth=1) # Again, a histogram for continuous data.
 ```
+
+"TotalRem" refers to the number of times a child has been removed from their
+birth home, including the current time. The majority of children in the data 
+appear to have been removed only once.
+
+###Number of Placements
 
 ```{r echo=FALSE}
 
 ggplot(aes(x=PlacesNumber), data=fosters) +
   geom_histogram(binwidth=1)
 ```
-```{r echo=FALSE}
-ggplot(aes(x=MannerOfRem), data=fosters) +
-  geom_bar()
-```
-```{r echo=FALSE}
-ggplot(aes(x=Adopted), data=fosters) +
-  geom_bar()
-```
 
-###Total Removals
-"TotalRem" refers to the number of times a child has been removed from their
-birth home, including the current time. The majority of children in the data 
-appear to have been removed only once.
-
-###Number of Placements
 "PlacesNumber" refers to the number of places a child has lived, including their
 current foster home, during the current removal episode (i.e. since leaving
 their birth home the latest time). This is heavily negative-skewed, but has a 
 long tail towards the right. Some children have been in 20 or more homes!
 
 ###Manner of Removal
+
+```{r echo=FALSE}
+ggplot(aes(x=MannerOfRem), data=fosters) +
+  geom_bar() # Bar plot for categorical data, once more.
+```
+
 "MannerOfRem" refers to how a child ended up in the foster system: a voluntary
 surrender, a court order, or unknown."NA" refers to missing values in this case.
 The vast majority of children were removed by court order.
 
 ###Adoptions
+
+```{r echo=FALSE}
+ggplot(aes(x=Adopted), data=fosters) +
+  geom_bar()
+```
+
 Finally, "Adopted" is a factor with two levels: 0 for not adopted, 1 for 
 adopted. About 1/4 of the children in the dataset have been adopted. In the
 bivariate analysis, we can explore this, and the adoptions dataset, to see what
@@ -254,7 +283,8 @@ by the long tail of "PlacesNumber" and, to a lesser extent, "TotalRem".
 
 ```{r echo=FALSE, Bivariate_Plots}
 ggplot(aes(x=Adopted, y=AgeAtEnd), data=fosters) +
-  geom_boxplot()
+  geom_boxplot() # A boxplot works well when one variable is categorical and one
+                 # is continuous like this.
 ```
 
 Looking at the above boxplot, we can see that the median age of adoptees appears
@@ -266,7 +296,7 @@ A look at the summary statistics by adoption helps clarify this data, as well
 as the data below:
 
 ```{r echo=FALSE}
-by(fosters, fosters$Adopted, summary)
+by(fosters, fosters$Adopted, summary) # Summary stats grouped by adoption status
 ```
 
 
@@ -294,7 +324,15 @@ from the foster care dataset.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum')
+# "Melting" the age data here gets us a new dataframe with only three columns:
+# RecNum as the ID, 'variable' to denote whether a child is in allCases.x 
+# (fosters) or allCases.y (adoptees), and 'value' to indicate their age. Because
+# I selected the subset of 'Adopted == 0,' only non-adopted foster children are
+# represented here:
+
+allCasesAges <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "AgeAtEnd", "AgeAtAdopt")], id.vars='RecNum') 
+
+# Plotting allCasesAges:
 
 ggplot(data=allCasesAges) +
   geom_histogram(aes(x=value, (..count..)/sum(..count..), fill=variable), 
@@ -318,8 +356,12 @@ adoption status, but we cannot say so for sure.
 ###Adoption by Disability Status
 
 ```{r echo=FALSE}
+
+# Subsetting below lets us get rid of the "NA" column/space from below. Using
+# a filled bar plot is a good way to represent two categorical variables.
+
 ggplot(aes(x=Adopted), 
-       data=subset(fosters, !is.na(ClinDis))) +
+       data=subset(fosters, !is.na(ClinDis))) + 
        geom_bar(aes(fill=ClinDis), position='fill')
 ```
 
@@ -344,23 +386,27 @@ ggplot(aes(x=Adopted),
 Sex, on the other hand, seems to be roughly equal, and this also tracks with the
 adoption information above (where the ratio of male to female is 1.06 to 1). 
 
-###Adoption by Race
+###Adoption by Race/Ethnicity
 
 ```{r echo=FALSE}
  ggplot(aes(x=Adopted), 
-        data=subset(fosters, !is.na(ChildRace))) +
-        geom_bar(aes(fill=ChildRace), position='fill')
+        data=subset(fosters, !is.na(CRaceEthn))) +
+        geom_bar(aes(fill=CRaceEthn), position='fill')
 ```
 
-There seem to be a few small differences in adoption by race. White children
-(red bar) and Hispanic children (purple bar) seem to be adopted slightly more 
-often, while black children (tan bar) seem to be adopted slightly less. Because 
-this is a slightly more complex question than sex, and because both datasets
-share the same "ChildRace" variable (with the same coding), I want to see if I 
-can get any further information by running another combined plot.
+There seem to be a few small differences in adoption by race/ethnicity. White 
+children (red bar) and Hispanic children (purple bar) seem to be adopted 
+slightly more often, while black children (tan bar) seem to be adopted slightly 
+less. Because this is a slightly more complex question than sex, and because 
+both datasets share the same "CRaceEthn" variable (with the same coding), I want
+to see if I can get any further information by running another combined plot.
 
 ```{r echo=FALSE}
-allCasesRace <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "ChildRace.x", "ChildRace.y")], id.vars='RecNum')
+
+# Again, 'melting' the race/ethnicity data for non-adopted foster children ('x')
+# and adopted children ('y'):
+
+allCasesRace <- melt(subset(allCases, Adopted=="0")[, c("RecNum", "CRaceEthn.x", "CRaceEthn.y")], id.vars='RecNum')
 
 ggplot(data=subset(allCasesRace, !is.na(value))) +
   geom_bar(aes(x=variable, fill=value), position="fill")
@@ -369,11 +415,13 @@ ggplot(data=subset(allCasesRace, !is.na(value))) +
 
 ```{r echo=FALSE}
 
+# The raw numbers for race/ethnicity by adoption status:
+
 "Fosters (non-adoptees):"
-summary(subset(fosters, Adopted=='0')$ChildRace)
+summary(subset(fosters, Adopted=='0')$CRaceEthn)
 
 "Adoptions:"
-summary(adoptions$ChildRace)
+summary(adoptions$CRaceEthn)
 
 ```
 
@@ -421,7 +469,12 @@ down on the potential for multiple removals/placements?
 
 ```{r echo=FALSE}
 ggplot(aes(x=AgeAtEnd, y=PlacesNumber), data=fosters) +
-  geom_point(alpha=0.25, position=position_jitter(height=0))
+  geom_point(alpha=0.25, position=position_jitter(height=0)) 
+
+# A scatter plot is ideal for two numerical variables. Because 'PlacesNumber' is
+# discrete, the original plot was just rows of points; playing with alpha and 
+# jitter lets us see any shape in the distribution a little better.
+
 ```
 
 ###Total Removals by Age
@@ -494,9 +547,9 @@ placements modify those relationships in a revealing way?
 
 ```{r echo=FALSE, Multivariate_Plots}
 
-ggplot(aes(x=Adopted, y=AgeAtEnd, fill=TotalRem), data=fosters) +
-  geom_boxplot(alpha=0.5) +
-  facet_wrap(~TotalRem)
+ggplot(aes(x=Adopted, y=AgeAtEnd), data=fosters) +
+  geom_boxplot() +
+  facet_wrap(~TotalRem) # Facet wrapping lets us easily add a third variable.
 ```
 
 This plot shows the breakdown of adoptee/non-adoptee age at every step of 
@@ -521,7 +574,7 @@ status. There does not appear to be any additional relationship here.
 
 ```{r echo=FALSE}
 
-ggplot(aes(y=AgeAtEnd, x=Adopted, fill=Adopted), 
+ggplot(aes(y=AgeAtEnd, x=Adopted), 
        data=subset(fosters, !is.na(ClinDis))) +
   geom_boxplot() +
   facet_wrap(~ClinDis)
@@ -542,8 +595,8 @@ with and without disabilities have a median age of around 13.
 
 ```{r echo=FALSE}
 
-ggplot(aes(y=AgeAtEnd, x=ChildRace, fill=ChildRace),
-       data=subset(fosters, !is.na(ChildRace))) +
+ggplot(aes(y=AgeAtEnd, x=CRaceEthn),
+       data=subset(fosters, !is.na(CRaceEthn))) +
   geom_boxplot() +
   facet_grid(Adopted ~ .)
 
