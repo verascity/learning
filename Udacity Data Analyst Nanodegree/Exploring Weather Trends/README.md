@@ -38,10 +38,10 @@
     <meta property="og:image" content="https://avatars1.githubusercontent.com/u/25555852?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="verascity/learning" /><meta property="og:url" content="https://github.com/verascity/learning" /><meta property="og:description" content="A repo to post things I&#39;m studying or mini-projects I&#39;m working on. - verascity/learning" />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzU5MzE4OTk4OmVhNzY0ODljOTA5ODVmNGU2NjZjYWMwOTgzZDViMTBkNWRkZDdjNzM3MzNlZTE4ODUyYTJjMDkyYzNhY2U3YmM=--499f1795eaf073cc7e5f0ce72cde67e760de0c62">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzU5MzE4OTk4Ojg2YzllMWQ4MmViYjA5NGVkYmJiY2NiNmQ1MmNkYjZhODRiNWU4ZDUwZGUyMzg3ZWJmZTE2YTM1NGU2ZjJlYzQ=--05447e53a019734e5774fd829bd3e57c9082ebeb">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="CF8C:356D:3AB1E59:73CF626:5C36683D" data-pjax-transient>
+  <meta name="request-id" content="CF8C:356D:3AB1516:73CE2F6:5C366829" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CF8C:356D:3AB1E59:73CF626:5C36683D" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="25555852" /><meta name="octolytics-actor-login" content="verascity" /><meta name="octolytics-actor-hash" content="a9d079313f94ded54edf7e8dde5e25772b194c0106331b65323f29cc989e4b7e" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CF8C:356D:3AB1516:73CE2F6:5C366829" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="25555852" /><meta name="octolytics-actor-login" content="verascity" /><meta name="octolytics-actor-hash" content="a9d079313f94ded54edf7e8dde5e25772b194c0106331b65323f29cc989e4b7e" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -70,7 +70,7 @@
     <meta name="user-login" content="verascity">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="YjVjN2NhNzBkYTI1NDY0YWI4MjYxMTNiM2UyNTY3YjRiOGQ5YjNiNDcyNTQ0YTcxZDNiMDhmZDY5MjRjOTI0Mnx7InJlbW90ZV9hZGRyZXNzIjoiMjQuOTAuMTU3LjE4NSIsInJlcXVlc3RfaWQiOiJDRjhDOjM1NkQ6M0FCMUU1OTo3M0NGNjI2OjVDMzY2ODNEIiwidGltZXN0YW1wIjoxNTQ3MDY5NTA0LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+    <meta name="js-proxy-site-detection-payload" content="MDBlYjZhMjJlMzkwYmFhZWY3MzljZWVlNGNlYjMyZDU4ZTYzNjVlNjA2ZGJkNjI4Yjk2MGVlNmE1YWVlYjUxOXx7InJlbW90ZV9hZGRyZXNzIjoiMjQuOTAuMTU3LjE4NSIsInJlcXVlc3RfaWQiOiJDRjhDOjM1NkQ6M0FCMTUxNjo3M0NFMkY2OjVDMzY2ODI5IiwidGltZXN0YW1wIjoxNTQ3MDY5NDg1LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT,DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,RELATED_ISSUES,MARKETPLACE_INSIGHTS_V2">
 
@@ -86,7 +86,7 @@
   <meta name="octolytics-dimension-user_id" content="25555852" /><meta name="octolytics-dimension-user_login" content="verascity" /><meta name="octolytics-dimension-repository_id" content="136081918" /><meta name="octolytics-dimension-repository_nwo" content="verascity/learning" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="136081918" /><meta name="octolytics-dimension-repository_network_root_nwo" content="verascity/learning" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="true" />
 
 
-    <link rel="canonical" href="https://github.com/verascity/learning/blob/master/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/verascity/learning/blob/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -155,7 +155,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=KVXCToSu1HQMc1Bkyd6RZEpqVSQnOV276nrglmAeqyD7y7M08GZhez0YlWOdwcD81+wdGTp/KGSXMRJmivQtmA=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=ESdEYXvQD0LlybKUoQxK5ElUNekQCfV0F7vkHFuXTOzDuTUbDxi6TdSid5P1Ext81NJ91A1PgKtq8BbssX3KVA=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -382,7 +382,7 @@
           <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
           <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
           <li>
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="7X26KqsPiQp6rRBcLHILBOp4PBI4Z2OHQlaQU5xqh4eHMb6+vk4CGF/h03mLUw/yBLdvLJR5u0WBOONOJwDCtA==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XUmbwEXw3DRIt8nE0Ok7wFyBQ7r5xK1TUQ+m728+xZc3BZ9UULFXJm37CuF3yD82sk4QhFXadZGSYdXy1FSApA==" />
               
               <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
                 Sign out
@@ -396,7 +396,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Jwbo+bq5CAZ/1mxotjWs3lCAZpxrUd6o19d95JT4HlBNSuxtr/iDFFqar00RFKgovk81osdPBmoUuQ75L5JbYw==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="oKtA6St0ERvkZXXsFhKs5vwEd05K//em+E6bJkB8hCXK50R9PjWaCcEptsmxM6gQEsskcObhL2Q7IOg7+xbBFg==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -433,7 +433,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="hxZ6SFoRHkJqw44clzYKU9w99P6kKbQtjTmR7oMqDRG4Pdg2NrFkC8RgAAcl4ScMZzHQ/tOIPsROqkgSqEO4uw==" />      <input type="hidden" name="repository_id" id="repository_id" value="136081918" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="W4b0g0nj0fPoB+rrrYeyi3EcN89e0ceJma2dFrVdU/BkrVb9JUOrukakZPAfUJ/UyhATzylwTWBaPkTqnjTmWg==" />      <input type="hidden" name="repository_id" id="repository_id" value="136081918" class="form-control" />
 
       <details class="details-reset details-overlay select-menu float-left">
         <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:blob#show">
@@ -507,7 +507,7 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/verascity/learning/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="KPKXYGVDmGF1sZZ182rNYRHAgiPfmzKbS1ND3egBICwufuv4xnmECwSMAc+AoMfnHJCizrgIOIBn/PKp/X9U3w==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/verascity/learning/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="K9CqtTvB0eFbBNL324BGmWuBZTWoL3TeDEs5MmYeuNktXNYtmPvNiyo5RU2oSkwfZtFF2M+8fsUg5IhGc2DMKg==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -522,7 +522,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/verascity/learning/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="TdjBpKBFv3mEDV6ymeE9kgONZTAIBLFG6drg62MwogLd1GB0evOgUB5Ww4r49h7hQKpUJDyIp93n8yOMnyvyTw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/verascity/learning/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="FGgVAUGLdW3WJ8dXsSWIPfitLC7WZrR5X9gJ+wZ4MvOEZLTRmz1qREx8Wm/QMqtOu4odOuLqouJR8cqc+mNivg==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -624,16 +624,16 @@
 
 
   
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/verascity/learning/blob/f6a0c136a759c8b33564e4ea3e62f3db2e017dc0/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/verascity/learning/blob/f6a0c136a759c8b33564e4ea3e62f3db2e017dc0/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v21:f509af4fd4355b5af53dfba90615db29 -->
+    <!-- blob contrib key: blob_contributors:v21:ecf0e223c0e0e1a60e72f0bc5fc4b530 -->
 
     
 
     <div class="file-navigation">
       
 <div class="select-menu branch-select-menu js-menu-container js-select-menu float-left js-load-contents"
-  data-contents-url="/verascity/learning/ref-list/master/README.md?source_action=show&amp;source_controller=blob">
+  data-contents-url="/verascity/learning/ref-list/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md?source_action=show&amp;source_controller=blob">
   <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
     
     type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
@@ -663,54 +663,21 @@
         </clipboard-copy>
       </div>
       <div id="blob-path" class="breadcrumb">
-        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/verascity/learning"><span>learning</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/verascity/learning"><span>learning</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/verascity/learning/tree/master/Udacity%20Data%20Analyst%20Nanodegree"><span>Udacity Data Analyst Nanodegree</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/verascity/learning/tree/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends"><span>Exploring Weather Trends</span></a></span><span class="separator">/</span><strong class="final-path">README.md</strong>
       </div>
     </div>
 
 
-    
-  <div class="commit-tease">
-      <span class="float-right">
-        <a class="commit-tease-sha" href="/verascity/learning/commit/88bfd8abdd2ba779e918afd493b42727cbabcf26" data-pjax>
-          88bfd8a
-        </a>
-        <relative-time datetime="2019-01-09T21:17:01Z">Jan 9, 2019</relative-time>
-      </span>
+    <include-fragment src="/verascity/learning/contributors/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md" class="commit-tease commit-loader">
       <div>
-        <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=25555852" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/verascity"><img class="avatar" src="https://avatars0.githubusercontent.com/u/25555852?s=40&amp;v=4" width="20" height="20" alt="@verascity" /></a>
-        <a class="user-mention" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=25555852" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/verascity">verascity</a>
-          <a data-pjax="true" title="Update README.md" class="message" href="/verascity/learning/commit/88bfd8abdd2ba779e918afd493b42727cbabcf26">Update README.md</a>
+        Fetching contributors&hellip;
       </div>
 
-    <div class="commit-tease-contributors">
-      
-<details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark float-left mr-2" id="blob_contributors_box">
-  <summary class="btn-link" aria-haspopup="dialog"  >
-    
-    <span><strong>1</strong> contributor</span>
-  </summary>
-  <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast " aria-label="Users who have contributed to this file">
-    <div class="Box-header">
-      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-      </button>
-      <h3 class="Box-title">Users who have contributed to this file</h3>
-    </div>
-    
-        <ul class="list-style-none overflow-auto">
-            <li class="Box-row">
-              <a class="link-gray-dark no-underline" href="/verascity">
-                <img class="avatar mr-2" alt="" src="https://avatars0.githubusercontent.com/u/25555852?s=40&amp;v=4" width="20" height="20" />
-                verascity
-</a>            </li>
-        </ul>
-
-  </details-dialog>
-</details>
-      
-    </div>
-  </div>
-
+      <div class="commit-tease-contributors">
+          <img alt="" class="loader-loading float-left" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
 
 
 
@@ -722,25 +689,25 @@
 
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/verascity/learning/raw/master/README.md">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/verascity/learning/blame/master/README.md">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/verascity/learning/commits/master/README.md">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/verascity/learning/raw/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/verascity/learning/blame/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/verascity/learning/commits/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="x-github-client://openRepo/https://github.com/verascity/learning?branch=master&amp;filepath=README.md"
+           href="x-github-client://openRepo/https://github.com/verascity/learning?branch=master&amp;filepath=Udacity%20Data%20Analyst%20Nanodegree%2FExploring%20Weather%20Trends%2FREADME.md"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/verascity/learning/edit/master/README.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zeeJPG7J9dxmfrggnee+75+MsCKUhKwa0H4gWEZYOs2IHYmfvOZfh4FT/VrHbLzeZ9jWmY100bexD+XtmRJtTw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/verascity/learning/edit/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VEsZxCWQ15d3SqMKW++lAhUVuWDzijnujRDD9Bpy0efyHYHJ8fDYg9eG/TDskqatELVk+MyetNuiSzYCHrxcqg==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Edit this file" data-hotkey="e" data-disable-with>
               <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
             </button>
 </form>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/verascity/learning/delete/master/README.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ZGVWicaAVKR5HVxhVwknjI42Dysga9mMum6aY/N3qn/XTWqQ7Vc/fCzqASrGKvsa1Hd9H/Xs6aTA3YVJ2KGvlQ==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/verascity/learning/delete/master/Udacity%20Data%20Analyst%20Nanodegree/Exploring%20Weather%20Trends/README.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="03Xacb9liEzo4QnDXF7UVbOd4HFcvLuHVpsb7AY1Z842kw3GzuWJ0E08P9m5VYomFzQGuvDNhpNEwJux920Q1g==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -748,16 +715,33 @@
 </form>  </div>
 
   <div class="file-info">
-      5 lines (2 sloc)
+      18 lines (12 sloc)
       <span class="file-info-divider"></span>
-    246 Bytes
+    1.88 KB
   </div>
 </div>
 
       
   <div id="readme" class="readme blob instapaper_body js-code-block-container">
-    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-learning" class="anchor" aria-hidden="true" href="#learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Learning</h1>
-<p>This repository contains projects for courses I am taking/have taken, such as Udacity's Data Analyst Nanodegree and edX's Analytics in Python, as well as projects that I completed/am completing in order to learn more about a topic.</p>
+    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-exploring-weather-trends-with-sql-and-python" class="anchor" aria-hidden="true" href="#exploring-weather-trends-with-sql-and-python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exploring Weather Trends (With SQL and Python)</h1>
+<p>This repository contains my submission for "Exploring Weather Trends," the first project of Udacity's Data Analyst Nanodegree. The project brief was as follows:</p>
+<blockquote>
+<ul>
+<li>Extract the data from the database. There's a workspace in the previous section that is connected to a database. You’ll need to export &gt;the temperature data for the world as well as for the closest big city to where you live. You can find a list of cities and countries in &gt;the city_list table.
+<ul>
+<li>Write a SQL query to extract the city level data. Export to CSV.</li>
+<li>Write a SQL query to extract the global data. Export to CSV.</li>
+</ul>
+</li>
+<li>Open up the CSV in whatever tool you feel most comfortable using. We suggest using Excel or Google sheets, but you are welcome to use &gt;another tool, such as Python or R.</li>
+<li>Create a line chart that compares your city’s temperatures with the global temperatures. Make sure to plot the moving average rather &gt;than the yearly averages in order to smooth out the lines, making trends more observable (the last concept in the previous lesson goes &gt;over how to do this in a spreadsheet).</li>
+<li>Make observations about the similarities and differences between the world averages and your city’s averages, as well as overall trends.</li>
+</ul>
+</blockquote>
+<h4><a id="user-content-method" class="anchor" aria-hidden="true" href="#method"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method:</h4>
+<p>I live in New York City, so of course that was the city I chose to tackle. You can view the SQL queries I wrote in my final report, contained in this repository. I then used Python's Pandas and Matplotlib libraries to visualize the extracted data and make observations. After running the analysis on New York, I decided to see if other cities would follow a similar pattern, so I repeated the process with a SQL query of five random cities.</p>
+<h4><a id="user-content-outcome" class="anchor" aria-hidden="true" href="#outcome"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Outcome:</h4>
+<p>I learned some interesting (if largely unsurprising) things about temperature history. I learned more about how to integrate multiple technologies when doing data analysis.</p>
 </article>
   </div>
 
@@ -789,7 +773,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2019 <span title="0.23666s from unicorn-579cb57ddd-72gtf">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2019 <span title="0.31176s from unicorn-c9c5b899f-5lbwx">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
