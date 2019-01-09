@@ -1,8 +1,10 @@
 
 *.pyc
+*.zip
 Linear Algebra/vector_math.py
-Udacity Data Analyst Nanodegree/Exploring Weather Trends/Exploring Weather Trends Final Report.pdf
 Udacity Data Analyst Nanodegree/Exploring Weather Trends/five_city_global_2.png
 Udacity Data Analyst Nanodegree/Exploring Weather Trends/sql_query_1.png
 Udacity Data Analyst Nanodegree/Exploring Weather Trends/sql_query_2.png
-
+Udacity Data Analyst Nanodegree/Data Wrangling/
+Udacity Data Analyst Nanodegree/Tableau Story Project/
+Udacity Data Analyst Nanodegree/Wrangle and Analyze Data/
