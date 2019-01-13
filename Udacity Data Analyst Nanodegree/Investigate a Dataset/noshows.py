@@ -98,7 +98,7 @@ if __name__ == "__main__":
                  title='No-Shows by Age, Time Waiting, and SMS Received')
 
     #Question 2: How are ages distributed between shows and no-shows? 
-    #View disrtributions as histogram:
+    #View distributions as histogram:
     no_show_ages = df[df['No-show'] == 'Yes']['Age']
     yes_show_ages = df[df['No-show'] == 'No']['Age']
     stacked_hist(no_show_ages, yes_show_ages, 'No-show', 'Show', title='Distribution of Show/No-Show Ages')
