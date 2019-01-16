@@ -34,10 +34,10 @@ with open(filename, 'r') as f:
 
 import mysql.connector as conn
 
-User = "u_2268_28390_955"
-Name = "db_2268_28390_95596"
-Host = "rdscourse.c5oiflamxeov.us-west-2.rds.amazonaws.com"
-password = "GjBf91dfwx7w2LB9C977"
+User = "username"
+Name = "name"
+Host = "host"
+password = "password"
 
 
 """
